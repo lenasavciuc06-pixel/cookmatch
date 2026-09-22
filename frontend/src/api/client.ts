@@ -64,7 +64,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
       throw new ApiError(response.status, problem.detail ?? problem.title ?? `Request failed with status ${response.status}`);
     }
 
-    return (await response.json()) as T;
+    return readJson<T>(response);
   } catch (error) {
     if (error instanceof ApiError) {
       throw error;
@@ -84,11 +84,10 @@ async function readProblemDetails(response: Response): Promise<ProblemDetails> {
   try {
     const problem: unknown = await response.json();
 
-    if (typeof problem === 'object' && problem !== null) {
-      const details = problem as Record<string, unknown>;
+    if (isRecord(problem)) {
       return {
-        detail: typeof details.detail === 'string' ? details.detail : undefined,
-        title: typeof details.title === 'string' ? details.title : undefined,
+        detail: typeof problem.detail === 'string' ? problem.detail : undefined,
+        title: typeof problem.title === 'string' ? problem.title : undefined,
       };
     }
   } catch {
@@ -98,11 +97,19 @@ async function readProblemDetails(response: Response): Promise<ProblemDetails> {
   return {};
 }
 
-function toQueryString(params: Record<string, string | number | undefined>): string {
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
+
+function readJson<T>(response: Response): Promise<T> {
+  return response.json();
+}
+
+function toQueryString(params: object): string {
   const searchParams = new URLSearchParams();
 
   for (const [key, value] of Object.entries(params)) {
-    if (value !== undefined) {
+    if (typeof value === 'string' || typeof value === 'number') {
       searchParams.set(key, String(value));
     }
   }

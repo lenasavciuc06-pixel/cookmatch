@@ -1,5 +1,27 @@
 {
   "selectedIngredients": "Ingrediente selectate",
   "emptyIngredients": "Nu ai selectat încă ingrediente din frigider.",
-  "ingredientCount": "Ai {{count}} ingrediente selectate."
+  "ingredientCount": "Ai {{count}} ingrediente selectate.",
+  "eyebrow": "Gătește mai bine, risipește mai puțin",
+  "heroTitle": "Ce ai în frigider? Noi îți spunem ce poți găti.",
+  "heroSubtitle": "Transformă ingredientele rămase în mese gustoase și redu risipa alimentară.",
+  "findButton": "Găsește ce pot găti",
+  "loadingButton": "Căutăm rețete...",
+  "quickSuggestions": "Încearcă rapid:",
+  "quickSuggestionsLabel": "Sugestii rapide de ingrediente",
+  "quickIngredients": { "potatoes": "cartofi", "eggs": "ouă", "onion": "ceapă", "cheese": "brânză", "chicken": "pui", "tomatoes": "roșii" },
+  "loadingResults": "Se încarcă rezultatele",
+  "howTitle": "Cum funcționează",
+  "steps": { "choose": { "title": "Adaugă ingredientele", "description": "Spune-ne ce ai deja în frigider." }, "match": { "title": "Potrivește rețetele", "description": "Motorul găsește cele mai apropiate rețete." }, "cook": { "title": "Gătește fără risipă", "description": "Alege o idee și transform-o în cină." } },
+  "errorTitle": "Nu am putut încărca rețetele",
+  "errorDescription": "Verifică conexiunea și încearcă din nou.",
+  "retry": "Încearcă din nou",
+  "emptyResultsTitle": "Mai avem nevoie de câteva ingrediente",
+  "emptyResultsDescription": "Adaugă alte ingrediente sau încearcă sugestiile rapide pentru a găsi mai multe potriviri.",
+  "resultsTitle": "Ce poți găti",
+  "missingCount": "Ingrediente lipsă: {{count}}",
+  "status": { "CanCookNow": "Poți găti acum", "OneMissing": "Îți mai lipsește 1 ingredient", "FewMissing": "Îți mai lipsesc 2+ ingrediente", "ManyMissing": "Îți mai lipsesc 2+ ingrediente" },
+  "groups": { "ready": "Poți găti acum", "oneMissing": "Îți mai lipsește 1 ingredient", "manyMissing": "Îți mai lipsesc 2+ ingrediente" },
+  "recipeCount": "{{count}} rețete",
+  "showMore": "Arată mai multe"
 }

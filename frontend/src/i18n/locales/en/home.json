@@ -1,5 +1,27 @@
 {
   "selectedIngredients": "Selected ingredients",
   "emptyIngredients": "You have not selected any ingredients yet.",
-  "ingredientCount": "You have {{count}} selected ingredients."
+  "ingredientCount": "You have {{count}} selected ingredients.",
+  "eyebrow": "Cook better, waste less",
+  "heroTitle": "What's in your fridge? We'll tell you what you can cook.",
+  "heroSubtitle": "Turn leftover ingredients into delicious meals and reduce food waste.",
+  "findButton": "Find what I can cook",
+  "loadingButton": "Finding recipes...",
+  "quickSuggestions": "Try quickly:",
+  "quickSuggestionsLabel": "Quick ingredient suggestions",
+  "quickIngredients": { "potatoes": "potatoes", "eggs": "eggs", "onion": "onion", "cheese": "cheese", "chicken": "chicken", "tomatoes": "tomatoes" },
+  "loadingResults": "Loading results",
+  "howTitle": "How it works",
+  "steps": { "choose": { "title": "Add ingredients", "description": "Tell us what you already have." }, "match": { "title": "Match recipes", "description": "The engine finds the closest recipes." }, "cook": { "title": "Cook without waste", "description": "Choose an idea and turn it into dinner." } },
+  "errorTitle": "We couldn't load recipes",
+  "errorDescription": "Check your connection and try again.",
+  "retry": "Try again",
+  "emptyResultsTitle": "We need a few more ingredients",
+  "emptyResultsDescription": "Add more ingredients or try the quick suggestions to find more matches.",
+  "resultsTitle": "What you can cook",
+  "missingCount": "Missing ingredients: {{count}}",
+  "status": { "CanCookNow": "Can cook now", "OneMissing": "One ingredient missing", "FewMissing": "2+ ingredients missing", "ManyMissing": "2+ ingredients missing" },
+  "groups": { "ready": "You can cook now", "oneMissing": "You are missing 1 ingredient", "manyMissing": "You are missing 2+ ingredients" },
+  "recipeCount": "{{count}} recipes",
+  "showMore": "Show more"
 }

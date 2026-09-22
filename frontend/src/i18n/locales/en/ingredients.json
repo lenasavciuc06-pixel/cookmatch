@@ -1,1 +1,1 @@
-{ "title": "Ingredients", "empty": "No ingredients are available." }
+{ "title": "Ingredients", "empty": "No ingredients are available.", "inputLabel": "Add ingredients", "placeholder": "Type an ingredient...", "clearAll": "Clear all", "duplicate": "This ingredient is already present.", "chip": "Ingredient: {{name}}", "remove": "Remove ingredient {{name}}" }

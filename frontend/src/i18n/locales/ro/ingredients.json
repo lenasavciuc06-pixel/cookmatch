@@ -1,1 +1,1 @@
-{ "title": "Ingrediente", "empty": "Nu există ingrediente disponibile." }
+{ "title": "Ingrediente", "empty": "Nu există ingrediente disponibile.", "inputLabel": "Adaugă ingrediente", "placeholder": "Scrie un ingredient...", "clearAll": "Golește tot", "duplicate": "Acest ingredient există deja.", "chip": "Ingredient: {{name}}", "remove": "Șterge ingredientul {{name}}" }

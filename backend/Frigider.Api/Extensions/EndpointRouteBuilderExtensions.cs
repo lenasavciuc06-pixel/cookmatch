@@ -1,3 +1,5 @@
+using Frigider.Api.Endpoints;
+
 namespace Frigider.Api.Extensions;
 
 public static class EndpointRouteBuilderExtensions
@@ -8,6 +10,12 @@ public static class EndpointRouteBuilderExtensions
                  .WithName("GetHealth")
                  .WithSummary("Verificare stare de funcționare a serviciului");
 
+        return endpoints;
+    }
+
+    public static IEndpointRouteBuilder MapApiEndpoints(this IEndpointRouteBuilder endpoints)
+    {
+        endpoints.MapRecipeEndpoints();
         return endpoints;
     }
 }

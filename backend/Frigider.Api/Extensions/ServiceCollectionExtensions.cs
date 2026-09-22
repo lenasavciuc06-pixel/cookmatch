@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Frigider.Api.Data;
+using Frigider.Api.Matching;
 using Microsoft.EntityFrameworkCore;
 
 namespace Frigider.Api.Extensions;
@@ -17,6 +18,8 @@ public static class ServiceCollectionExtensions
     {
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        services.AddResponseCaching();
+        services.AddSingleton<RecipeMatcher>();
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlite(configuration.GetConnectionString("FrigiderDb")));
 

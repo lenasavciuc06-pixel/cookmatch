@@ -1,9 +1,13 @@
+using Frigider.Api.Middleware;
+
 namespace Frigider.Api.Extensions;
 
 public static class WebApplicationExtensions
 {
     public static WebApplication UseApplicationPipeline(this WebApplication app)
     {
+        app.UseMiddleware<ProblemDetailsMiddleware>();
+
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -11,8 +15,10 @@ public static class WebApplicationExtensions
         }
 
         app.UseCors(ServiceCollectionExtensions.FrontendCorsPolicyName);
+        app.UseResponseCaching();
 
         app.MapHealthEndpoints();
+        app.MapApiEndpoints();
 
         return app;
     }

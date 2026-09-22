@@ -1,6 +1,2 @@
-export interface Ingredient {
-  id: number;
-  name: string;
-  isStaple: boolean;
-}
+export type { Ingredient } from '@/api/types';
 

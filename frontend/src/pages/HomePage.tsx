@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { checkHealth } from '@/api/client';
-import { useAppStore } from '@/store';
+import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export const HomePage: React.FC = () => {
   const { t } = useTranslation();
-  const { selectedIngredients } = useAppStore();
+  const selectedIngredients = useIngredientsStore(ingredientsSelectors.items);
   const [backendStatus, setBackendStatus] = useState<string>('checking');
 
   useEffect(() => {

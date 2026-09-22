@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { useAppStore } from '@/store';
+import { shoppingListSelectors, useShoppingListStore } from '@/store';
 
 export const ShoppingListPage: React.FC = () => {
   const { t } = useTranslation();
-  const { shoppingListItems } = useAppStore();
+  const shoppingListItems = useShoppingListStore(shoppingListSelectors.items);
 
   return (
     <div className="space-y-4">

@@ -7,7 +7,7 @@ import { favoritesSelectors, useFavoritesStore } from '@/store';
 
 export interface RecipeCardProps {
   recipe: RecipeSummary;
-  match?: Pick<RecipeMatch, 'matchedIngredients' | 'missingIngredients'>;
+  match?: Pick<RecipeMatch, 'matchStatus' | 'matchedIngredients' | 'missingIngredients'>;
   showMissingIngredients?: boolean;
   onAddMissing?: (ingredients: string[]) => void;
 }
@@ -45,6 +45,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
           </div>
           <span className="shrink-0 rounded-full bg-zinc-800 px-2 py-1 text-xs text-zinc-400">{recipe.category}</span>
         </div>
+        {match && <p className="mt-3 text-xs font-semibold text-emerald-300">{t(`matchStatus.${match.matchStatus}`, { ns: 'recipes' })}</p>}
         <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-zinc-500">
           <span>{t('prepTime', { ns: 'recipes', count: recipe.prepTimeMinutes })}</span>
           <span>{t(`difficulty.${recipe.difficulty}`, { ns: 'recipes' })}</span>

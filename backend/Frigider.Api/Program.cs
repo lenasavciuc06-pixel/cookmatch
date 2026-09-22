@@ -1,4 +1,7 @@
+using Frigider.Api.Data;
+using Frigider.Api.Data.Seed;
 using Frigider.Api.Extensions;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +17,18 @@ builder.Logging.AddConsole();
 builder.Services.AddApplicationServices(builder.Environment, builder.Configuration);
 
 var app = builder.Build();
+
+if (args.Contains("seed", StringComparer.OrdinalIgnoreCase))
+{
+    using var scope = app.Services.CreateScope();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+    await dbContext.Database.EnsureDeletedAsync();
+    await dbContext.Database.MigrateAsync();
+    await SeedRunner.SeedAsync(dbContext);
+
+    return;
+}
 
 // Pipeline middleware și mapare endpoint-uri prin extension methods
 app.UseApplicationPipeline();

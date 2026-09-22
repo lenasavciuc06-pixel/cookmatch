@@ -1,0 +1,1168 @@
+{
+  "recipes": [
+    {
+      "Slug": "omleta-cu-ceapa-si-branza",
+      "Name": "Omletă cu ceapă și brânză",
+      "Description": "O omletă simplă, bogată și rapidă, ideală pentru mic dejun sau cină la 10 minute.",
+      "ImageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80",
+      "Category": "Breakfast",
+      "PrepTimeMinutes": 15,
+      "Difficulty": "Easy",
+      "Servings": 2,
+      "Instructions": [
+        "Căli ceapa în puțin ulei până devine transparentă.",
+        "Bate ouăle cu sare și piper.",
+        "Toarnă ouăle peste ceapă și amestecă ușor.",
+        "Adaugă brânza rasă și lasă să se topească.",
+        "Servește imediat caldă."
+      ],
+      "Ingredients": [
+        { "Name": "ouă", "Quantity": "4 bucăți" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "brânză", "Quantity": "100 g" },
+        { "Name": "ulei", "Quantity": "1 lingură" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Onion and cheese omelet",
+          "Description": "A simple, rich and quick omelet, perfect for breakfast or a fast dinner.",
+          "Instructions": [
+            "Sauté the onion in a little oil until translucent.",
+            "Beat the eggs with salt and pepper.",
+            "Pour the eggs over the onion and stir gently.",
+            "Add the grated cheese and let it melt.",
+            "Serve immediately warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "supa-de-legume-cu-cartofi",
+      "Name": "Supă de legume cu cartofi",
+      "Description": "Supă reconfortantă de legume, gătită lent și echilibrată, perfectă pentru zilele mai reci.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+      "Category": "Soup",
+      "PrepTimeMinutes": 35,
+      "Difficulty": "Easy",
+      "Servings": 4,
+      "Instructions": [
+        "Toacă ceapa și morcovii în ulei.",
+        "Adaugă cartofii, țelina și apa.",
+        "Lasă să fiarbă până când legumele sunt moi.",
+        "Adu la final pătrunjelul și piperul.",
+        "Servește caldă cu o lingură de smântână."
+      ],
+      "Ingredients": [
+        { "Name": "cartofi", "Quantity": "3" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "morcovi", "Quantity": "2" },
+        { "Name": "țelină", "Quantity": "1 tulpină" },
+        { "Name": "apă", "Quantity": "1 l" },
+        { "Name": "smântână", "Quantity": "2 linguri" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Potato vegetable soup",
+          "Description": "A comforting vegetable soup, gently cooked and perfectly suited for chilly days.",
+          "Instructions": [
+            "Sauté the onion and carrots in oil.",
+            "Add the potatoes, celery and water.",
+            "Simmer until the vegetables are tender.",
+            "Add parsley and pepper at the end.",
+            "Serve warm with a spoonful of sour cream."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "salata-de-rosii-si-castraveti",
+      "Name": "Salată de roșii și castraveți",
+      "Description": "Salată proaspătă, ușoară și perfectă alături de orice fel principal.",
+      "ImageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80",
+      "Category": "Salad",
+      "PrepTimeMinutes": 15,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Taie roșiile și castraveții cubulețe.",
+        "Amestecă cu ceapa fin tăiată și mărarul.",
+        "Condimentează cu ulei, sare și puțină lămâie.",
+        "Lasă 5 minute să se pătrundă aromele.",
+        "Servește imediat."
+      ],
+      "Ingredients": [
+        { "Name": "roșii", "Quantity": "3" },
+        { "Name": "castraveți", "Quantity": "2" },
+        { "Name": "ceapă", "Quantity": "0,5" },
+        { "Name": "mărar", "Quantity": "1 legătură" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "lămâie", "Quantity": "1" },
+        { "Name": "sare", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Tomato and cucumber salad",
+          "Description": "A fresh and light salad that pairs perfectly with any main dish.",
+          "Instructions": [
+            "Dice the tomatoes and cucumbers.",
+            "Mix with finely sliced onion and dill.",
+            "Season with oil, salt and a touch of lemon.",
+            "Let the flavors meld for 5 minutes.",
+            "Serve immediately."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "pasta-carbonara-cu-mushrooms",
+      "Name": "Paste carbonara cu ciuperci",
+      "Description": "Pastă cremoasă și savuroasă, cu gust bogat și ciuperci prăjite.",
+      "ImageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
+      "Category": "Pasta",
+      "PrepTimeMinutes": 25,
+      "Difficulty": "Medium",
+      "Servings": 3,
+      "Instructions": [
+        "Coci pastele în apă cu sare.",
+        "Prăjești ciupercile cu usturoi și piper.",
+        "Amesteci ouăle cu parmezan și puțină apă de gătit.",
+        "Incorporezi pastele în sos.",
+        "Serviți cu pătrunjel proaspăt."
+      ],
+      "Ingredients": [
+        { "Name": "paste", "Quantity": "250 g" },
+        { "Name": "ciuperci", "Quantity": "200 g" },
+        { "Name": "ouă", "Quantity": "2" },
+        { "Name": "parmezan", "Quantity": "50 g" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "sare", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Mushroom carbonara pasta",
+          "Description": "Creamy and delicious pasta with a rich flavor and sautéed mushrooms.",
+          "Instructions": [
+            "Cook the pasta in salted water.",
+            "Sauté the mushrooms with garlic and pepper.",
+            "Mix the eggs with parmesan and a little cooking water.",
+            "Fold the pasta into the sauce.",
+            "Serve with fresh parsley."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "tochitura-traditionala",
+      "Name": "Tochitură tradițională",
+      "Description": "Un classic românesc, cu carne, ouă și garnitură de cartofi, pregătit pentru mesele de familie.",
+      "ImageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80",
+      "Category": "Meat",
+      "PrepTimeMinutes": 70,
+      "Difficulty": "Hard",
+      "Servings": 4,
+      "Instructions": [
+        "Frigi carnea în ulei până se rumenește.",
+        "Adaugă ceapa, usturoiul și condimentele.",
+        "Lasă să fiarbă încet împreună cu puțină apă.",
+        "Gătești cartofii separați și îi taie cubulețe.",
+        "Serviți cu ouă, brânză și ceapă roșie."
+      ],
+      "Ingredients": [
+        { "Name": "vită", "Quantity": "500 g" },
+        { "Name": "cartofi", "Quantity": "500 g" },
+        { "Name": "ouă", "Quantity": "4" },
+        { "Name": "ceapă", "Quantity": "2" },
+        { "Name": "usturoi", "Quantity": "4 căței" },
+        { "Name": "brânză", "Quantity": "150 g" },
+        { "Name": "ceapă roșie", "Quantity": "1" },
+        { "Name": "ulei", "Quantity": "2 linguri" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Traditional Romanian meat stew",
+          "Description": "A classic Romanian dish with meat, eggs and a potato side, made for family gatherings.",
+          "Instructions": [
+            "Brown the meat in oil.",
+            "Add the onion, garlic and seasonings.",
+            "Let it simmer slowly with a bit of water.",
+            "Cook the potatoes separately and cube them.",
+            "Serve with eggs, cheese and red onion."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "ciorba-radauteana",
+      "Name": "Ciorbă rădăuțeană",
+      "Description": "Ciorbă acidulată, aromată și bine echilibrată, emblematică pentru bucătăria românească.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+      "Category": "Soup",
+      "PrepTimeMinutes": 60,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Fierbi carnea și oze și elimini spuma.",
+        "Adaugă legumele tăiate felii.",
+        "Toarnă apă și lasă să fiarbă.",
+        "Adu ciorba la punct cu borș și condimente.",
+        "Servi imediat cu smântână și ardei."
+      ],
+      "Ingredients": [
+        { "Name": "vită", "Quantity": "400 g" },
+        { "Name": "carne", "Quantity": "200 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "morcovi", "Quantity": "2" },
+        { "Name": "țelină", "Quantity": "1" },
+        { "Name": "roșii", "Quantity": "2" },
+        { "Name": "smântână", "Quantity": "2 linguri" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Traditional sour soup",
+          "Description": "A tangy and aromatic classic soup emblematic of Romanian cuisine.",
+          "Instructions": [
+            "Boil the meat and remove the foam.",
+            "Add the sliced vegetables.",
+            "Pour in water and simmer.",
+            "Season with sour broth and spices.",
+            "Serve immediately with sour cream and pepper."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "gratar-de-pui-cu-legume",
+      "Name": "Grătar de pui cu legume",
+      "Description": "Fel principal ușor și colorat, cu pui, ardei și cartofi la cuptor.",
+      "ImageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dinner",
+      "PrepTimeMinutes": 45,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Marină puiul cu ulei, usturoi și ierburi.",
+        "Taie legumele în bucăți mari.",
+        "Întinde totul pe tavă și coace la temperatură medie.",
+        "Întoarce din când în când pentru rumenire uniformă.",
+        "Servește cu ierburi proaspete."
+      ],
+      "Ingredients": [
+        { "Name": "pui", "Quantity": "600 g" },
+        { "Name": "ardei", "Quantity": "2" },
+        { "Name": "cartofi", "Quantity": "400 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "usturoi", "Quantity": "3 căței" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "oregano", "Quantity": "1 linguriță" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Grilled chicken with vegetables",
+          "Description": "A colorful, light main dish with chicken, peppers and oven-roasted potatoes.",
+          "Instructions": [
+            "Marinate the chicken with oil, garlic and herbs.",
+            "Cut the vegetables into large pieces.",
+            "Spread everything on a tray and bake at medium heat.",
+            "Turn occasionally for even browning.",
+            "Serve with fresh herbs."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "tortilla-spanac-si-branza",
+      "Name": "Tortilla cu spanac și brânză",
+      "Description": "Tortilla de ouă, gustoasă și plină de verdeață, perfectă pentru brunch.",
+      "ImageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80",
+      "Category": "Vegetarian",
+      "PrepTimeMinutes": 20,
+      "Difficulty": "Easy",
+      "Servings": 2,
+      "Instructions": [
+        "Călești spanacul într-o tigaie.",
+        "Bate ouăle cu sare și piper.",
+        "Toarnă ouăle peste spanac.",
+        "Adaugă brânza și lasă să se prăjească la foc mic.",
+        "Întoarce și servește."
+      ],
+      "Ingredients": [
+        { "Name": "ouă", "Quantity": "4" },
+        { "Name": "spanac", "Quantity": "150 g" },
+        { "Name": "brânză", "Quantity": "80 g" },
+        { "Name": "ulei", "Quantity": "1 lingură" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Spinach and cheese tortilla",
+          "Description": "A flavorful egg tortilla full of greens, perfect for brunch.",
+          "Instructions": [
+            "Sauté the spinach in a skillet.",
+            "Beat the eggs with salt and pepper.",
+            "Pour the eggs over the spinach.",
+            "Add the cheese and cook over low heat.",
+            "Flip and serve."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "prajitura-cu-mere-si-scortisoara",
+      "Name": "Prăjitură cu mere și scorțișoară",
+      "Description": "Prăjitură moale și aromată, ideală la finalul unei mese familiare.",
+      "ImageUrl": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dessert",
+      "PrepTimeMinutes": 50,
+      "Difficulty": "Medium",
+      "Servings": 8,
+      "Instructions": [
+        "Amesteci făina cu zahărul și praful de copt.",
+        "Adaugi ouăle și laptele până obții un aluat uniform.",
+        "Încorporezi merele feliate și scorțișoara.",
+        "Torni compoziția în tavă și coaceți.",
+        "Lasă să se răcească și servește."
+      ],
+      "Ingredients": [
+        { "Name": "făină", "Quantity": "250 g" },
+        { "Name": "zahăr", "Quantity": "150 g" },
+        { "Name": "mere", "Quantity": "3" },
+        { "Name": "ouă", "Quantity": "2" },
+        { "Name": "lapte", "Quantity": "200 ml" },
+        { "Name": "scorțișoară", "Quantity": "1 linguriță" },
+        { "Name": "ulei", "Quantity": "100 ml" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Apple and cinnamon cake",
+          "Description": "A soft and fragrant cake, ideal as a comforting family dessert.",
+          "Instructions": [
+            "Mix flour with sugar and baking powder.",
+            "Add the eggs and milk until smooth.",
+            "Fold in the sliced apples and cinnamon.",
+            "Pour into a tray and bake.",
+            "Let cool before serving."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "orez-cu-legume-si-soia",
+      "Name": "Orez cu legume și soia",
+      "Description": "Bowl ușor și hrănitor cu orez, legume și gust bogat de soia.",
+      "ImageUrl": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=900&q=80",
+      "Category": "Lunch",
+      "PrepTimeMinutes": 30,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Coci orezul până devine moale.",
+        "Prăjești ceapa, ardeiul și morcovii.",
+        "Adaugi mazărea și soia.",
+        "Amesteci totul cu orezul fierbinte.",
+        "Condimentezi final cu sos de soia."
+      ],
+      "Ingredients": [
+        { "Name": "orez", "Quantity": "200 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "ardei", "Quantity": "1" },
+        { "Name": "morcovi", "Quantity": "2" },
+        { "Name": "mazăre", "Quantity": "150 g" },
+        { "Name": "soia", "Quantity": "150 g" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Rice with vegetables and soy",
+          "Description": "A light and nourishing rice bowl with vegetables and rich soy flavor.",
+          "Instructions": [
+            "Cook the rice until tender.",
+            "Sauté the onion, pepper and carrots.",
+            "Add peas and soybeans.",
+            "Combine all with hot rice.",
+            "Season with soy sauce at the end."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "pui-la-cuptor-cu-cartofi",
+      "Name": "Pui la cuptor cu cartofi",
+      "Description": "Fel principal simplu și consistent, cu pui rumenit și cartofi aurii.",
+      "ImageUrl": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dinner",
+      "PrepTimeMinutes": 60,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Marină puiul cu ulei și usturoi.",
+        "Taie cartofii cubulețe și amestecă cu piper și sare.",
+        "Așază totul în tavă.",
+        "Coace până se rumenesc uniform.",
+        "Servește cald."
+      ],
+      "Ingredients": [
+        { "Name": "pui", "Quantity": "700 g" },
+        { "Name": "cartofi", "Quantity": "500 g" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "usturoi", "Quantity": "3 căței" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Oven chicken with potatoes",
+          "Description": "A simple and hearty main dish with roasted chicken and golden potatoes.",
+          "Instructions": [
+            "Marinate the chicken with oil and garlic.",
+            "Cut the potatoes into cubes and season with pepper and salt.",
+            "Arrange everything on a tray.",
+            "Bake until evenly browned.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "gnocchi-cu-rosii-si-busuioc",
+      "Name": "Gnocchi cu roșii și busuioc",
+      "Description": "O masă rapidă și plăcută, cu o combinație vibrantă de roșii și ierburi.",
+      "ImageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80",
+      "Category": "Pasta",
+      "PrepTimeMinutes": 25,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Coci gnocchi în apă clocotită.",
+        "Gătești roșiile cu usturoi și busuioc.",
+        "Amesteci cu gnocchiul.",
+        "Adaugi parmezan la final.",
+        "Servește imediat."
+      ],
+      "Ingredients": [
+        { "Name": "gnocchi", "Quantity": "300 g" },
+        { "Name": "roșii", "Quantity": "350 g" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "busuioc", "Quantity": "1 mână" },
+        { "Name": "parmezan", "Quantity": "40 g" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Gnocchi with tomatoes and basil",
+          "Description": "A quick and pleasant meal with a vibrant combination of tomatoes and herbs.",
+          "Instructions": [
+            "Cook the gnocchi in boiling water.",
+            "Sauté the tomatoes with garlic and basil.",
+            "Combine with the gnocchi.",
+            "Add parmesan at the end.",
+            "Serve immediately."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "supa-crema-de-mazare",
+      "Name": "Supă cremă de mazăre",
+      "Description": "Supă cremoasă, savuroasă și foarte plăcută în zilele reci.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+      "Category": "Soup",
+      "PrepTimeMinutes": 30,
+      "Difficulty": "Easy",
+      "Servings": 4,
+      "Instructions": [
+        "Călești ceapa și usturoiul.",
+        "Adaugi mazărea și apa.",
+        "Lasi să fiarbă până se înmoaie.",
+        "Blend-ezi compoziția până devine cremoasă.",
+        "Ajustezi cu sare, piper și smântână."
+      ],
+      "Ingredients": [
+        { "Name": "mazăre", "Quantity": "300 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "apă", "Quantity": "700 ml" },
+        { "Name": "smântână", "Quantity": "2 linguri" },
+        { "Name": "ulei", "Quantity": "1 lingură" },
+        { "Name": "sare", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Pea cream soup",
+          "Description": "A creamy, savory soup that is especially comforting on cold days.",
+          "Instructions": [
+            "Sauté the onion and garlic.",
+            "Add the peas and water.",
+            "Simmer until tender.",
+            "Blend until smooth and creamy.",
+            "Adjust with salt, pepper and sour cream."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "salata-greceasca",
+      "Name": "Salată grecească",
+      "Description": "O salată latino-mediteraneană, proaspătă și colorată.",
+      "ImageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80",
+      "Category": "Salad",
+      "PrepTimeMinutes": 20,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Taie roșiile, castraveții și ceapa.",
+        "Amestecă cu maslinele și feta.",
+        "Adaugă oregano și ulei de măsline.",
+        "Servește cu lămâie.",
+        "Întinde pe farfurie și servește rece."
+      ],
+      "Ingredients": [
+        { "Name": "roșii", "Quantity": "3" },
+        { "Name": "castraveți", "Quantity": "2" },
+        { "Name": "ceapă", "Quantity": "0,5" },
+        { "Name": "masline", "Quantity": "50 g" },
+        { "Name": "telemea", "Quantity": "100 g" },
+        { "Name": "oregano", "Quantity": "1 linguriță" },
+        { "Name": "ulei", "Quantity": "2 linguri" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Greek salad",
+          "Description": "A fresh and colorful Mediterranean-inspired salad.",
+          "Instructions": [
+            "Slice the tomatoes, cucumbers and onion.",
+            "Mix with olives and feta.",
+            "Add oregano and olive oil.",
+            "Serve with lemon.",
+            "Arrange on plates and serve cold."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "paella-de-vegetale",
+      "Name": "Paella de legume",
+      "Description": "O paella de legume bogată în arome și texturi, perfectă pentru masă de weekend.",
+      "ImageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dinner",
+      "PrepTimeMinutes": 50,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Încinge uleiul și călește ceapa și usturoiul.",
+        "Adaugă orezul și amestecă puțin.",
+        "Toarnă apă fierbinte și adaugă legumele.",
+        "Lasi să fiarbă până orezul este gata.",
+        "Servi cu pătrunjel și lămâie."
+      ],
+      "Ingredients": [
+        { "Name": "orez", "Quantity": "250 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "ardei", "Quantity": "2" },
+        { "Name": "roșii", "Quantity": "3" },
+        { "Name": "mazăre", "Quantity": "150 g" },
+        { "Name": "apă", "Quantity": "600 ml" },
+        { "Name": "ulei", "Quantity": "2 linguri" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Vegetable paella",
+          "Description": "A vegetable paella full of flavor and texture, perfect for a weekend meal.",
+          "Instructions": [
+            "Heat the oil and sauté the onion and garlic.",
+            "Add the rice and stir briefly.",
+            "Pour in hot water and add the vegetables.",
+            "Simmer until the rice is tender.",
+            "Serve with parsley and lemon."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "clatite-cu-branza-si-mere",
+      "Name": "Clătite cu brânză și mere",
+      "Description": "Clătite moi și parfumate, un desert simplu care se servește cald.",
+      "ImageUrl": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dessert",
+      "PrepTimeMinutes": 40,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Amesteci făina cu laptele și ouăle.",
+        "Adaugi zahăr și puțină sare.",
+        "Prăjești clătitele pe o tigaie.",
+        "Umpli cu brânză și mere rase.",
+        "Servește calde."
+      ],
+      "Ingredients": [
+        { "Name": "făină", "Quantity": "200 g" },
+        { "Name": "lapte", "Quantity": "250 ml" },
+        { "Name": "ouă", "Quantity": "2" },
+        { "Name": "zahăr", "Quantity": "50 g" },
+        { "Name": "brânză", "Quantity": "150 g" },
+        { "Name": "mere", "Quantity": "2" },
+        { "Name": "ulei", "Quantity": "2 linguri" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Cheese and apple pancakes",
+          "Description": "Soft and fragrant pancakes, a simple dessert served warm.",
+          "Instructions": [
+            "Mix flour with milk and eggs.",
+            "Add sugar and a pinch of salt.",
+            "Fry the pancakes in a pan.",
+            "Fill with cheese and grated apple.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "bolognese-cu-paste",
+      "Name": "Bolognese cu paste",
+      "Description": "Sos italian aromat, perfect pentru o masă confortabilă de seară.",
+      "ImageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
+      "Category": "Pasta",
+      "PrepTimeMinutes": 45,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Prăjești carnea cu ceapa și usturoiul.",
+        "Adaugi roșiile și condimentele.",
+        "Lasi să fiarbă până se îngroașă.",
+        "Coci pastele.",
+        "Amesteci și servești."
+      ],
+      "Ingredients": [
+        { "Name": "paste", "Quantity": "300 g" },
+        { "Name": "vită", "Quantity": "400 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "roșii", "Quantity": "500 g" },
+        { "Name": "oregano", "Quantity": "1 linguriță" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Bolognese pasta",
+          "Description": "A rich Italian sauce, perfect for a cozy evening meal.",
+          "Instructions": [
+            "Sear the meat with onion and garlic.",
+            "Add tomatoes and seasonings.",
+            "Let it simmer until thick.",
+            "Cook the pasta.",
+            "Combine and serve."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "mancare-de-linte-cu-cartofi",
+      "Name": "Mâncare de linte cu cartofi",
+      "Description": "Un preparat din linte și cartofi, consistent și plin de gust.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+      "Category": "Budget",
+      "PrepTimeMinutes": 40,
+      "Difficulty": "Easy",
+      "Servings": 4,
+      "Instructions": [
+        "Călești ceapa și morcovii.",
+        "Adaugă lintea, cartofii și apa.",
+        "Lasă să fiarbă până se înmoaie bine.",
+        "Ajustezi cu sare și piper.",
+        "Servește caldă."
+      ],
+      "Ingredients": [
+        { "Name": "linte", "Quantity": "200 g" },
+        { "Name": "cartofi", "Quantity": "300 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "morcovi", "Quantity": "2" },
+        { "Name": "apă", "Quantity": "600 ml" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Lentil and potato stew",
+          "Description": "A hearty lentil and potato dish with rich flavor and comforting texture.",
+          "Instructions": [
+            "Sauté the onion and carrots.",
+            "Add lentils, potatoes and water.",
+            "Simmer until tender.",
+            "Adjust with salt and pepper.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "pizza-capriciosa",
+      "Name": "Pizza Capriciosa",
+      "Description": "Pizza cu gust bogat, felii de salam, ciuperci și brânză.",
+      "ImageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+      "Category": "Lunch",
+      "PrepTimeMinutes": 50,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Întinde aluatul și unge-l cu sos de roșii.",
+        "Adaugă brânza, salamul și ciupercile.",
+        "Coace la temperatură ridicată.",
+        "Adu la final busuioc și piper.",
+        "Taie felii și servește."
+      ],
+      "Ingredients": [
+        { "Name": "făină", "Quantity": "300 g" },
+        { "Name": "sos de roșii", "Quantity": "200 g" },
+        { "Name": "brânză", "Quantity": "200 g" },
+        { "Name": "salam", "Quantity": "150 g" },
+        { "Name": "ciuperci", "Quantity": "150 g" },
+        { "Name": "busuioc", "Quantity": "1 mână" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Capriciosa pizza",
+          "Description": "A rich-tasting pizza with sausage, mushrooms and cheese.",
+          "Instructions": [
+            "Spread the dough and brush with tomato sauce.",
+            "Add cheese, sausage and mushrooms.",
+            "Bake at high temperature.",
+            "Finish with basil and pepper.",
+            "Slice and serve."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "vegetarian-bowl-cu-quinoa",
+      "Name": "Bowl vegetarian cu quinoa",
+      "Description": "Un bol echilibrat, sănătos și colorat, ideal pentru prânz.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+      "Category": "Vegetarian",
+      "PrepTimeMinutes": 30,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Gătești quinoa în apă.",
+        "Călești legumele cu usturoi și ulei.",
+        "Amesteci quinoa-ul cu legumele.",
+        "Adu gust cu lămâie și piper.",
+        "Servește cald sau rece."
+      ],
+      "Ingredients": [
+        { "Name": "quinoa", "Quantity": "200 g" },
+        { "Name": "ardei", "Quantity": "1" },
+        { "Name": "roșii", "Quantity": "2" },
+        { "Name": "castraveți", "Quantity": "1" },
+        { "Name": "avocado", "Quantity": "1" },
+        { "Name": "lămâie", "Quantity": "1" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Vegetarian quinoa bowl",
+          "Description": "A balanced, healthy and colorful bowl, perfect for lunch.",
+          "Instructions": [
+            "Cook the quinoa in water.",
+            "Sauté the vegetables with garlic and oil.",
+            "Combine quinoa with vegetables.",
+            "Finish with lemon and pepper.",
+            "Serve warm or cold."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "salata-cu-naut-si-rosii",
+      "Name": "Salată cu năut și roșii",
+      "Description": "Salată saturoasă, proaspătă și foarte satisfăcătoare.",
+      "ImageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80",
+      "Category": "Salad",
+      "PrepTimeMinutes": 15,
+      "Difficulty": "Easy",
+      "Servings": 2,
+      "Instructions": [
+        "Clătește năutul și îl amesteci cu roșiile.",
+        "Adaugă ceapa, mărarul și uleiul.",
+        "Condimentezi cu lămâie și piper.",
+        "Lasă 10 minute.",
+        "Servește răcoroasă."
+      ],
+      "Ingredients": [
+        { "Name": "năut", "Quantity": "200 g" },
+        { "Name": "roșii", "Quantity": "3" },
+        { "Name": "ceapă", "Quantity": "0,5" },
+        { "Name": "mărar", "Quantity": "1 legătură" },
+        { "Name": "lămâie", "Quantity": "1" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Chickpea and tomato salad",
+          "Description": "A hearty, fresh and highly satisfying salad.",
+          "Instructions": [
+            "Rinse the chickpeas and mix with the tomatoes.",
+            "Add onion, dill and oil.",
+            "Season with lemon and pepper.",
+            "Let it sit for 10 minutes.",
+            "Serve chilled."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "tigaie-de-cartofi-si-oua",
+      "Name": "Tigaie de cartofi și ouă",
+      "Description": "Preparat rustic, cu cartofi fragezi, ouă și aromă de ceapă.",
+      "ImageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80",
+      "Category": "Quick",
+      "PrepTimeMinutes": 25,
+      "Difficulty": "Easy",
+      "Servings": 2,
+      "Instructions": [
+        "Cai cartofii cubulețe până sunt moi.",
+        "Adaugă ceapa și prăjește ușor.",
+        "Peste tot pui ouăle bătute.",
+        "Amesteci până se prăjesc uniform.",
+        "Servește caldă."
+      ],
+      "Ingredients": [
+        { "Name": "cartofi", "Quantity": "300 g" },
+        { "Name": "ouă", "Quantity": "3" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Potato and egg skillet",
+          "Description": "A rustic dish with fresh potatoes, eggs and onion flavor.",
+          "Instructions": [
+            "Cook the diced potatoes until tender.",
+            "Add onion and sauté gently.",
+            "Pour in the beaten eggs.",
+            "Stir until evenly cooked.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "supa-de-dovlecei",
+      "Name": "Supă de dovlecei",
+      "Description": "Supă delicată și plăcută, ușor de preparat și foarte proaspătă.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+      "Category": "Soup",
+      "PrepTimeMinutes": 25,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Cai dovleceii și ceapa în ulei.",
+        "Adaugă apa și fierbe până devin moi.",
+        "Blend-ezi în cremă.",
+        "Ajustezi sare și piper.",
+        "Servi cu frunze de busuioc."
+      ],
+      "Ingredients": [
+        { "Name": "dovlecei", "Quantity": "3" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "apă", "Quantity": "600 ml" },
+        { "Name": "ulei", "Quantity": "1 lingură" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "busuioc", "Quantity": "1 mână" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Zucchini soup",
+          "Description": "A delicate and pleasant soup, easy to prepare and very fresh.",
+          "Instructions": [
+            "Sauté the zucchini and onion in oil.",
+            "Add water and simmer until soft.",
+            "Blend into a smooth cream.",
+            "Adjust salt and pepper.",
+            "Serve with basil leaves."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "mancare-de-ciuperci-cu-orez",
+      "Name": "Mâncare de ciuperci cu orez",
+      "Description": "Preparat consistent și rustic, bun pentru o masă simplă de acasă.",
+      "ImageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80",
+      "Category": "Quick",
+      "PrepTimeMinutes": 35,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Prăjești ciupercile cu ceapa și usturoiul.",
+        "Adaugă orezul și apa.",
+        "Lasi să fiarbă până se absoarbe lichidul.",
+        "Ajustezi cu sare și piper.",
+        "Servește cald."
+      ],
+      "Ingredients": [
+        { "Name": "ciuperci", "Quantity": "250 g" },
+        { "Name": "orez", "Quantity": "200 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "apă", "Quantity": "500 ml" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Mushroom and rice dish",
+          "Description": "A hearty rustic dish, ideal for a simple home-cooked meal.",
+          "Instructions": [
+            "Sauté the mushrooms with onion and garlic.",
+            "Add the rice and water.",
+            "Simmer until the liquid is absorbed.",
+            "Adjust with salt and pepper.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "pancakes-cu-ricotta",
+      "Name": "Pancakes cu ricotta",
+      "Description": "Pancakes pufoase și gustoase, perfecte pentru micul dejun.",
+      "ImageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80",
+      "Category": "Breakfast",
+      "PrepTimeMinutes": 20,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Amesteci făina, ouăle și laptele.",
+        "Adaugi ricotta și zahăr.",
+        "Prăjești pe o tigaie cu puțin ulei.",
+        "Servește cu mere sau fructe de sezon.",
+        "Poți adăuga un strop de miere."
+      ],
+      "Ingredients": [
+        { "Name": "făină", "Quantity": "200 g" },
+        { "Name": "ouă", "Quantity": "2" },
+        { "Name": "lapte", "Quantity": "200 ml" },
+        { "Name": "ricotta", "Quantity": "150 g" },
+        { "Name": "zahăr", "Quantity": "30 g" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Ricotta pancakes",
+          "Description": "Fluffy and tasty pancakes, perfect for breakfast.",
+          "Instructions": [
+            "Mix flour, eggs and milk.",
+            "Add ricotta and sugar.",
+            "Fry in a lightly oiled pan.",
+            "Serve with apples or seasonal fruit.",
+            "You can drizzle with honey."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "orez-cu-rosii-si-masline",
+      "Name": "Orez cu roșii și măsline",
+      "Description": "Un porționat simplu, arome mediteraneene și textură plăcută.",
+      "ImageUrl": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=900&q=80",
+      "Category": "Lunch",
+      "PrepTimeMinutes": 30,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Coci orezul.",
+        "Prăjești roșiile cu usturoiul.",
+        "Adaugi măslinele și mixezi.",
+        "Amesteci cu orezul fierbinte.",
+        "Servește cu busuioc."
+      ],
+      "Ingredients": [
+        { "Name": "orez", "Quantity": "200 g" },
+        { "Name": "roșii", "Quantity": "300 g" },
+        { "Name": "usturoi", "Quantity": "2 căței" },
+        { "Name": "masline", "Quantity": "60 g" },
+        { "Name": "busuioc", "Quantity": "1 mână" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Rice with tomatoes and olives",
+          "Description": "A simple Mediterranean-inspired side dish with pleasant texture and flavor.",
+          "Instructions": [
+            "Cook the rice.",
+            "Sauté the tomatoes with garlic.",
+            "Add the olives and mix well.",
+            "Combine with the hot rice.",
+            "Serve with basil."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "gratin-de-cartofi-cu-branza",
+      "Name": "Gratin de cartofi cu brânză",
+      "Description": "Cartofi gratinați cu brânză, bogat și reconfortant.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+      "Category": "Dinner",
+      "PrepTimeMinutes": 55,
+      "Difficulty": "Medium",
+      "Servings": 4,
+      "Instructions": [
+        "Taie cartofii felii subțiri.",
+        "Amestecă smântâna cu sare și piper.",
+        "Așază straturile cu cartofi și brânză.",
+        "Coace până devin aurii.",
+        "Servește cald."
+      ],
+      "Ingredients": [
+        { "Name": "cartofi", "Quantity": "500 g" },
+        { "Name": "brânză", "Quantity": "200 g" },
+        { "Name": "smântână", "Quantity": "200 ml" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "ulei", "Quantity": "1 lingură" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Cheese potato gratin",
+          "Description": "Baked potatoes with cheese, rich and comforting.",
+          "Instructions": [
+            "Slice the potatoes thinly.",
+            "Mix the cream with salt and pepper.",
+            "Layer potatoes and cheese.",
+            "Bake until golden.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "supa-de-varza",
+      "Name": "Supă de varză",
+      "Description": "Supă rustică de varză, simplă și foarte economică.",
+      "ImageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+      "Category": "Budget",
+      "PrepTimeMinutes": 35,
+      "Difficulty": "Easy",
+      "Servings": 4,
+      "Instructions": [
+        "Călești ceapa și morcovii.",
+        "Adaugă varza și apa.",
+        "Lasă să fiarbă încet.",
+        "Ajustezi cu sare și piper.",
+        "Servește cu o felie de pâine."
+      ],
+      "Ingredients": [
+        { "Name": "varză", "Quantity": "400 g" },
+        { "Name": "ceapă", "Quantity": "1" },
+        { "Name": "morcovi", "Quantity": "2" },
+        { "Name": "apă", "Quantity": "800 ml" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "pâine", "Quantity": "2 felii" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Cabbage soup",
+          "Description": "A rustic cabbage soup, simple and very affordable.",
+          "Instructions": [
+            "Sauté the onion and carrots.",
+            "Add cabbage and water.",
+            "Simmer gently.",
+            "Adjust with salt and pepper.",
+            "Serve with bread."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "salam-de-fasole-cu-rosii",
+      "Name": "Salată de fasole cu roșii",
+      "Description": "Salată de fasole, proaspătă și bine pregătită pentru prânz.",
+      "ImageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80",
+      "Category": "Salad",
+      "PrepTimeMinutes": 20,
+      "Difficulty": "Easy",
+      "Servings": 3,
+      "Instructions": [
+        "Fierbi fasolea până este moale.",
+        "Amestecă cu roșiile și ceapa.",
+        "Adaugă ulei, lămâie și piper.",
+        "Lasă câteva minute să se îmbine.",
+        "Servește rece."
+      ],
+      "Ingredients": [
+        { "Name": "fasole", "Quantity": "250 g" },
+        { "Name": "roșii", "Quantity": "2" },
+        { "Name": "ceapă", "Quantity": "0,5" },
+        { "Name": "ulei", "Quantity": "2 linguri" },
+        { "Name": "lămâie", "Quantity": "1" },
+        { "Name": "piper", "Quantity": "după gust" },
+        { "Name": "sare", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Bean and tomato salad",
+          "Description": "A fresh bean salad, perfect for lunch and quick prep.",
+          "Instructions": [
+            "Cook the beans until tender.",
+            "Mix with tomatoes and onion.",
+            "Add oil, lemon and pepper.",
+            "Let it rest a few minutes.",
+            "Serve cold."
+          ]
+        }
+      }
+    },
+    {
+      "Slug": "omleta-cu-ardei-si-cartofi",
+      "Name": "Omletă cu ardei și cartofi",
+      "Description": "O variantă hearty și plină de arome, perfectă pentru micul dejun.",
+      "ImageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80",
+      "Category": "Breakfast",
+      "PrepTimeMinutes": 20,
+      "Difficulty": "Easy",
+      "Servings": 2,
+      "Instructions": [
+        "Prăjești cartofii cu ardeiul.",
+        "Bate ouăle cu sare și piper.",
+        "Toarnă ouăle peste legume.",
+        "Lasă să se coacă la foc mic.",
+        "Servește caldă."
+      ],
+      "Ingredients": [
+        { "Name": "cartofi", "Quantity": "250 g" },
+        { "Name": "ouă", "Quantity": "4" },
+        { "Name": "ardei", "Quantity": "1" },
+        { "Name": "ulei", "Quantity": "1 lingură" },
+        { "Name": "sare", "Quantity": "după gust" },
+        { "Name": "piper", "Quantity": "după gust" }
+      ],
+      "Translations": {
+        "en": {
+          "Name": "Pepper and potato omelet",
+          "Description": "A hearty, flavorful breakfast variation with peppers and potatoes.",
+          "Instructions": [
+            "Sauté the potatoes with the pepper.",
+            "Beat the eggs with salt and pepper.",
+            "Pour the eggs over the vegetables.",
+            "Cook over low heat.",
+            "Serve warm."
+          ]
+        }
+      }
+    },
+  ]
+}

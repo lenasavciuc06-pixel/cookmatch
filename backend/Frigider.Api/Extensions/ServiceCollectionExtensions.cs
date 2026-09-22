@@ -1,5 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Frigider.Api.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Frigider.Api.Extensions;
 
@@ -15,6 +17,8 @@ public static class ServiceCollectionExtensions
     {
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlite(configuration.GetConnectionString("FrigiderDb")));
 
         services.ConfigureHttpJsonOptions(options =>
         {
@@ -34,7 +38,7 @@ public static class ServiceCollectionExtensions
                 }
                 else
                 {
-                    var frontendOrigin = configuration["FRONTEND_ORIGIN"] 
+                    var frontendOrigin = configuration["FRONTEND_ORIGIN"]
                         ?? Environment.GetEnvironmentVariable("FRONTEND_ORIGIN");
 
                     if (!string.IsNullOrWhiteSpace(frontendOrigin))

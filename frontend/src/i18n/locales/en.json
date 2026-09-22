@@ -1,0 +1,19 @@
+{
+  "app": {
+    "title": "Fridge",
+    "tagline": "What are we cooking with ingredients at home?"
+  },
+  "nav": {
+    "home": "Home",
+    "recipes": "Recipes",
+    "favorites": "Favorites",
+    "shoppingList": "Shopping List"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "status": "Status",
+    "language": "Language"
+  }
+}
+

@@ -5,7 +5,7 @@ import { checkHealth } from '@/api/client';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export const HomePage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'home']);
   const selectedIngredients = useIngredientsStore(ingredientsSelectors.items);
   const [backendStatus, setBackendStatus] = useState<string>('checking');
 
@@ -32,17 +32,17 @@ export const HomePage: React.FC = () => {
                 : 'bg-amber-950 text-amber-300 border border-amber-800'
             }`}
           >
-            {backendStatus}
+            {backendStatus === 'checking' ? t('common.checking') : backendStatus === 'offline' ? t('common.offline') : backendStatus}
           </span>
         </div>
       </div>
 
       <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-6">
-        <h2 className="text-xl font-semibold text-zinc-200">Ingrediente selectate</h2>
+        <h2 className="text-xl font-semibold text-zinc-200">{t('selectedIngredients', { ns: 'home' })}</h2>
         <p className="text-sm text-zinc-400 mt-1">
           {selectedIngredients.length === 0
-            ? 'Nu ai selectat încă ingrediente din frigider.'
-            : `Ai ${selectedIngredients.length} ingrediente selectate.`}
+            ? t('emptyIngredients', { ns: 'home' })
+            : t('ingredientCount', { ns: 'home', count: selectedIngredients.length })}
         </p>
       </div>
     </div>

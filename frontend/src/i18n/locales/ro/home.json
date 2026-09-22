@@ -1,0 +1,5 @@
+{
+  "selectedIngredients": "Ingrediente selectate",
+  "emptyIngredients": "Nu ai selectat încă ingrediente din frigider.",
+  "ingredientCount": "Ai {{count}} ingrediente selectate."
+}

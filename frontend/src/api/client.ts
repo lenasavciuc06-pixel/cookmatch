@@ -10,6 +10,7 @@ import type {
   RecipeMatch,
   RecipeSummary,
 } from '@/api/types';
+import i18n from '@/i18n';
 
 const API_BASE = import.meta.env.VITE_API_URL ?? '/api';
 const REQUEST_TIMEOUT_MS = 10_000;
@@ -123,7 +124,8 @@ export function matchRecipes(request: MatchRecipesRequest): Promise<RecipeMatch[
 }
 
 export function getRecipes(params: GetRecipesParams = {}): Promise<PagedResult<RecipeSummary>> {
-  return request<PagedResult<RecipeSummary>>(`/recipes${toQueryString(params)}`);
+  const language = params.language ?? (i18n.language.startsWith('en') ? 'en' : 'ro');
+  return request<PagedResult<RecipeSummary>>(`/recipes${toQueryString({ ...params, language })}`);
 }
 
 export function getRecipeBySlug(slug: string, ingredients?: string[]): Promise<Recipe> {

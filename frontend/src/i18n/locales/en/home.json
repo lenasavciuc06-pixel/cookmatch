@@ -1,0 +1,5 @@
+{
+  "selectedIngredients": "Selected ingredients",
+  "emptyIngredients": "You have not selected any ingredients yet.",
+  "ingredientCount": "You have {{count}} selected ingredients."
+}

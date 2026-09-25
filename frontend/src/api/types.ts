@@ -19,9 +19,9 @@ export interface RecipeSummary {
   name: string;
   description: string;
   imageUrl: string;
-  category: RecipeCategory;
+  category: string;
   prepTimeMinutes: number;
-  difficulty: Difficulty;
+  difficulty: string;
   servings: number;
 }
 
@@ -52,7 +52,7 @@ export interface Ingredient {
 }
 
 export interface Category {
-  value: RecipeCategory;
+  value: string;
   labelRo: string;
   labelEn: string;
 }

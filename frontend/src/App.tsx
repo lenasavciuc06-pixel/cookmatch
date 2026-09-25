@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Layout } from '@/components/Layout';
+import { RouteErrorBoundary } from '@/components/RouteErrorBoundary';
 
 const HomePage = lazy(() => import('@/pages/HomePage').then((module) => ({ default: module.HomePage })));
 const RecipesPage = lazy(() => import('@/pages/RecipesPage').then((module) => ({ default: module.RecipesPage })));
@@ -19,21 +20,25 @@ const RouteFallback: React.FC = () => {
 };
 
 export const App: React.FC = () => {
+  const { t } = useTranslation('common');
+
   return (
     <BrowserRouter>
       <Suspense fallback={<RouteFallback />}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="recipes" element={<RecipesPage />} />
-            <Route path="recipes/:slug" element={<RecipeDetailsPage />} />
-            <Route path="my-ingredients" element={<MyIngredientsPage />} />
-            <Route path="favorites" element={<FavoritesPage />} />
-            <Route path="shopping-list" element={<ShoppingListPage />} />
-            <Route path="style-guide" element={<StyleGuidePage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
+        <RouteErrorBoundary title={t('common.renderError')} description={t('common.renderErrorDescription')} retryLabel={t('common.retry')}>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="recipes" element={<RecipesPage />} />
+              <Route path="recipes/:slug" element={<RecipeDetailsPage />} />
+              <Route path="my-ingredients" element={<MyIngredientsPage />} />
+              <Route path="favorites" element={<FavoritesPage />} />
+              <Route path="shopping-list" element={<ShoppingListPage />} />
+              <Route path="style-guide" element={<StyleGuidePage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </RouteErrorBoundary>
       </Suspense>
     </BrowserRouter>
   );

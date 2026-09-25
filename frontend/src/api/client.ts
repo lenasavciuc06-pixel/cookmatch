@@ -25,6 +25,15 @@ export class ApiError extends Error {
   }
 }
 
+export type ApiErrorKind = 'client' | 'server' | 'timeout' | 'network';
+
+export function getApiErrorKind(error: ApiError): ApiErrorKind {
+  if (error.statusCode === 408) return 'timeout';
+  if (error.statusCode === 0) return 'network';
+  if (error.statusCode >= 400 && error.statusCode < 500) return 'client';
+  return 'server';
+}
+
 interface ProblemDetails {
   detail?: string;
   title?: string;
@@ -45,6 +54,8 @@ export interface GetRecipesParams {
   page?: number;
   pageSize?: number;
 }
+
+let ingredientsRequest: Promise<Ingredient[]> | null = null;
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const controller = new AbortController();
@@ -128,15 +139,20 @@ export function getRecipes(params: GetRecipesParams = {}): Promise<PagedResult<R
   return request<PagedResult<RecipeSummary>>(`/recipes${toQueryString({ ...params, language })}`);
 }
 
-export function getRecipeBySlug(slug: string, ingredients?: string[]): Promise<Recipe> {
-  const query = ingredients?.length
-    ? `?ingredients=${encodeURIComponent(ingredients.join(','))}`
-    : '';
+export function getRecipeBySlug(slug: string, ingredients: string[] = [], language?: Language): Promise<Recipe> {
+  const selectedLanguage = language ?? (i18n.language.startsWith('en') ? 'en' : 'ro');
+  const params = new URLSearchParams({ language: selectedLanguage });
+  if (ingredients.length > 0) params.set('ingredients', ingredients.join(','));
+  const query = `?${params.toString()}`;
   return request<Recipe>(`/recipes/${encodeURIComponent(slug)}${query}`);
 }
 
 export function getIngredients(): Promise<Ingredient[]> {
-  return request<Ingredient[]>('/ingredients');
+  ingredientsRequest ??= request<Ingredient[]>('/ingredients').catch((error: unknown) => {
+    ingredientsRequest = null;
+    throw error;
+  });
+  return ingredientsRequest;
 }
 
 export function getCategories(): Promise<Category[]> {

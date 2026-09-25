@@ -111,6 +111,18 @@ public sealed class EndpointContractTests : IClassFixture<EndpointApiFactory>
     }
 
     [Fact]
+    public async Task GetRecipe_EnglishLanguageUsesTranslation()
+    {
+        var response = await client.GetAsync("/api/recipes/test-recipe?language=en");
+
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        using var document = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+
+        Assert.Equal("Potato omelet", document.RootElement.GetProperty("recipe").GetProperty("name").GetString());
+        Assert.Equal("Cook the ingredients.", document.RootElement.GetProperty("instructions")[0].GetString());
+    }
+
+    [Fact]
     public async Task GetRecipe_UnknownSlugReturnsNotFound()
     {
         var response = await client.GetAsync("/api/recipes/does-not-exist");

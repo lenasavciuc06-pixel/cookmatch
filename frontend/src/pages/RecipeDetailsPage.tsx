@@ -1,25 +1,24 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 
-import { ApiError, getRecipeBySlug } from '@/api/client';
-import type { Recipe } from '@/api/types';
+import { getRecipeBySlug } from '@/api/client';
+import type { Difficulty, Recipe, RecipeCategory } from '@/api/types';
+import { useAsync } from '@/lib/useAsync';
 import { favoritesSelectors, ingredientsSelectors, shoppingListSelectors, useFavoritesStore, useIngredientsStore, useShoppingListStore } from '@/store';
 
 export const RecipeDetailsPage: React.FC = () => {
-  const { t } = useTranslation('recipes');
+  const { t, i18n } = useTranslation('recipes');
   const { t: commonT } = useTranslation('common');
   const { slug } = useParams<{ slug: string }>();
   const sessionIngredients = useIngredientsStore(ingredientsSelectors.items);
   const toggleFavorite = useFavoritesStore(favoritesSelectors.toggle);
   const favoriteSlugs = useFavoritesStore(favoritesSelectors.slugs);
   const addManyToShoppingList = useShoppingListStore(shoppingListSelectors.addMany);
-  const [recipe, setRecipe] = useState<Recipe | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isNotFound, setIsNotFound] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const { data: recipe, error, isLoading, run: loadRecipe } = useAsync<Recipe>();
 
   const isFavorite = slug ? favoriteSlugs.has(slug) : false;
+  const language = i18n.language.startsWith('en') ? 'en' : 'ro';
   const missingIngredients = useMemo(
     () => recipe?.ingredients.filter((ingredient) => !ingredient.isAvailable && !ingredient.isPantryStaple) ?? [],
     [recipe],
@@ -27,34 +26,11 @@ export const RecipeDetailsPage: React.FC = () => {
 
   useEffect(() => {
     if (!slug) {
-      setIsLoading(false);
-      setIsNotFound(true);
       return;
     }
 
-    let cancelled = false;
-    setIsLoading(true);
-    setHasError(false);
-    setIsNotFound(false);
-
-    void getRecipeBySlug(slug, sessionIngredients)
-      .then((loadedRecipe) => {
-        if (!cancelled) setRecipe(loadedRecipe);
-      })
-      .catch((error: unknown) => {
-        if (cancelled) return;
-        setRecipe(null);
-        setIsNotFound(error instanceof ApiError && error.statusCode === 404);
-        setHasError(!(error instanceof ApiError && error.statusCode === 404));
-      })
-      .finally(() => {
-        if (!cancelled) setIsLoading(false);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [sessionIngredients, slug]);
+    void loadRecipe(() => getRecipeBySlug(slug, sessionIngredients, language));
+  }, [language, loadRecipe, sessionIngredients, slug]);
 
   useEffect(() => {
     if (!recipe) return;
@@ -73,11 +49,11 @@ export const RecipeDetailsPage: React.FC = () => {
     return <div className="h-96 animate-pulse rounded-lg border border-border bg-surface" aria-label={commonT('common.loading')} />;
   }
 
-  if (isNotFound) {
+  if (error?.statusCode === 404 || (!slug && !isLoading)) {
     return <EmptyRecipeState title={t('recipeNotFound')} description={t('recipeNotFoundDescription')} />;
   }
 
-  if (hasError || !recipe) {
+  if (error || !recipe) {
     return <EmptyRecipeState title={t('loadError')} description={t('recipeLoadErrorDescription')} />;
   }
 
@@ -90,7 +66,7 @@ export const RecipeDetailsPage: React.FC = () => {
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-5 pt-20 sm:p-8 sm:pt-24">
           <div className="flex items-end justify-between gap-4">
             <div>
-              <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-accent">{t(`categories.${summary.category}`)}</p>
+              <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-accent">{t(`categories.${summary.category}` as `categories.${RecipeCategory}`)}</p>
               <h1 className="text-2xl font-semibold text-white sm:text-4xl">{summary.name}</h1>
               <p className="mt-2 max-w-3xl text-base text-zinc-200">{summary.description}</p>
             </div>
@@ -110,9 +86,9 @@ export const RecipeDetailsPage: React.FC = () => {
 
       <div className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">
         <MetaItem label={t('prepTimeLabel')} value={t('prepTime', { count: summary.prepTimeMinutes })} />
-        <MetaItem label={t('difficultyLabel')} value={t(`difficulty.${summary.difficulty}`)} />
+        <MetaItem label={t('difficultyLabel')} value={t(`difficulty.${summary.difficulty}` as `difficulty.${Difficulty}`)} />
         <MetaItem label={t('servingsLabel')} value={t('servings', { count: summary.servings })} />
-        <MetaItem label={t('categoryLabel')} value={t(`categories.${summary.category}`)} />
+        <MetaItem label={t('categoryLabel')} value={t(`categories.${summary.category}` as `categories.${RecipeCategory}`)} />
       </div>
 
       <section aria-labelledby="ingredients-heading" className="space-y-5">

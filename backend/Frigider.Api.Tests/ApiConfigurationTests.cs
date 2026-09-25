@@ -35,6 +35,7 @@ public class ApiConfigurationTests : IClassFixture<WebApplicationFactory<Program
 
         Assert.NotNull(policy);
         Assert.Contains("http://localhost:5173", policy.Origins);
+        Assert.Contains("http://127.0.0.1:5173", policy.Origins);
     }
 }
 

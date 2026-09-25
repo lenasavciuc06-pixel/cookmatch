@@ -8,7 +8,7 @@ import { RecipeCard } from '@/features/recipes/RecipeCard';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export const RecipesPage: React.FC = () => {
-  const { t, i18n } = useTranslation(['common', 'recipes']);
+  const { t, i18n } = useTranslation('recipes');
   const [searchParams, setSearchParams] = useSearchParams();
   const sessionIngredients = useIngredientsStore(ingredientsSelectors.items);
   const [searchInput, setSearchInput] = useState(searchParams.get('search') ?? '');
@@ -99,14 +99,14 @@ export const RecipesPage: React.FC = () => {
 
   const activeFilters = useMemo(() => {
     const labels: Array<{ key: string; label: string }> = [];
-    if (searchParams.get('search')) labels.push({ key: 'search', label: `${t('filterSearch', { ns: 'recipes' })}: ${searchParams.get('search')}` });
+    if (searchParams.get('search')) labels.push({ key: 'search', label: `${t('filterSearch')}: ${searchParams.get('search')}` });
     if (category) {
       const selectedCategory = categories.find((item) => item.value === category);
       labels.push({ key: 'category', label: language === 'en' ? selectedCategory?.labelEn ?? category : selectedCategory?.labelRo ?? category });
     }
-    if (maxTime) labels.push({ key: 'maxTime', label: `${t('maxTime', { ns: 'recipes' })}: ${t('minutes', { ns: 'recipes', count: Number(maxTime) })}` });
-    if (difficulty) labels.push({ key: 'difficulty', label: t(`difficulty.${difficulty}`, { ns: 'recipes' }) });
-    if (ingredient) labels.push({ key: 'ingredient', label: `${t('filterIngredient', { ns: 'recipes' })}: ${ingredient}` });
+    if (maxTime) labels.push({ key: 'maxTime', label: `${t('maxTime')}: ${t('minutes', { count: Number(maxTime) })}` });
+    if (difficulty) labels.push({ key: 'difficulty', label: t(`difficulty.${difficulty}` as `difficulty.${Difficulty}`) });
+    if (ingredient) labels.push({ key: 'ingredient', label: `${t('filterIngredient')}: ${ingredient}` });
     return labels;
   }, [categories, category, difficulty, ingredient, language, maxTime, searchParams, t]);
 
@@ -138,7 +138,7 @@ export const RecipesPage: React.FC = () => {
             <input value={searchInput} onChange={(event) => setSearchInput(event.target.value)} placeholder={t('searchPlaceholder')} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100 outline-none focus:border-emerald-500" />
             <select value={category} onChange={(event) => updateFilter('category', event.target.value)} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100"><option value="">{t('allCategories')}</option>{categories.map((item) => <option key={item.value} value={item.value}>{language === 'en' ? item.labelEn : item.labelRo}</option>)}</select>
             <select value={maxTime} onChange={(event) => updateFilter('maxTime', event.target.value)} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100"><option value="">{t('anyTime')}</option>{[15, 30, 45, 60].map((time) => <option key={time} value={time}>{t('minutes', { count: time })}</option>)}</select>
-            <select value={difficulty} onChange={(event) => updateFilter('difficulty', event.target.value)} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100"><option value="">{t('anyDifficulty')}</option>{(['Easy', 'Medium', 'Hard'] as Difficulty[]).map((level) => <option key={level} value={level}>{t(`difficulty.${level}`, { ns: 'recipes' })}</option>)}</select>
+            <select value={difficulty} onChange={(event) => updateFilter('difficulty', event.target.value)} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100"><option value="">{t('anyDifficulty')}</option>{(['Easy', 'Medium', 'Hard'] as Difficulty[]).map((level) => <option key={level} value={level}>{t(`difficulty.${level}` as `difficulty.${Difficulty}`)}</option>)}</select>
             <select value={ingredient} onChange={(event) => updateFilter('ingredient', event.target.value)} className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100"><option value="">{t('anyIngredient')}</option>{ingredients.map((item) => <option key={item.name} value={item.name}>{item.name}</option>)}</select>
           </div>
         </div>

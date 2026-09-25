@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom';
 import { getRecipes } from '@/api/client';
 import type { RecipeSummary } from '@/api/types';
 import { RecipeCard } from '@/features/recipes/RecipeCard';
+import { useAsync } from '@/lib/useAsync';
 import { favoritesSelectors, useFavoritesStore } from '@/store';
 
 export const FavoritesPage: React.FC = () => {
   const { t, i18n } = useTranslation('recipes');
   const favoriteSlugs = useFavoritesStore(favoritesSelectors.slugs);
   const toggleFavorite = useFavoritesStore(favoritesSelectors.toggle);
-  const [recipes, setRecipes] = useState<RecipeSummary[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const { data: loadedRecipes, isLoading, error, run: loadRecipes, reset: resetRecipes } = useAsync<RecipeSummary[]>([]);
   const [undoSlug, setUndoSlug] = useState<string | null>(null);
   const undoTimer = useRef<number | undefined>(undefined);
   const favoriteKey = Array.from(favoriteSlugs).sort().join('|');
@@ -22,29 +21,18 @@ export const FavoritesPage: React.FC = () => {
 
   useEffect(() => {
     if (favoriteSlugs.size === 0) {
-      setRecipes([]);
+      resetRecipes();
       return;
     }
 
-    let cancelled = false;
-    setIsLoading(true);
-    setHasError(false);
     const language = i18n.language.startsWith('en') ? 'en' : 'ro';
-    void getRecipes({ language, page: 1, pageSize: 100 })
-      .then((result) => {
-        if (!cancelled) setRecipes(result.items.filter((recipe) => favoriteSlugs.has(recipe.slug)));
-      })
-      .catch(() => {
-        if (!cancelled) setHasError(true);
-      })
-      .finally(() => {
-        if (!cancelled) setIsLoading(false);
-      });
+    void loadRecipes(async () => {
+      const result = await getRecipes({ language, page: 1, pageSize: 100 });
+      return result.items.filter((recipe) => favoriteSlugs.has(recipe.slug));
+    });
+  }, [favoriteKey, favoriteSlugs, i18n.language, loadRecipes, resetRecipes]);
 
-    return () => { cancelled = true; };
-  }, [favoriteKey, favoriteSlugs, i18n.language]);
-
-  const visibleRecipes = useMemo(() => recipes.filter((recipe) => favoriteSlugs.has(recipe.slug)), [favoriteSlugs, recipes]);
+  const visibleRecipes = useMemo(() => (loadedRecipes ?? []).filter((recipe) => favoriteSlugs.has(recipe.slug)), [favoriteSlugs, loadedRecipes]);
 
   const handleRemoved = (slug: string) => {
     setUndoSlug(slug);
@@ -67,15 +55,15 @@ export const FavoritesPage: React.FC = () => {
       </header>
       {undoSlug && <div role="status" className="flex items-center justify-between gap-4 rounded-lg border border-emerald-700/60 bg-emerald-950/40 px-4 py-3 text-sm text-emerald-200"><span>{t('favoriteRemoved')}</span><button type="button" onClick={undo} className="font-semibold underline hover:text-white">{t('undo')}</button></div>}
       {isLoading && <div className="h-64 animate-pulse rounded-lg border border-zinc-800 bg-zinc-900/60" />}
-      {!isLoading && hasError && <p className="rounded-lg border border-red-900/60 bg-red-950/20 p-6 text-center text-red-200">{t('favoritesLoadError')}</p>}
-      {!isLoading && !hasError && visibleRecipes.length === 0 && (
+      {!isLoading && error && <p className="rounded-lg border border-red-900/60 bg-red-950/20 p-6 text-center text-red-200">{t('favoritesLoadError')}</p>}
+      {!isLoading && !error && visibleRecipes.length === 0 && (
         <div className="rounded-lg border border-zinc-800 bg-zinc-900/50 p-8 text-center">
           <h2 className="font-semibold text-zinc-100">{t('favoritesEmptyTitle')}</h2>
           <p className="mt-2 text-sm text-zinc-400">{t('favoritesEmptyDescription')}</p>
           <Link to="/recipes" className="mt-5 inline-flex rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-zinc-950 hover:bg-emerald-400">{t('browseRecipes')}</Link>
         </div>
       )}
-      {!isLoading && !hasError && visibleRecipes.length > 0 && <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">{visibleRecipes.map((recipe) => <RecipeCard key={recipe.slug} recipe={recipe} onFavoriteRemoved={handleRemoved} />)}</div>}
+      {!isLoading && !error && visibleRecipes.length > 0 && <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">{visibleRecipes.map((recipe) => <RecipeCard key={recipe.slug} recipe={recipe} onFavoriteRemoved={handleRemoved} />)}</div>}
     </div>
   );
 };

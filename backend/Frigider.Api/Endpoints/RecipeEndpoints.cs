@@ -141,10 +141,11 @@ public static class RecipeEndpoints
     private static async Task<IResult> GetRecipe(
         string slug,
         string? ingredients,
+        string? language,
         AppDbContext dbContext,
         CancellationToken cancellationToken)
     {
-        const string selectedLanguage = "ro";
+        var selectedLanguage = NormalizeLanguage(language);
         var recipe = await dbContext.Recipes
             .AsNoTracking()
             .Where(item => item.Slug == slug)

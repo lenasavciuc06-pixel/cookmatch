@@ -6,13 +6,6 @@ import type { Ingredient } from '@/api/types';
 import { normalizeIngredient } from '@/lib/normalize';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
-let ingredientCatalogPromise: Promise<Ingredient[]> | null = null;
-
-function loadIngredientCatalog(): Promise<Ingredient[]> {
-  ingredientCatalogPromise ??= getIngredients();
-  return ingredientCatalogPromise;
-}
-
 export interface IngredientInputProps {
   className?: string;
 }
@@ -33,7 +26,7 @@ export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) =
   const feedbackTimerRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    void loadIngredientCatalog()
+    void getIngredients()
       .then(setCatalog)
       .catch(() => setCatalog([]));
   }, []);

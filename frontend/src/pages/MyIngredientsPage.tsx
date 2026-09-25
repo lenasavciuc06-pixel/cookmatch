@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import { matchRecipes } from '@/api/client';
+import type { RecipeMatch } from '@/api/types';
 import { IngredientInput } from '@/features/ingredients';
+import { useAsync } from '@/lib/useAsync';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export const MyIngredientsPage: React.FC = () => {
@@ -18,7 +20,7 @@ export const MyIngredientsPage: React.FC = () => {
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [editing, setEditing] = useState<string | null>(null);
   const [draft, setDraft] = useState('');
-  const [isMatching, setIsMatching] = useState(false);
+  const { isLoading: isMatching, run: runMatch } = useAsync<RecipeMatch[]>();
 
   const filteredItems = useMemo(() => {
     const query = search.trim().toLocaleLowerCase();
@@ -47,14 +49,9 @@ export const MyIngredientsPage: React.FC = () => {
 
   const findRecipes = async () => {
     if (items.length === 0 || isMatching) return;
-    setIsMatching(true);
-    try {
-      const language = i18n.language.startsWith('en') ? 'en' : 'ro';
-      const results = await matchRecipes({ ingredients: items, language });
-      navigate('/', { state: { preloadedResults: results } });
-    } finally {
-      setIsMatching(false);
-    }
+    const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+    const results = await runMatch(() => matchRecipes({ ingredients: items, language }));
+    if (results) navigate('/', { state: { preloadedResults: results } });
   };
 
   return (

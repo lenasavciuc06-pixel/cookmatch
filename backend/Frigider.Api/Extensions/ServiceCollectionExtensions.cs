@@ -9,7 +9,10 @@ namespace Frigider.Api.Extensions;
 public static class ServiceCollectionExtensions
 {
     public const string FrontendCorsPolicyName = "Frontend";
-    private const string DevelopmentFrontendOrigin = "http://localhost:5173";
+    private static readonly string[] DevelopmentFrontendOrigins = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173"
+    ];
 
     public static IServiceCollection AddApplicationServices(
         this IServiceCollection services,
@@ -35,7 +38,7 @@ public static class ServiceCollectionExtensions
             {
                 if (environment.IsDevelopment())
                 {
-                    policy.WithOrigins(DevelopmentFrontendOrigin)
+                    policy.WithOrigins(DevelopmentFrontendOrigins)
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 }

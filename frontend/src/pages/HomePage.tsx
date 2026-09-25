@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { matchRecipes } from '@/api/client';
 import type { RecipeMatch } from '@/api/types';
 import { IngredientInput } from '@/features/ingredients';
-import { MatchResults } from '@/features/recipes';
+import { MemoizedMatchResults } from '@/features/recipes';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export interface HomeNavigationState {
@@ -113,7 +113,7 @@ export const HomePage: React.FC = () => {
             <p className="mt-2 text-sm text-zinc-400">{t('emptyResultsDescription', { ns: 'home' })}</p>
           </div>
         )}
-        {!isLoading && !error && results.length > 0 && <MatchResults results={results} />}
+        {!isLoading && !error && results.length > 0 && <MemoizedMatchResults results={results} />}
       </section>
     </div>
   );

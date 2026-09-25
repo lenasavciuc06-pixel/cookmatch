@@ -58,3 +58,5 @@ export const MatchResults: React.FC<MatchResultsProps> = ({ results }) => {
     </div>
   );
 };
+
+export const MemoizedMatchResults = React.memo(MatchResults);

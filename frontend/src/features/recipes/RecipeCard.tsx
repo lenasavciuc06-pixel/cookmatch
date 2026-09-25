@@ -71,3 +71,5 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
     </article>
   );
 };
+
+export const MemoizedRecipeCard = React.memo(RecipeCard);

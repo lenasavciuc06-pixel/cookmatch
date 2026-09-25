@@ -31,7 +31,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
     <article className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/70 shadow-lg shadow-black/10">
       <div className="relative aspect-[16/9] bg-zinc-800">
         {!imageFailed && recipe.imageUrl ? (
-          <img src={recipe.imageUrl} alt={recipe.name} loading="lazy" onError={() => setImageFailed(true)} className="h-full w-full object-cover" />
+          <img src={recipe.imageUrl} alt={recipe.name} width={1200} height={675} loading="lazy" decoding="async" onError={() => setImageFailed(true)} className="h-full w-full object-cover" />
         ) : (
           <div className="flex h-full items-center justify-center text-4xl text-zinc-600" aria-label={t('imageUnavailable')}>🥣</div>
         )}

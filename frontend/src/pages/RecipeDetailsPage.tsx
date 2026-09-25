@@ -62,7 +62,7 @@ export const RecipeDetailsPage: React.FC = () => {
   return (
     <article className="space-y-10">
       <header className="relative overflow-hidden rounded-lg border border-border bg-surface">
-        <img src={summary.imageUrl} alt={summary.name} className="h-64 w-full object-cover sm:h-80" />
+        <img src={summary.imageUrl} alt={summary.name} width={1200} height={675} decoding="async" className="h-64 w-full object-cover sm:h-80" />
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-5 pt-20 sm:p-8 sm:pt-24">
           <div className="flex items-end justify-between gap-4">
             <div className="min-w-0">

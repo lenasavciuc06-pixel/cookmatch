@@ -1,5 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 import { matchRecipes } from '@/api/client';
 import type { RecipeMatch } from '@/api/types';
@@ -7,8 +8,13 @@ import { IngredientInput } from '@/features/ingredients';
 import { MatchResults } from '@/features/recipes';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
+export interface HomeNavigationState {
+  preloadedResults?: RecipeMatch[];
+}
+
 export const HomePage: React.FC = () => {
   const { t, i18n } = useTranslation(['common', 'home']);
+  const location = useLocation();
   const ingredients = useIngredientsStore(ingredientsSelectors.items);
   const addIngredient = useIngredientsStore(ingredientsSelectors.add);
   const [results, setResults] = useState<RecipeMatch[]>([]);
@@ -16,6 +22,15 @@ export const HomePage: React.FC = () => {
   const [error, setError] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
   const resultsRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const state = location.state as HomeNavigationState | null;
+    if (!state?.preloadedResults) return;
+    setResults(state.preloadedResults);
+    setHasSearched(true);
+    window.requestAnimationFrame(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    window.history.replaceState({}, document.title, window.location.href);
+  }, [location.state]);
 
   const language = i18n.language.startsWith('en') ? 'en' : 'ro';
   const quickIngredients = ['potatoes', 'eggs', 'onion', 'cheese', 'chicken', 'tomatoes'] as const;

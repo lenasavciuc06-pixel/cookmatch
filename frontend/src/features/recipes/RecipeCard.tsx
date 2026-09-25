@@ -10,6 +10,7 @@ export interface RecipeCardProps {
   match?: Pick<RecipeMatch, 'matchStatus' | 'matchedIngredients' | 'missingIngredients'>;
   showMissingIngredients?: boolean;
   onAddMissing?: (ingredients: string[]) => void;
+  onFavoriteRemoved?: (slug: string) => void;
 }
 
 export const RecipeCard: React.FC<RecipeCardProps> = ({
@@ -17,6 +18,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
   match,
   showMissingIngredients = false,
   onAddMissing,
+  onFavoriteRemoved,
 }) => {
   const { t } = useTranslation(['common', 'recipes']);
   const isFavorite = useFavoritesStore((state) => state.slugs.has(recipe.slug));
@@ -33,7 +35,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
         ) : (
           <div className="flex h-full items-center justify-center text-4xl text-zinc-600" aria-label={t('imageUnavailable', { ns: 'recipes' })}>🥣</div>
         )}
-        <button type="button" onClick={() => toggleFavorite(recipe.slug)} aria-pressed={isFavorite} aria-label={isFavorite ? t('removeFavorite', { ns: 'recipes' }) : t('addFavorite', { ns: 'recipes' })} className="absolute right-3 top-3 rounded-full bg-zinc-950/75 px-3 py-2 text-lg text-white backdrop-blur hover:bg-emerald-700">
+        <button type="button" onClick={() => { toggleFavorite(recipe.slug); if (isFavorite) onFavoriteRemoved?.(recipe.slug); }} aria-pressed={isFavorite} aria-label={isFavorite ? t('removeFavorite', { ns: 'recipes' }) : t('addFavorite', { ns: 'recipes' })} className="absolute right-3 top-3 rounded-full bg-zinc-950/75 px-3 py-2 text-lg text-white backdrop-blur hover:bg-emerald-700">
           {isFavorite ? '♥' : '♡'}
         </button>
       </div>

@@ -29,6 +29,7 @@ export interface ShoppingListState {
   toggleChecked: (name: string) => void;
   remove: (name: string) => void;
   clearChecked: () => void;
+  clear: () => void;
 }
 
 export const useIngredientsStore = create<IngredientsState>((set) => ({
@@ -116,6 +117,7 @@ export const useShoppingListStore = create<ShoppingListState>((set) => ({
       items: state.items.filter((item) => normalizeIngredient(item.name) !== normalizeIngredient(name)),
     })),
   clearChecked: () => set((state) => ({ items: state.items.filter((item) => !item.checked) })),
+  clear: () => set({ items: [] }),
 }));
 
 export const ingredientsSelectors = {
@@ -139,5 +141,6 @@ export const shoppingListSelectors = {
   toggleChecked: (state: ShoppingListState) => state.toggleChecked,
   remove: (state: ShoppingListState) => state.remove,
   clearChecked: (state: ShoppingListState) => state.clearChecked,
+  clear: (state: ShoppingListState) => state.clear,
 };
 

@@ -1,1 +1,1 @@
-{ "description": "Missing ingredients added to the shopping list ({{count}})." }
+{ "title": "Shopping list", "description": "You have {{count}} ingredients on your list.", "manualPlaceholder": "Add a product...", "add": "Add", "manualGroup": "Added manually", "emptyTitle": "Your list is empty", "emptyDescription": "Add ingredients from a recipe or type a product directly.", "check": "Check {{name}}", "clearChecked": "Delete checked", "clearAll": "Clear list", "copy": "Copy list", "copied": "List copied" }

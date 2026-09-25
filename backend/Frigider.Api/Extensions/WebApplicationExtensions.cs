@@ -15,6 +15,7 @@ public static class WebApplicationExtensions
         }
 
         app.UseCors(ServiceCollectionExtensions.FrontendCorsPolicyName);
+        app.UseResponseCompression();
         app.UseResponseCaching();
 
         app.MapHealthEndpoints();

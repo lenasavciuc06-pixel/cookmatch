@@ -181,15 +181,12 @@ public static class RecipeEndpoints
         return TypedResults.Ok(recipe.ToDto(selectedLanguage, available));
     }
 
-    private static async Task<IResult> ListIngredients(AppDbContext dbContext, CancellationToken cancellationToken)
+    private static async Task<IResult> ListIngredients(
+        AppDbContext dbContext,
+        IngredientCatalogCache catalogCache,
+        CancellationToken cancellationToken)
     {
-        var ingredients = await dbContext.Ingredients
-            .AsNoTracking()
-            .OrderBy(ingredient => ingredient.Name)
-            .Select(ingredient => new IngredientDto(ingredient.Name, ingredient.IsPantryStaple))
-            .ToListAsync(cancellationToken);
-
-        return TypedResults.Ok(ingredients);
+        return TypedResults.Ok(await catalogCache.GetAsync(dbContext, cancellationToken));
     }
 
     private static IResult ListCategories() => TypedResults.Ok(

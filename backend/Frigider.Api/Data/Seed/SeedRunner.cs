@@ -54,6 +54,7 @@ public static class SeedRunner
         foreach (var ingredient in ingredients)
         {
             var existing = await dbContext.Ingredients
+                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.NormalizedName == ingredient.NormalizedName, cancellationToken);
 
             if (existing is not null)
@@ -72,6 +73,7 @@ public static class SeedRunner
         foreach (var recipeSeed in recipes)
         {
             var existingRecipe = await dbContext.Recipes
+                .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Slug == recipeSeed.Slug, cancellationToken);
 
             if (existingRecipe is not null)
@@ -96,11 +98,13 @@ public static class SeedRunner
             foreach (var item in recipeSeed.Ingredients)
             {
                 var ingredient = await dbContext.Ingredients
+                    .AsNoTracking()
                     .FirstOrDefaultAsync(x => x.NormalizedName == IngredientNormalizer.Normalize(item.Name), cancellationToken);
 
                 if (ingredient is null)
                 {
                     ingredient = await dbContext.Ingredients
+                        .AsNoTracking()
                         .FirstOrDefaultAsync(x => x.Name == item.Name, cancellationToken);
                 }
 

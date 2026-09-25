@@ -22,6 +22,10 @@ public static class ServiceCollectionExtensions
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddResponseCaching();
+        services.AddResponseCompression(options => options.EnableForHttps = true);
+        services.AddMemoryCache();
+        services.AddSingleton<IngredientCatalogCache>();
+        services.AddHostedService<IngredientCatalogWarmupService>();
         services.AddSingleton<RecipeMatcher>();
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlite(configuration.GetConnectionString("FrigiderDb")));

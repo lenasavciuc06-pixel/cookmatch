@@ -40,15 +40,15 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({
         </button>
       </div>
       <div className="p-4">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <h3 className="font-semibold text-zinc-100">{recipe.name}</h3>
-            <p className="mt-1 line-clamp-2 text-sm text-zinc-400">{recipe.description}</p>
+        <div className="flex min-w-0 items-start justify-between gap-3">
+          <div className="min-w-0">
+            <h3 className="min-w-0 break-words font-semibold text-zinc-100">{recipe.name}</h3>
+            <p className="mt-1 line-clamp-2 break-words text-sm text-zinc-300">{recipe.description}</p>
           </div>
-          <span className="shrink-0 rounded-full bg-zinc-800 px-2 py-1 text-xs text-zinc-400">{recipe.category}</span>
+          <span className="max-w-[45%] shrink-0 break-words rounded-full bg-zinc-800 px-2 py-1 text-xs text-zinc-300">{recipe.category}</span>
         </div>
         {match && <p className="mt-3 text-xs font-semibold text-emerald-300">{t(`matchStatus.${match.matchStatus}` as const)}</p>}
-        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-zinc-500">
+        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-zinc-400">
           <span>{t('prepTime', { count: recipe.prepTimeMinutes })}</span>
           <span>{t(`difficulty.${recipe.difficulty}` as `difficulty.${Difficulty}`)}</span>
           <span>{t('ingredientsCount', { count: ingredientCount })}</span>

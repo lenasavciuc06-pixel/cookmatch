@@ -135,7 +135,7 @@ export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) =
         {items.map((item) => (
           <span key={normalizeIngredient(item)} className="inline-flex items-center gap-1 rounded-full bg-emerald-900/70 px-3 py-1 text-sm text-emerald-100" aria-label={t('chip', { name: item })}>
             {item}
-            <button type="button" onClick={() => remove(item)} aria-label={t('remove', { name: item })} className="rounded-full px-1 text-emerald-300 hover:bg-emerald-700 hover:text-white">
+            <button type="button" onClick={() => remove(item)} aria-label={t('remove', { name: item })} className="rounded-full px-2 text-emerald-300 hover:bg-emerald-700 hover:text-white">
               ×
             </button>
           </span>
@@ -154,10 +154,10 @@ export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) =
           aria-activedescendant={activeIndex >= 0 ? `${listboxId}-${activeIndex}` : undefined}
           aria-label={t('inputLabel')}
           placeholder={t('placeholder')}
-          className="min-w-40 flex-1 bg-transparent py-1 text-sm text-zinc-100 outline-none placeholder:text-zinc-500"
+          className="min-w-[8rem] flex-1 bg-transparent py-1 text-sm text-zinc-100 outline-none placeholder:text-zinc-500"
         />
         {items.length > 0 && (
-          <button type="button" onClick={() => useIngredientsStore.getState().clear()} className="text-xs text-zinc-400 hover:text-white">
+          <button type="button" onClick={() => useIngredientsStore.getState().clear()} className="px-2 text-xs text-zinc-400 hover:text-white">
             {t('clearAll')}
           </button>
         )}
@@ -168,7 +168,7 @@ export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) =
         <ul id={listboxId} role="listbox" className="mt-1 overflow-hidden rounded-lg border border-zinc-700 bg-zinc-900 shadow-lg">
           {suggestions.map((suggestion, index) => (
             <li key={suggestion.name} id={`${listboxId}-${index}`} role="option" aria-selected={index === activeIndex}>
-              <button type="button" onMouseDown={(event) => event.preventDefault()} onClick={() => { confirmIngredient(suggestion.name); setInputValue(''); setSuggestions([]); }} className={`w-full px-3 py-2 text-left text-sm ${index === activeIndex ? 'bg-emerald-800 text-white' : 'text-zinc-300 hover:bg-zinc-800'}`}>
+              <button type="button" onMouseDown={(event) => event.preventDefault()} onClick={() => { confirmIngredient(suggestion.name); setInputValue(''); setSuggestions([]); }} className={`w-full px-3 py-2 text-left text-sm break-words ${index === activeIndex ? 'bg-emerald-800 text-white' : 'text-zinc-300 hover:bg-zinc-800'}`}>
                 {suggestion.name}
               </button>
             </li>

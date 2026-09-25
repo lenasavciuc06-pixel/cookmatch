@@ -18,6 +18,7 @@ export const Layout: React.FC = () => {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark);
+    document.documentElement.classList.toggle('light', !isDark);
   }, [isDark]);
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export const Layout: React.FC = () => {
   }, [isMenuOpen]);
 
   const navItemClass = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+    `inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
       isActive
         ? 'bg-emerald-800/60 text-emerald-300 border border-emerald-600/50'
         : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50'
@@ -115,8 +116,8 @@ export const Layout: React.FC = () => {
         </div>
       </header>
 
-      {isMenuOpen && <button type="button" className="fixed inset-0 z-40 bg-black/50 sm:hidden" aria-label={t('common.closeMenu')} onClick={() => setIsMenuOpen(false)} />}
-      <aside ref={menuRef} className={`fixed inset-y-0 right-0 z-50 w-72 bg-zinc-900 p-5 shadow-xl transition-transform sm:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} aria-hidden={!isMenuOpen}>
+      {isMenuOpen && <button type="button" className="fixed inset-0 z-40 w-full bg-black/50 sm:hidden" aria-label={t('common.closeMenu')} onClick={() => setIsMenuOpen(false)} />}
+      <aside ref={menuRef} className={`fixed inset-y-0 right-0 z-50 w-72 max-w-[calc(100vw-1rem)] bg-zinc-900 p-5 shadow-xl transition-transform sm:hidden ${isMenuOpen ? 'visible translate-x-0' : 'invisible pointer-events-none translate-x-full'}`} aria-hidden={!isMenuOpen}>
         <div className="mb-8 flex items-center justify-between">
           <span className="font-semibold text-emerald-400">{t('app.title')}</span>
           <button type="button" onClick={() => setIsMenuOpen(false)} className="rounded-md px-2 py-1 text-xl text-zinc-300" aria-label={t('common.closeMenu')}>×</button>

@@ -65,10 +65,10 @@ export const RecipeDetailsPage: React.FC = () => {
         <img src={summary.imageUrl} alt={summary.name} className="h-64 w-full object-cover sm:h-80" />
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-5 pt-20 sm:p-8 sm:pt-24">
           <div className="flex items-end justify-between gap-4">
-            <div>
+            <div className="min-w-0">
               <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-accent">{t(`categories.${summary.category}` as `categories.${RecipeCategory}`)}</p>
-              <h1 className="text-2xl font-semibold text-white sm:text-4xl">{summary.name}</h1>
-              <p className="mt-2 max-w-3xl text-base text-zinc-200">{summary.description}</p>
+              <h1 className="break-words text-2xl font-semibold text-white sm:text-4xl">{summary.name}</h1>
+              <p className="mt-2 max-w-3xl break-words text-base text-zinc-200">{summary.description}</p>
             </div>
             <button
               type="button"
@@ -103,7 +103,7 @@ export const RecipeDetailsPage: React.FC = () => {
                 <span className={`flex h-7 w-7 items-center justify-center rounded-full text-sm ${ingredient.isPantryStaple ? 'bg-surface-elevated text-text-muted' : ingredient.isAvailable ? 'bg-status-success/20 text-status-success' : 'bg-status-warning/20 text-status-warning'}`} aria-hidden="true">
                   {ingredient.isPantryStaple ? '·' : ingredient.isAvailable ? '✓' : '!'}
                 </span>
-                <span className={ingredient.isPantryStaple ? 'text-text-muted' : ingredient.isAvailable ? 'text-status-success' : 'text-status-warning'}>{ingredient.name}</span>
+                <span className={`min-w-0 break-words ${ingredient.isPantryStaple ? 'text-text-muted' : ingredient.isAvailable ? 'text-status-success' : 'text-status-warning'}`}>{ingredient.name}</span>
                 {ingredient.isPantryStaple && <span className="text-xs text-text-muted">{t('alwaysAvailable')}</span>}
               </span>
               <span className="text-right text-sm text-text-secondary">{ingredient.quantity}</span>

@@ -28,12 +28,17 @@ export const HomePage: React.FC = () => {
     if (!state?.preloadedResults) return;
     setResults(state.preloadedResults);
     setHasSearched(true);
-    window.requestAnimationFrame(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    scrollToResults();
     window.history.replaceState({}, document.title, window.location.href);
   }, [location.state]);
 
   const language = i18n.language.startsWith('en') ? 'en' : 'ro';
   const quickIngredients = ['potatoes', 'eggs', 'onion', 'cheese', 'chicken', 'tomatoes'] as const;
+
+  const scrollToResults = () => {
+    const behavior: ScrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    window.requestAnimationFrame(() => resultsRef.current?.scrollIntoView({ behavior, block: 'start' }));
+  };
 
   const findRecipes = async () => {
     if (ingredients.length === 0 || isLoading) {
@@ -47,7 +52,7 @@ export const HomePage: React.FC = () => {
     try {
       const matches = await matchRecipes({ ingredients, language });
       setResults(matches);
-      window.requestAnimationFrame(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      scrollToResults();
     } catch {
       setError(true);
     } finally {

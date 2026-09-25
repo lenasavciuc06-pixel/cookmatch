@@ -4,9 +4,81 @@
 
 :root {
   color-scheme: dark;
+  --color-surface: #18181b;
+  --color-surface-elevated: #27272a;
+  --color-border: #52525b;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #d4d4d8;
+  --color-text-muted: #a1a1aa;
+  --color-accent: #34d399;
+  --color-accent-hover: #6ee7b7;
+  --color-success: #6ee7b7;
+  --color-warning: #fbbf24;
+  --color-danger: #fca5a5;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
+  background: #09090b;
+}
+
+html.light {
+  color-scheme: light;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f4f4f5;
+  --color-border: #a1a1aa;
+  --color-text-primary: #18181b;
+  --color-text-secondary: #3f3f46;
+  --color-text-muted: #52525b;
+  --color-accent: #047857;
+  --color-accent-hover: #065f46;
+  --color-success: #047857;
+  --color-warning: #a16207;
+  --color-danger: #b91c1c;
+}
+
+html.light body,
+html.light .bg-zinc-950 { background-color: #f4f4f5 !important; color: #18181b; }
+html.light .bg-zinc-900,
+html.light .bg-zinc-900\/40,
+html.light .bg-zinc-900\/50,
+html.light .bg-zinc-900\/60,
+html.light .bg-zinc-900\/70,
+html.light .bg-zinc-900\/75,
+html.light .bg-zinc-900\/80 { background-color: #ffffff !important; }
+html.light .bg-zinc-800,
+html.light .bg-zinc-800\/50 { background-color: #e4e4e7 !important; }
+html.light .text-zinc-50,
+html.light .text-zinc-100,
+html.light .text-zinc-200 { color: #18181b !important; }
+html.light .text-zinc-300,
+html.light .text-zinc-400,
+html.light .text-zinc-500,
+html.light .text-zinc-600 { color: #3f3f46 !important; }
+html.dark .text-zinc-500,
+html.dark .text-zinc-600 { color: #a1a1aa !important; }
+html.light .border-zinc-700,
+html.light .border-zinc-800 { border-color: #a1a1aa !important; }
+
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+:where(button, a) { min-height: 44px; }
+:where(button) { min-width: 44px; }
+:where(input, select, textarea) { min-height: 44px; }
+input[type='checkbox'] { min-width: 44px; min-height: 44px; }
+
+button, a, input, select, textarea { max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

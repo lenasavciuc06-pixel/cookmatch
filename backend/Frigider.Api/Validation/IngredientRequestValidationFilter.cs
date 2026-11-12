@@ -34,9 +34,10 @@ public sealed class IngredientRequestValidationFilter : IEndpointFilter
         }
 
         if (!string.Equals(request.Language, "ro", StringComparison.OrdinalIgnoreCase)
-            && !string.Equals(request.Language, "en", StringComparison.OrdinalIgnoreCase))
+            && !string.Equals(request.Language, "en", StringComparison.OrdinalIgnoreCase)
+            && !string.Equals(request.Language, "ru", StringComparison.OrdinalIgnoreCase))
         {
-            return Results.Problem(statusCode: 400, title: "Limba nu este validă.", detail: "Limba trebuie să fie 'ro' sau 'en'.");
+            return Results.Problem(statusCode: 400, title: "Limba nu este validă.", detail: "Limba trebuie să fie 'ro', 'en' sau 'ru'.");
         }
 
         return await next(context);

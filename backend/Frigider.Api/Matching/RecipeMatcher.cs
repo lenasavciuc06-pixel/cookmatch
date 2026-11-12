@@ -43,7 +43,8 @@ public sealed class RecipeMatcher
                     ? ingredient.Name
                     : ingredient.NormalizedName);
 
-            if (normalizedUserIngredients.Contains(normalizedName))
+            if (normalizedUserIngredients.Contains(normalizedName)
+                || ingredient.Translations.Any(t => normalizedUserIngredients.Contains(IngredientNormalizer.Normalize(t.Name))))
             {
                 matched.Add(ingredient);
             }

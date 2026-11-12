@@ -1,0 +1,15 @@
+{
+  "selectedIngredients":"Выбранные продукты","emptyIngredients":"Вы пока не выбрали продукты.","ingredientCount":"Выбрано продуктов: {{count}}.",
+  "eyebrow":"Готовьте вкуснее, тратьте меньше","heroTitle":"Что есть в холодильнике?","heroSubtitle":"Ваши продукты — вкусные идеи на каждый день. Узнайте, что можно приготовить, и используйте продукты без остатка.",
+  "findButton":"Что я могу приготовить?","loadingButton":"Ищем рецепты…","quickSuggestions":"Попробуйте:","quickSuggestionsLabel":"Быстрый выбор продуктов",
+  "quickIngredients":{"potatoes":"картофель","eggs":"яйца","onion":"лук","cheese":"сыр","chicken":"курица","tomatoes":"помидоры"},
+  "loadingResults":"Загрузка результатов","howTitle":"Как это работает",
+  "steps":{"choose":{"title":"Выберите продукты","description":"Начните с того, что уже есть."},"match":{"title":"Найдите рецепты","description":"Посмотрите, что можно приготовить."},"cook":{"title":"Готовьте с удовольствием","description":"Больше вкуса, меньше отходов."}},
+  "errorTitle":"Не удалось загрузить рецепты","errorDescription":"Проверьте подключение и попробуйте снова.","retry":"Попробовать снова",
+  "emptyResultsTitle":"Нужно ещё немного продуктов","emptyResultsDescription":"Добавьте продукты или воспользуйтесь быстрым выбором, чтобы найти больше рецептов.",
+  "resultsTitle":"Что можно приготовить","missingCount":"Не хватает продуктов: {{count}}",
+  "status":{"CanCookNow":"Можно готовить","OneMissing":"Не хватает одного продукта","FewMissing":"Не хватает 2 и более продуктов","ManyMissing":"Не хватает 2 и более продуктов"},
+  "groups":{"ready":"Можно готовить прямо сейчас","oneMissing":"Не хватает 1 продукта","manyMissing":"Не хватает 2 и более продуктов"},
+  "recipeCount":"{{count}} рецептов","recipeCount_one":"{{count}} рецепт","recipeCount_few":"{{count}} рецепта","recipeCount_many":"{{count}} рецептов","recipeCount_other":"{{count}} рецепта",
+  "showMore":"Показать ещё","photoAlt":"Свежий салат с овощами, зеленью и сезонными продуктами","photoCaption":"Простые продукты. Радость на тарелке.","inputHint":"Нажмите Enter, чтобы добавить продукт, или разделяйте названия запятыми."
+}

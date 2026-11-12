@@ -59,6 +59,7 @@ public static class RecipeEndpoints
         var recipes = await dbContext.Recipes
             .Include(recipe => recipe.RecipeIngredients)
             .ThenInclude(link => link.Ingredient)
+            .ThenInclude(ingredient => ingredient.Translations)
             .Include(recipe => recipe.Translations)
             .AsNoTracking()
             .ToListAsync(cancellationToken);
@@ -88,9 +89,20 @@ public static class RecipeEndpoints
 
         if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            var search = query.Search.Trim().ToLower();
-            recipes = recipes.Where(recipe => recipe.Name.ToLower().Contains(search)
-                || recipe.Description.ToLower().Contains(search));
+            // SQLite lower() is ASCII-only. Fold localized text in .NET so Cyrillic
+            // searches work regardless of case, then retain SQL filtering/pagination.
+            var search = query.Search.Trim().ToLowerInvariant();
+            var searchable = await recipes.Select(recipe => new
+            {
+                recipe.Slug, recipe.Name, recipe.Description,
+                Translation = recipe.Translations.Where(t => t.LanguageCode == language)
+                    .Select(t => new { t.Name, t.Description }).FirstOrDefault()
+            }).ToListAsync(cancellationToken);
+            var slugs = searchable.Where(r => r.Name.ToLowerInvariant().Contains(search) || r.Description.ToLowerInvariant().Contains(search)
+                || (r.Translation?.Name ?? r.Name).ToLowerInvariant().Contains(search)
+                || (r.Translation?.Description ?? r.Description).ToLowerInvariant().Contains(search))
+                .Select(r => r.Slug).ToArray();
+            recipes = recipes.Where(recipe => slugs.Contains(recipe.Slug));
         }
 
         if (Enum.TryParse<RecipeCategory>(query.Category, true, out var category))
@@ -111,7 +123,10 @@ public static class RecipeEndpoints
         if (!string.IsNullOrWhiteSpace(query.Ingredient))
         {
             var ingredient = IngredientNormalizer.Normalize(query.Ingredient);
-            recipes = recipes.Where(recipe => recipe.RecipeIngredients.Any(link => link.Ingredient.NormalizedName == ingredient));
+            var aliases = await dbContext.Ingredients.AsNoTracking().Include(i => i.Translations).ToListAsync(cancellationToken);
+            var ids = aliases.Where(i => i.NormalizedName == ingredient
+                || i.Translations.Any(t => IngredientNormalizer.Normalize(t.Name) == ingredient)).Select(i => i.Id).ToArray();
+            recipes = recipes.Where(recipe => recipe.RecipeIngredients.Any(link => ids.Contains(link.IngredientId)));
         }
 
         var totalCount = await recipes.CountAsync(cancellationToken);
@@ -164,7 +179,9 @@ public static class RecipeEndpoints
                     .Select(translation => new TranslationProjection(translation.Name, translation.Description, translation.Instructions))
                     .FirstOrDefault(),
                 item.RecipeIngredients
-                    .Select(link => new IngredientProjection(link.Ingredient.Name, link.Ingredient.NormalizedName, link.Ingredient.IsPantryStaple, link.Quantity))
+                    .Select(link => new IngredientProjection(link.Ingredient.Name, link.Ingredient.NormalizedName, link.Ingredient.IsPantryStaple, link.Quantity,
+                        link.Ingredient.Translations.Where(t => t.LanguageCode == selectedLanguage).Select(t => t.Name).FirstOrDefault(),
+                        link.Ingredient.Translations.Select(t => t.Name).ToArray()))
                     .ToArray()))
             .SingleOrDefaultAsync(cancellationToken);
 
@@ -184,9 +201,16 @@ public static class RecipeEndpoints
     private static async Task<IResult> ListIngredients(
         AppDbContext dbContext,
         IngredientCatalogCache catalogCache,
+        string? language,
         CancellationToken cancellationToken)
     {
-        return TypedResults.Ok(await catalogCache.GetAsync(dbContext, cancellationToken));
+        var catalog = await catalogCache.GetAsync(dbContext, cancellationToken);
+        var selectedLanguage = NormalizeLanguage(language);
+        if (selectedLanguage == "ro") return TypedResults.Ok(catalog);
+        var translations = await dbContext.Ingredients.AsNoTracking()
+            .Select(i => new IngredientDto(i.Translations.Where(t => t.LanguageCode == selectedLanguage).Select(t => t.Name).FirstOrDefault() ?? i.Name, i.IsPantryStaple))
+            .ToListAsync(cancellationToken);
+        return TypedResults.Ok(translations.OrderBy(i => i.Name, StringComparer.Create(System.Globalization.CultureInfo.GetCultureInfo(selectedLanguage), false)).ToArray());
     }
 
     private static IResult ListCategories() => TypedResults.Ok(
@@ -202,7 +226,7 @@ public static class RecipeEndpoints
 
     private static string TranslateIngredient(Ingredient ingredient, string language) => ingredient.Translations.FirstOrDefault(item => item.LanguageCode == language)?.Name ?? ingredient.Name;
 
-    private static string NormalizeLanguage(string? language) => string.Equals(language, "en", StringComparison.OrdinalIgnoreCase) ? "en" : "ro";
+    private static string NormalizeLanguage(string? language) => language?.ToLowerInvariant() switch { "en" => "en", "ru" => "ru", _ => "ro" };
 
     private static ResponseCacheAttribute CacheFor(int seconds) => new() { Duration = seconds, Location = ResponseCacheLocation.Any };
 
@@ -229,7 +253,7 @@ public static class RecipeEndpoints
         public RecipeSummaryDto ToDto(string language) => new(Slug, language == "ro" ? Name : Translation?.Name ?? Name, language == "ro" ? Description : Translation?.Description ?? Description, ImageUrl, Category.ToString(), PrepTimeMinutes, Difficulty.ToString(), Servings);
     }
 
-    private sealed record IngredientProjection(string Name, string NormalizedName, bool IsPantryStaple, string Quantity);
+    private sealed record IngredientProjection(string Name, string NormalizedName, bool IsPantryStaple, string Quantity, string? TranslatedName, string[] Aliases);
 
     private sealed record RecipeDetailsProjection(string Slug, string Name, string Description, string ImageUrl, RecipeCategory Category, int PrepTimeMinutes, Difficulty Difficulty, int Servings, List<string> Instructions, TranslationProjection? Translation, IngredientProjection[] Ingredients)
     {
@@ -237,8 +261,17 @@ public static class RecipeEndpoints
         {
             var summary = new RecipeSummaryDto(Slug, language == "ro" ? Name : Translation?.Name ?? Name, language == "ro" ? Description : Translation?.Description ?? Description, ImageUrl, Category.ToString(), PrepTimeMinutes, Difficulty.ToString(), Servings);
             var translatedInstructions = language == "ro" ? Instructions : Translation?.Instructions ?? Instructions;
-            var mappedIngredients = Ingredients.Select(ingredient => new RecipeIngredientDto(ingredient.Name, ingredient.Quantity, ingredient.IsPantryStaple, ingredient.IsPantryStaple || available.Contains(ingredient.NormalizedName))).ToArray();
+            var mappedIngredients = Ingredients.Select(ingredient => new RecipeIngredientDto(ingredient.TranslatedName ?? ingredient.Name,
+                language == "ru" ? TranslateQuantity(ingredient.Quantity) : ingredient.Quantity, ingredient.IsPantryStaple,
+                ingredient.IsPantryStaple || available.Contains(ingredient.NormalizedName) || ingredient.Aliases.Any(name => available.Contains(IngredientNormalizer.Normalize(name))))).ToArray();
             return new RecipeDetailsDto(summary, translatedInstructions, mappedIngredients);
         }
     }
+
+    private static string TranslateQuantity(string quantity) => quantity
+        .Replace("după gust", "по вкусу").Replace("lingurițe", "ч. л.").Replace("linguriță", "ч. л.")
+        .Replace("linguri", "ст. л.").Replace("lingură", "ст. л.").Replace("felii", "ломтика").Replace("felie", "ломтик")
+        .Replace("căni", "стакана").Replace("cană", "стакан").Replace("căței", "зубчика").Replace("cățel", "зубчик")
+        .Replace("bucăți", "шт.").Replace("bucată", "шт.").Replace("tulpină", "стебель").Replace("legătură", "пучок").Replace("mână", "горсть")
+        .Replace("ml", "мл").Replace("kg", "кг").Replace(" g", " г").Replace(" l", " л");
 }

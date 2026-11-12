@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { matchRecipes } from '@/api/client';
 import type { RecipeMatch } from '@/api/types';
 import { IngredientInput } from '@/features/ingredients';
+import { appLanguage } from '@/i18n/language';
 import { useAsync } from '@/lib/useAsync';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
@@ -49,7 +50,7 @@ export const MyIngredientsPage: React.FC = () => {
 
   const findRecipes = async () => {
     if (items.length === 0 || isMatching) return;
-    const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+    const language = appLanguage(i18n.language);
     const results = await runMatch(() => matchRecipes({ ingredients: items, language }));
     if (results) navigate('/', { state: { preloadedResults: results } });
   };

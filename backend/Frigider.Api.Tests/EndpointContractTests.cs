@@ -123,6 +123,28 @@ public sealed class EndpointContractTests : IClassFixture<EndpointApiFactory>
     }
 
     [Fact]
+    public async Task Russian_CatalogSearchDetailsAndMatchingUseTranslations()
+    {
+        var results = await client.GetFromJsonAsync<JsonElement>("/api/recipes?language=ru&search=" + Uri.EscapeDataString("ОМЛЕТ"));
+        Assert.Equal(1, results.GetProperty("totalCount").GetInt32());
+        Assert.Equal("Омлет с картофелем", results.GetProperty("items")[0].GetProperty("name").GetString());
+        var detail = await client.GetFromJsonAsync<JsonElement>("/api/recipes/test-recipe?language=ru&ingredients=" + Uri.EscapeDataString("картофель"));
+        Assert.Equal("Приготовьте продукты.", detail.GetProperty("instructions")[0].GetString());
+        var potato = detail.GetProperty("ingredients").EnumerateArray().Single(i => i.GetProperty("name").GetString() == "картофель");
+        Assert.True(potato.GetProperty("isAvailable").GetBoolean());
+        var catalog = await client.GetFromJsonAsync<JsonElement>("/api/ingredients?language=ru");
+        Assert.Contains(catalog.EnumerateArray(), i => i.GetProperty("name").GetString() == "картофель");
+        var response = await client.PostAsJsonAsync("/api/recipes/match", new { ingredients = new[] { "КАРТОФЕЛЬ" }, language = "ru" });
+        response.EnsureSuccessStatusCode();
+        var matches = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var match = matches.EnumerateArray().Single(r => r.GetProperty("recipe").GetProperty("slug").GetString() == "test-recipe");
+        Assert.Equal(1, match.GetProperty("missingCount").GetInt32());
+        Assert.Equal("картофель", match.GetProperty("matchedIngredients")[0].GetString());
+        var filtered = await client.GetFromJsonAsync<JsonElement>("/api/recipes?language=ru&ingredient=" + Uri.EscapeDataString("картофель"));
+        Assert.Equal(1, filtered.GetProperty("totalCount").GetInt32());
+    }
+
+    [Fact]
     public async Task GetRecipe_UnknownSlugReturnsNotFound()
     {
         var response = await client.GetAsync("/api/recipes/does-not-exist");
@@ -208,6 +230,7 @@ public sealed class EndpointApiFactory : WebApplicationFactory<Program>
     private static void Seed(AppDbContext dbContext)
     {
         var potatoes = new Ingredient { Name = "cartofi", NormalizedName = "cartof" };
+        potatoes.Translations.Add(new IngredientTranslation { LanguageCode = "ru", Name = "картофель" });
         var onion = new Ingredient { Name = "ceapă", NormalizedName = "ceapa" };
         var salt = new Ingredient { Name = "sare", NormalizedName = "sare", IsPantryStaple = true };
         dbContext.Ingredients.AddRange(potatoes, onion, salt);
@@ -230,7 +253,8 @@ public sealed class EndpointApiFactory : WebApplicationFactory<Program>
             ],
             Translations =
             [
-                new RecipeTranslation { LanguageCode = "en", Name = "Potato omelet", Description = "Test recipe", Instructions = ["Cook the ingredients."] }
+                new RecipeTranslation { LanguageCode = "en", Name = "Potato omelet", Description = "Test recipe", Instructions = ["Cook the ingredients."] },
+                new RecipeTranslation { LanguageCode = "ru", Name = "Омлет с картофелем", Description = "Тестовый рецепт", Instructions = ["Приготовьте продукты."] }
             ]
         };
 

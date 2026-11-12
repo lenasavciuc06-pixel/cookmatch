@@ -7,6 +7,10 @@
         {
           "LanguageCode": "en",
           "Name": "onion"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "лук"
         }
       ]
     },
@@ -17,6 +21,10 @@
         {
           "LanguageCode": "en",
           "Name": "garlic"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "чеснок"
         }
       ]
     },
@@ -27,6 +35,10 @@
         {
           "LanguageCode": "en",
           "Name": "potatoes"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "картофель"
         }
       ]
     },
@@ -37,6 +49,10 @@
         {
           "LanguageCode": "en",
           "Name": "eggs"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "яйца"
         }
       ]
     },
@@ -47,6 +63,10 @@
         {
           "LanguageCode": "en",
           "Name": "cheese"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сыр"
         }
       ]
     },
@@ -57,6 +77,10 @@
         {
           "LanguageCode": "en",
           "Name": "tomatoes"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "помидоры"
         }
       ]
     },
@@ -67,6 +91,10 @@
         {
           "LanguageCode": "en",
           "Name": "cucumbers"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "огурцы"
         }
       ]
     },
@@ -77,6 +105,10 @@
         {
           "LanguageCode": "en",
           "Name": "carrots"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "морковь"
         }
       ]
     },
@@ -87,6 +119,10 @@
         {
           "LanguageCode": "en",
           "Name": "celery"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сельдерей"
         }
       ]
     },
@@ -97,6 +133,10 @@
         {
           "LanguageCode": "en",
           "Name": "parsnip"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "пастернак"
         }
       ]
     },
@@ -107,6 +147,10 @@
         {
           "LanguageCode": "en",
           "Name": "spinach"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "шпинат"
         }
       ]
     },
@@ -117,6 +161,10 @@
         {
           "LanguageCode": "en",
           "Name": "peppers"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сладкий перец"
         }
       ]
     },
@@ -127,6 +175,10 @@
         {
           "LanguageCode": "en",
           "Name": "cabbage"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "капуста"
         }
       ]
     },
@@ -137,6 +189,10 @@
         {
           "LanguageCode": "en",
           "Name": "peas"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "зелёный горошек"
         }
       ]
     },
@@ -147,6 +203,10 @@
         {
           "LanguageCode": "en",
           "Name": "beans"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "фасоль"
         }
       ]
     },
@@ -157,6 +217,10 @@
         {
           "LanguageCode": "en",
           "Name": "zucchini"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "кабачки"
         }
       ]
     },
@@ -167,6 +231,10 @@
         {
           "LanguageCode": "en",
           "Name": "mushrooms"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "грибы"
         }
       ]
     },
@@ -177,6 +245,10 @@
         {
           "LanguageCode": "en",
           "Name": "parsley"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "петрушка"
         }
       ]
     },
@@ -187,6 +259,10 @@
         {
           "LanguageCode": "en",
           "Name": "dill"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "укроп"
         }
       ]
     },
@@ -197,6 +273,10 @@
         {
           "LanguageCode": "en",
           "Name": "basil"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "базилик"
         }
       ]
     },
@@ -207,6 +287,10 @@
         {
           "LanguageCode": "en",
           "Name": "oregano"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "орегано"
         }
       ]
     },
@@ -217,6 +301,10 @@
         {
           "LanguageCode": "en",
           "Name": "lemon"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "лимон"
         }
       ]
     },
@@ -227,6 +315,10 @@
         {
           "LanguageCode": "en",
           "Name": "pepper"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "чёрный перец"
         }
       ]
     },
@@ -237,6 +329,10 @@
         {
           "LanguageCode": "en",
           "Name": "salt"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "соль"
         }
       ]
     },
@@ -247,6 +343,10 @@
         {
           "LanguageCode": "en",
           "Name": "water"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "вода"
         }
       ]
     },
@@ -257,6 +357,10 @@
         {
           "LanguageCode": "en",
           "Name": "oil"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "растительное масло"
         }
       ]
     },
@@ -267,6 +371,10 @@
         {
           "LanguageCode": "en",
           "Name": "sugar"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сахар"
         }
       ]
     },
@@ -277,6 +385,10 @@
         {
           "LanguageCode": "en",
           "Name": "flour"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "мука"
         }
       ]
     },
@@ -287,6 +399,10 @@
         {
           "LanguageCode": "en",
           "Name": "milk"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "молоко"
         }
       ]
     },
@@ -297,6 +413,10 @@
         {
           "LanguageCode": "en",
           "Name": "sour cream"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сметана"
         }
       ]
     },
@@ -307,6 +427,10 @@
         {
           "LanguageCode": "en",
           "Name": "yogurt"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "йогурт"
         }
       ]
     },
@@ -317,6 +441,10 @@
         {
           "LanguageCode": "en",
           "Name": "chicken"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "курица"
         }
       ]
     },
@@ -327,6 +455,10 @@
         {
           "LanguageCode": "en",
           "Name": "chicken breast"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "куриная грудка"
         }
       ]
     },
@@ -337,6 +469,10 @@
         {
           "LanguageCode": "en",
           "Name": "beef"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "говядина"
         }
       ]
     },
@@ -347,6 +483,10 @@
         {
           "LanguageCode": "en",
           "Name": "pork"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "свинина"
         }
       ]
     },
@@ -357,6 +497,10 @@
         {
           "LanguageCode": "en",
           "Name": "bacon"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "бекон"
         }
       ]
     },
@@ -367,6 +511,10 @@
         {
           "LanguageCode": "en",
           "Name": "salmon"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "лосось"
         }
       ]
     },
@@ -377,6 +525,10 @@
         {
           "LanguageCode": "en",
           "Name": "tuna"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "тунец"
         }
       ]
     },
@@ -387,6 +539,10 @@
         {
           "LanguageCode": "en",
           "Name": "sardines"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "сардины"
         }
       ]
     },
@@ -397,6 +553,10 @@
         {
           "LanguageCode": "en",
           "Name": "rice"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "рис"
         }
       ]
     },
@@ -407,6 +567,10 @@
         {
           "LanguageCode": "en",
           "Name": "pasta"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "макароны"
         }
       ]
     },
@@ -417,6 +581,10 @@
         {
           "LanguageCode": "en",
           "Name": "semolina"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "манная крупа"
         }
       ]
     },
@@ -427,6 +595,10 @@
         {
           "LanguageCode": "en",
           "Name": "bread"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "хлеб"
         }
       ]
     },
@@ -437,6 +609,10 @@
         {
           "LanguageCode": "en",
           "Name": "avocado"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "авокадо"
         }
       ]
     },
@@ -447,6 +623,10 @@
         {
           "LanguageCode": "en",
           "Name": "apples"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "яблоки"
         }
       ]
     },
@@ -457,6 +637,10 @@
         {
           "LanguageCode": "en",
           "Name": "pears"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "груши"
         }
       ]
     },
@@ -467,6 +651,10 @@
         {
           "LanguageCode": "en",
           "Name": "bananas"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "бананы"
         }
       ]
     },
@@ -477,6 +665,10 @@
         {
           "LanguageCode": "en",
           "Name": "oranges"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "апельсины"
         }
       ]
     },
@@ -487,6 +679,10 @@
         {
           "LanguageCode": "en",
           "Name": "olives"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "оливки"
         }
       ]
     },
@@ -497,6 +693,10 @@
         {
           "LanguageCode": "en",
           "Name": "tomato juice"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "томатный сок"
         }
       ]
     },
@@ -507,6 +707,10 @@
         {
           "LanguageCode": "en",
           "Name": "pesto"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "песто"
         }
       ]
     },
@@ -517,6 +721,10 @@
         {
           "LanguageCode": "en",
           "Name": "chickpeas"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "нут"
         }
       ]
     },
@@ -527,6 +735,10 @@
         {
           "LanguageCode": "en",
           "Name": "lentils"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "чечевица"
         }
       ]
     },
@@ -537,6 +749,10 @@
         {
           "LanguageCode": "en",
           "Name": "quinoa"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "киноа"
         }
       ]
     },
@@ -547,6 +763,10 @@
         {
           "LanguageCode": "en",
           "Name": "feta"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "брынза"
         }
       ]
     },
@@ -557,6 +777,10 @@
         {
           "LanguageCode": "en",
           "Name": "ricotta"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "рикотта"
         }
       ]
     },
@@ -567,6 +791,10 @@
         {
           "LanguageCode": "en",
           "Name": "mozzarella"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "моцарелла"
         }
       ]
     },
@@ -577,6 +805,10 @@
         {
           "LanguageCode": "en",
           "Name": "parmesan"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "пармезан"
         }
       ]
     },
@@ -587,6 +819,10 @@
         {
           "LanguageCode": "en",
           "Name": "sausage"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "колбаса"
         }
       ]
     },
@@ -597,6 +833,10 @@
         {
           "LanguageCode": "en",
           "Name": "greek yogurt"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "греческий йогурт"
         }
       ]
     },
@@ -607,6 +847,10 @@
         {
           "LanguageCode": "en",
           "Name": "cherry tomatoes"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "помидоры черри"
         }
       ]
     },
@@ -617,6 +861,10 @@
         {
           "LanguageCode": "en",
           "Name": "radish"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "редис"
         }
       ]
     },
@@ -627,6 +875,10 @@
         {
           "LanguageCode": "en",
           "Name": "red onion"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "красный лук"
         }
       ]
     },
@@ -637,6 +889,10 @@
         {
           "LanguageCode": "en",
           "Name": "pumpkin"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "тыква"
         }
       ]
     },
@@ -647,6 +903,10 @@
         {
           "LanguageCode": "en",
           "Name": "cornmeal"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "кукурузная крупа"
         }
       ]
     },
@@ -657,6 +917,10 @@
         {
           "LanguageCode": "en",
           "Name": "meat"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "мясо"
         }
       ]
     },
@@ -667,6 +931,10 @@
         {
           "LanguageCode": "en",
           "Name": "gnocchi"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "ньокки"
         }
       ]
     },
@@ -677,6 +945,10 @@
         {
           "LanguageCode": "en",
           "Name": "cinnamon"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "корица"
         }
       ]
     },
@@ -687,6 +959,10 @@
         {
           "LanguageCode": "en",
           "Name": "soy"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "соя"
         }
       ]
     },
@@ -697,6 +973,10 @@
         {
           "LanguageCode": "en",
           "Name": "tomato sauce"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "томатный соус"
         }
       ]
     },
@@ -707,6 +987,10 @@
         {
           "LanguageCode": "en",
           "Name": "ginger"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "имбирь"
         }
       ]
     },
@@ -717,6 +1001,10 @@
         {
           "LanguageCode": "en",
           "Name": "sweetcorn"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "кукуруза"
         }
       ]
     },
@@ -727,6 +1015,10 @@
         {
           "LanguageCode": "en",
           "Name": "broccoli"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "брокколи"
         }
       ]
     },
@@ -737,6 +1029,10 @@
         {
           "LanguageCode": "en",
           "Name": "rosemary"
+        },
+        {
+          "LanguageCode": "ru",
+          "Name": "розмарин"
         }
       ]
     }

@@ -209,3 +209,4 @@ if(new Set(recipes.map(r=>r.Slug)).size!==300)throw Error('Duplicate recipe slug
 fs.writeFileSync(path.join(seedDir,'ingredients.json'),JSON.stringify({ingredients},null,2)+'\n');
 fs.writeFileSync(path.join(seedDir,'recipes.json'),JSON.stringify({recipes},null,2)+'\n');
 console.log(`Catalog: ${original.length} existing + ${added.length} new = ${recipes.length}; ${ingredients.length} ingredients.`);
+require('./translate-catalog-ru.cjs')();

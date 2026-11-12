@@ -10,6 +10,8 @@ assert.equal(recipes.length, 300);
 assert.equal(new Set(recipes.map(r => r.Slug)).size, 300);
 assert.equal(new Set(recipes.map(r => r.Name)).size, 300);
 assert.equal(new Set(recipes.map(r => r.Translations.en.Name)).size, 300);
+assert.equal(new Set(recipes.map(r => r.Translations.ru.Name)).size, 300);
+assert.ok(ingredients.every(i => i.Translations.some(t => t.LanguageCode === 'ru' && /[А-Яа-яЁё]/.test(t.Name))));
 let stages = 0;
 for (const recipe of recipes) {
   assert.ok(recipe.Servings > 0 && recipe.Ingredients.length >= 3, recipe.Slug);
@@ -20,8 +22,10 @@ for (const recipe of recipes) {
   }
   const ro = recipe.Instructions;
   const en = recipe.Translations.en.Instructions;
+  const ru = recipe.Translations.ru.Instructions;
   assert.ok(ro.length >= 4, recipe.Slug);
   assert.equal(en.length, ro.length, recipe.Slug);
+  assert.equal(ru.length, ro.length, recipe.Slug);
   for (const [lang, instructions] of [['ro', ro], ['en', en]]) {
     let minutes = 0;
     for (const instruction of instructions) {
@@ -34,6 +38,8 @@ for (const recipe of recipes) {
     assert.equal(minutes, recipe.PrepTimeMinutes, recipe.Slug + ': total time does not match stages');
   }
   assert.deepEqual(ro.map(s => Number(s.match(/^\[(\d+)/)[1])), en.map(s => Number(s.match(/^\[(\d+)/)[1])));
+  assert.deepEqual(ro.map(s => Number(s.match(/^\[(\d+)/)[1])), ru.map(s => Number(s.match(/^\[(\d+)/)[1])));
+  assert.ok(ru.every(s => /^\[\d+ мин\] [\s\S]+\nВнешний вид: [\s\S]+$/.test(s)), recipe.Slug);
   stages += ro.length;
 }
 for (const previous of original) {

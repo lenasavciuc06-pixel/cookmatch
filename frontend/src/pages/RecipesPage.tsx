@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 import { getCategories, getIngredients, getRecipes, matchRecipes } from '@/api/client';
 import type { Category, Difficulty, Ingredient, RecipeCategory, RecipeMatch, RecipeSummary } from '@/api/types';
 import { RecipeCard } from '@/features/recipes/RecipeCard';
+import { appLanguage } from '@/i18n/language';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export const RecipesPage: React.FC = () => {
@@ -21,7 +22,7 @@ export const RecipesPage: React.FC = () => {
   const [error, setError] = useState(false);
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState(false);
 
-  const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+  const language = appLanguage(i18n.language);
   const page = Number(searchParams.get('page') ?? '1') || 1;
   const pageSize = Number(searchParams.get('pageSize') ?? '12') || 12;
   const category = searchParams.get('category') ?? '';
@@ -57,7 +58,7 @@ export const RecipesPage: React.FC = () => {
         setIngredients(loadedIngredients);
       })
       .catch(() => undefined);
-  }, []);
+  }, [language]);
 
   useEffect(() => {
     let cancelled = false;
@@ -101,14 +102,13 @@ export const RecipesPage: React.FC = () => {
     const labels: Array<{ key: string; label: string }> = [];
     if (searchParams.get('search')) labels.push({ key: 'search', label: `${t('filterSearch')}: ${searchParams.get('search')}` });
     if (category) {
-      const selectedCategory = categories.find((item) => item.value === category);
-      labels.push({ key: 'category', label: language === 'en' ? selectedCategory?.labelEn ?? category : selectedCategory?.labelRo ?? category });
+      labels.push({ key: 'category', label: t(`categories.${category}` as `categories.${RecipeCategory}`) });
     }
     if (maxTime) labels.push({ key: 'maxTime', label: `${t('maxTime')}: ${t('minutes', { count: Number(maxTime) })}` });
     if (difficulty) labels.push({ key: 'difficulty', label: t(`difficulty.${difficulty}` as `difficulty.${Difficulty}`) });
     if (ingredient) labels.push({ key: 'ingredient', label: `${t('filterIngredient')}: ${ingredient}` });
     return labels;
-  }, [categories, category, difficulty, ingredient, language, maxTime, searchParams, t]);
+  }, [category, difficulty, ingredient, maxTime, searchParams, t]);
 
   const updateFilter = (key: string, value: string) => {
     const next = new URLSearchParams(searchParams);
@@ -136,7 +136,7 @@ export const RecipesPage: React.FC = () => {
           <div className="mb-4 flex items-center justify-between md:hidden"><h2 className="font-semibold text-text-primary">{t('filters')}</h2><button type="button" onClick={() => setIsFilterPanelOpen(false)} aria-label={t('closeFilters')}>×</button></div>
           <div className="grid min-w-0 gap-3 rounded-xl border border-border bg-surface/50 p-4 md:grid-cols-5">
             <input value={searchInput} onChange={(event) => setSearchInput(event.target.value)} placeholder={t('searchPlaceholder')} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary outline-none focus:border-accent/30" />
-            <select value={category} onChange={(event) => updateFilter('category', event.target.value)} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary"><option value="">{t('allCategories')}</option>{categories.map((item) => <option key={item.value} value={item.value}>{language === 'en' ? item.labelEn : item.labelRo}</option>)}</select>
+            <select value={category} onChange={(event) => updateFilter('category', event.target.value)} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary"><option value="">{t('allCategories')}</option>{categories.map((item) => <option key={item.value} value={item.value}>{t(`categories.${item.value}` as `categories.${RecipeCategory}`)}</option>)}</select>
             <select value={maxTime} onChange={(event) => updateFilter('maxTime', event.target.value)} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary"><option value="">{t('anyTime')}</option>{[15, 30, 45, 60].map((time) => <option key={time} value={time}>{t('minutes', { count: time })}</option>)}</select>
             <select value={difficulty} onChange={(event) => updateFilter('difficulty', event.target.value)} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary"><option value="">{t('anyDifficulty')}</option>{(['Easy', 'Medium', 'Hard'] as Difficulty[]).map((level) => <option key={level} value={level}>{t(`difficulty.${level}` as `difficulty.${Difficulty}`)}</option>)}</select>
             <select value={ingredient} onChange={(event) => updateFilter('ingredient', event.target.value)} className="rounded-lg border border-border bg-canvas px-3 py-2 text-sm text-text-primary"><option value="">{t('anyIngredient')}</option>{ingredients.map((item) => <option key={item.name} value={item.name}>{item.name}</option>)}</select>

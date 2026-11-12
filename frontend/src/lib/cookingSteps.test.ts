@@ -18,4 +18,9 @@ describe('cooking instructions', () => {
       expect(parseCookingStep(instruction)).toEqual({ action: instruction });
     }
   });
+  it('separates Russian durations and visual guidance', () => {
+    expect(parseCookingStep('[4 мин] Размягчите лук.\nВнешний вид: Лук полупрозрачный.')).toEqual({
+      durationMinutes: 4, action: 'Размягчите лук.', appearance: 'Лук полупрозрачный.',
+    });
+  });
 });

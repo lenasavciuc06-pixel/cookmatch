@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { getRecipeBySlug } from '@/api/client';
 import type { RecipeSummary } from '@/api/types';
 import { RecipeCard } from '@/features/recipes/RecipeCard';
+import { appLanguage } from '@/i18n/language';
 import { useAsync } from '@/lib/useAsync';
 import { favoritesSelectors, useFavoritesStore } from '@/store';
 
@@ -25,7 +26,7 @@ export const FavoritesPage: React.FC = () => {
       return;
     }
 
-    const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+    const language = appLanguage(i18n.language);
     void loadRecipes(async () => {
       return Promise.all(Array.from(favoriteSlugs, async (slug) => {
         const result = await getRecipeBySlug(slug, [], language);

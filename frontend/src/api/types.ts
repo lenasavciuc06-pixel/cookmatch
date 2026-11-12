@@ -12,7 +12,7 @@ export type RecipeCategory =
   | 'Vegetarian'
   | 'Quick'
   | 'Budget';
-export type Language = 'ro' | 'en';
+export type Language = 'ro' | 'en' | 'ru';
 
 export interface RecipeSummary {
   slug: string;

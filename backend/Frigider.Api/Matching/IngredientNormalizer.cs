@@ -69,7 +69,7 @@ public static partial class IngredientNormalizer
             .ToArray();
 
         value = string.Join(' ', words);
-        value = Regex.Replace(value, @"[^a-z ]", string.Empty);
+        value = Regex.Replace(value, @"[^a-z\p{IsCyrillic} ]", string.Empty);
         value = Regex.Replace(value, @"\s+", " ").Trim();
 
         return value;

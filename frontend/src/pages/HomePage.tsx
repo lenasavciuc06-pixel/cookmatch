@@ -6,6 +6,7 @@ import { matchRecipes } from '@/api/client';
 import type { RecipeMatch } from '@/api/types';
 import { IngredientInput } from '@/features/ingredients';
 import { MemoizedMatchResults } from '@/features/recipes';
+import { appLanguage } from '@/i18n/language';
 import { ingredientsSelectors, useIngredientsStore } from '@/store';
 
 export interface HomeNavigationState {
@@ -21,6 +22,7 @@ export const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
+  const [searchVersion, setSearchVersion] = useState(0);
   const resultsRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -32,7 +34,7 @@ export const HomePage: React.FC = () => {
     window.history.replaceState({}, document.title, window.location.href);
   }, [location.state]);
 
-  const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+  const language = appLanguage(i18n.language);
   const quickIngredients = ['potatoes', 'eggs', 'onion', 'cheese', 'chicken', 'tomatoes'] as const;
 
   const scrollToResults = () => {
@@ -40,24 +42,28 @@ export const HomePage: React.FC = () => {
     window.requestAnimationFrame(() => resultsRef.current?.scrollIntoView({ behavior, block: 'start' }));
   };
 
-  const findRecipes = async () => {
-    if (ingredients.length === 0 || isLoading) {
+  useEffect(() => {
+    if (ingredients.length === 0) {
+      setResults([]);
+      setIsLoading(false);
+      setHasSearched(false);
       return;
     }
-
+    if (!hasSearched) return;
+    let cancelled = false;
     setIsLoading(true);
     setError(false);
-    setHasSearched(true);
+    void matchRecipes({ ingredients, language }).then(matches => {
+      if (!cancelled) { setResults(matches); scrollToResults(); }
+    }).catch(() => { if (!cancelled) setError(true); })
+      .finally(() => { if (!cancelled) setIsLoading(false); });
+    return () => { cancelled = true; };
+  }, [hasSearched, ingredients, language, searchVersion]);
 
-    try {
-      const matches = await matchRecipes({ ingredients, language });
-      setResults(matches);
-      scrollToResults();
-    } catch {
-      setError(true);
-    } finally {
-      setIsLoading(false);
-    }
+  const findRecipes = () => {
+    if (ingredients.length === 0 || isLoading) return;
+    setHasSearched(true);
+    setSearchVersion(version => version + 1);
   };
 
   return (

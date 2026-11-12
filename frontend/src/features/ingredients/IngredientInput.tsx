@@ -11,7 +11,7 @@ export interface IngredientInputProps {
 }
 
 export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) => {
-  const { t } = useTranslation('ingredients');
+  const { t, i18n } = useTranslation('ingredients');
   const items = useIngredientsStore(ingredientsSelectors.items);
   const add = useIngredientsStore(ingredientsSelectors.add);
   const remove = useIngredientsStore(ingredientsSelectors.remove);
@@ -29,7 +29,7 @@ export const IngredientInput: React.FC<IngredientInputProps> = ({ className }) =
     void getIngredients()
       .then(setCatalog)
       .catch(() => setCatalog([]));
-  }, []);
+  }, [i18n.language]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {

@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { getRecipeBySlug } from '@/api/client';
 import type { Difficulty, Recipe, RecipeCategory } from '@/api/types';
 import { RecipeImage } from '@/components/RecipeImage';
+import { appLanguage } from '@/i18n/language';
 import { parseCookingStep } from '@/lib/cookingSteps';
 import { useAsync } from '@/lib/useAsync';
 import { favoritesSelectors, ingredientsSelectors, shoppingListSelectors, useFavoritesStore, useIngredientsStore, useShoppingListStore } from '@/store';
@@ -20,7 +21,7 @@ export const RecipeDetailsPage: React.FC = () => {
   const { data: recipe, error, isLoading, run: loadRecipe } = useAsync<Recipe>();
 
   const isFavorite = slug ? favoriteSlugs.has(slug) : false;
-  const language = i18n.language.startsWith('en') ? 'en' : 'ro';
+  const language = appLanguage(i18n.language);
   const missingIngredients = useMemo(
     () => recipe?.ingredients.filter((ingredient) => !ingredient.isAvailable && !ingredient.isPantryStaple) ?? [],
     [recipe],

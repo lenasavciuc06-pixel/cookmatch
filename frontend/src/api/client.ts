@@ -11,6 +11,7 @@ import type {
   RecipeSummary,
 } from '@/api/types';
 import i18n from '@/i18n';
+import { appLanguage } from '@/i18n/language';
 
 const API_BASE = import.meta.env.VITE_API_URL ?? '/api';
 const REQUEST_TIMEOUT_MS = 10_000;
@@ -55,7 +56,7 @@ export interface GetRecipesParams {
   pageSize?: number;
 }
 
-let ingredientsRequest: Promise<Ingredient[]> | null = null;
+const ingredientsRequests = new Map<Language, Promise<Ingredient[]>>();
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const controller = new AbortController();
@@ -135,24 +136,28 @@ export function matchRecipes(request: MatchRecipesRequest): Promise<RecipeMatch[
 }
 
 export function getRecipes(params: GetRecipesParams = {}): Promise<PagedResult<RecipeSummary>> {
-  const language = params.language ?? (i18n.language.startsWith('en') ? 'en' : 'ro');
+  const language = params.language ?? (appLanguage(i18n.language));
   return request<PagedResult<RecipeSummary>>(`/recipes${toQueryString({ ...params, language })}`);
 }
 
 export function getRecipeBySlug(slug: string, ingredients: string[] = [], language?: Language): Promise<Recipe> {
-  const selectedLanguage = language ?? (i18n.language.startsWith('en') ? 'en' : 'ro');
+  const selectedLanguage = language ?? (appLanguage(i18n.language));
   const params = new URLSearchParams({ language: selectedLanguage });
   if (ingredients.length > 0) params.set('ingredients', ingredients.join(','));
   const query = `?${params.toString()}`;
   return request<Recipe>(`/recipes/${encodeURIComponent(slug)}${query}`);
 }
 
-export function getIngredients(): Promise<Ingredient[]> {
-  ingredientsRequest ??= request<Ingredient[]>('/ingredients').catch((error: unknown) => {
-    ingredientsRequest = null;
-    throw error;
-  });
-  return ingredientsRequest;
+export function getIngredients(language: Language = appLanguage(i18n.language)): Promise<Ingredient[]> {
+  let pending = ingredientsRequests.get(language);
+  if (!pending) {
+    pending = request<Ingredient[]>('/ingredients?language=' + language).catch((error: unknown) => {
+      ingredientsRequests.delete(language);
+      throw error;
+    });
+    ingredientsRequests.set(language, pending);
+  }
+  return pending;
 }
 
 export function getCategories(): Promise<Category[]> {

@@ -54,11 +54,16 @@ public static class SeedRunner
         foreach (var ingredient in ingredients)
         {
             var existing = await dbContext.Ingredients
-                .AsNoTracking()
+                .Include(x => x.Translations)
                 .FirstOrDefaultAsync(x => x.NormalizedName == ingredient.NormalizedName, cancellationToken);
 
             if (existing is not null)
             {
+                foreach (var translation in ingredient.Translations)
+                {
+                    if (!existing.Translations.Any(t => t.LanguageCode == translation.LanguageCode))
+                        existing.Translations.Add(translation);
+                }
                 continue;
             }
 
@@ -81,6 +86,11 @@ public static class SeedRunner
 
             if (existingRecipe is not null)
             {
+                foreach (var translation in BuildRecipeTranslations(recipeSeed.Translations))
+                {
+                    if (!existingRecipe.Translations.Any(t => t.LanguageCode == translation.LanguageCode))
+                        existingRecipe.Translations.Add(translation);
+                }
                 if (updateInstructions)
                 {
                     existingRecipe.Instructions = recipeSeed.Instructions;

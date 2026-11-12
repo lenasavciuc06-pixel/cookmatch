@@ -1,10 +1,10 @@
 # Imaginile rețetelor CookMatch
 
 - Rețete asociate după nume: **300**.
-- Fotografii atribuite: **289** (arhivă: 23; descărcate: 266).
-- Linkuri indisponibile: **5**.
-- Fișiere excluse la revizuirea vizuală: **6**.
-- Potriviri aproximative păstrate, cu observații: **41**.
+- Fotografii atribuite: **300**; **34** intrări actualizate din arhiva corectată, folosind exclusiv fișiere locale.
+- Rețete fără imagine locală: **0**. Linkurile externe nu sunt necesare pentru afișare.
+- Cele 6 fotografii respinse anterior au fost înlocuite cu fotografiile corectate.
+- Potriviri aproximative păstrate, cu observații: **43**.
 - Licențele de reutilizare sunt **neverificate**, conform informațiilor primite. Această integrare nu reprezintă o autorizare de reutilizare/publicare.
 - Fișierele au fost păstrate în formatul și rezoluția descărcate, fără redimensionare sau conversie. Afișarea folosește decupare centrală 4:3, fără deformare.
 - Pentru intrările indisponibile sau respinse se afișează „Imagine indisponibilă”; nu se folosesc fotografiile comune vechi ca înlocuitor.
@@ -13,17 +13,7 @@
 
 ## Probleme rămase
 
-- **Supă cremă de năut și spanac** (catalog 46): HTTP 403. [Pagina sursă](https://primalharvest.de/blogs/posts/gesunde-suppenrezepte-fur-deine-darmgesundheit)
-- **Salată cu varză și mere** (catalog 87): Planșă de rețetă cu text și pictograme; nu este o fotografie de preparat potrivită pentru coperta 4:3. [Pagina sursă](https://www.wikitree.co.kr/articles/1121999)
-- **Salată cu varză și morcovi** (catalog 88): Captură a unei fișe tehnologice cu mult text și o fotografie mică; nu este o fotografie culinară utilizabilă ca atare. [Pagina sursă](https://znanio.ru/media/sbornik-instruktsionnyh-i-tehnologicheskih-kart-po-tehnologii-2874976)
-- **Salată grecească** (catalog 91): Poster/slide cu rețeta și fotografii foarte mici; nu este o fotografie de salată pentru card. [Pagina sursă](https://www.slideshare.net/slideshow/traditional-recipe-greek-salad-horiatiki/28557397)
-- **Grătar de pui cu legume** (catalog 168): Planșă de rețetă cu text, ingrediente și fotografie; nu este o fotografie simplă pentru copertă. [Pagina sursă](https://www.justbewell.info/summer-meal-inspiration-grilled-chicken-with-roasted-veggies)
-- **Somon la cuptor cu roșii și busuioc** (catalog 187): HTTP 403. [Pagina sursă](https://mutti-parma.com/se/tomatrecept/ugnslax-med-tomat-och-salsa-verde/)
-- **Bowl vegetarian cu quinoa** (catalog 213): Infografic cu ingrediente și instrucțiuni în jurul bolului; nu este o fotografie simplă pentru copertă. [Pagina sursă](https://kromad.dk/buddha-bowl-med-quinoa-kikaerter-og-tahindressing/)
-- **Chiftele la tigaie cu broccoli și telemea** (catalog 216): HTTP 403. [Pagina sursă](https://www.leahitsines.com.au/blogs/recipes/feta-and-cauliflower-fritters)
-- **Tortilla cu spanac și brânză** (catalog 234): Fotografia arată un wrap din lipie cu spanac și brânză. Rețeta CookMatch este o tortilla pe bază de ouă, fără lipie. [Pagina sursă](https://varecha.pravda.sk/recepty/tortilla-s-baby-spenatom-a-so-syrom-fotorecept/74135-recept.html)
-- **Pâine prăjită cu fasole și roșii** (catalog 271): HTTP 403. [Pagina sursă](https://mutti-parma.com/can-en/recipes/baked-beans-in-tomato-sauce/)
-- **Pâine prăjită cu năut și ardei** (catalog 272): HTTP 403. [Pagina sursă](https://www.eko-skrnicl.si/blogs/novicke/toast-malo-drugace)
+Nicio imagine lipsă sau invalidă. Tortilla cu spanac și brânză rămâne o potrivire aproximativă: fotografia include lipie. Licențele rămân neverificate; observațiile sunt păstrate mai jos.
 
 ## Potriviri aproximative
 
@@ -57,9 +47,11 @@
 - **Piept de pui la tavă cu morcovi și țelină** (catalog 206): Verifică prezența țelinei și bucata de pui. [Sursă](https://www.prostreno.cz/recepty/14935/-Kureci-prsa-na-zelenine)
 - **Piept de pui la tavă cu țelină și păstârnac** (catalog 211): Legume rădăcinoase; verifică separat țelina și păstârnacul. [Sursă](https://migusto.migros.ch/de/rezepte/pouletschenkel-aus-dem-ofen)
 - **Chiftele la tigaie cu ardei și mozzarella** (catalog 214): Variantă apropiată: chiftele/clătite de legume cu mozzarella. [Sursă](https://www.kochen-kueche.com/rezept/gemuese-pancakes)
+- **Chiftele la tigaie cu broccoli și telemea** (catalog 216): Feta folosită ca alternativă vizuală pentru telemea. [Sursă](https://jow.com/recipes/broccoli-and-feta-fritters-8lfrdt8n8rcicvir17wz)
 - **Chiftele la tigaie cu ciuperci și telemea** (catalog 218): Variantă apropiată: chiftele cu ciuperci și brânză kefalotyri/myzithra, nu telemea. [Sursă](https://www.dianekochilas.com/greek-island-mushroom-fritters-with-cumin-and-cheese/)
 - **Chiftele la tigaie cu dovlecei și telemea** (catalog 224): Feta folosită ca alternativă vizuală pentru telemea. [Sursă](https://www.weightwatchers.com/uk/recipe/spiced-courgette-and-feta-fritters/581c0b12b0fea3d027de05c5)
 - **Chiftele la tigaie cu mazăre și telemea** (catalog 226): Feta folosită ca alternativă vizuală pentru telemea. [Sursă](https://www.lecker.de/erbsen-bratlinge-mit-feta-128738.html)
+- **Tortilla cu spanac și brânză** (catalog 234): Fotografia furnizată arată o lipie umplută cu ou, spanac și brânză; rețeta CookMatch este o tortilla pe bază de ouă, fără lipie. Păstrată conform cererii de aplicare a tuturor celor 34 de fotografii; potrivire aproximativă. [Sursă](https://kuchynalidla.sk/recepty/zemiakove-placky)
 - **Tocană de țelină și morcovi** (catalog 265): Preparat apropiat de țelină cu morcovi; sosul deschis la culoare nu reprezintă exact sosul de roșii al rețetei CookMatch. [Sursă](https://www.lezzet.com.tr/yemek-tarifleri/sebze-yemekleri/zeytinyaglilar/kereviz-yemegi)
 - **Pâine prăjită cu avocado și telemea** (catalog 270): Feta folosită ca alternativă vizuală pentru telemea. [Sursă](https://kitchen.sayidaty.net/node/25659/%D8%AA%D9%88%D8%B3%D8%AA-%D8%A8%D8%A7%D9%84%D8%A3%D9%81%D9%88%D9%83%D8%A7%D8%AF%D9%88-%D9%85%D8%B9-%D8%AC%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D9%8A%D8%AA%D8%A7-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88/%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%84%D8%A7%D8%AA/%D9%88%D8%B5%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88)
 - **Pâine prăjită cu telemea și castraveți** (catalog 276): Feta folosită ca alternativă vizuală pentru telemea. [Sursă](https://www.ica.se/recept/ljummen-fetaosttoast-med-dillig-gurksalsa-721147/)
@@ -77,3 +69,9 @@ Unele fotografii conțin text, filigrane sau colaje; aceste cazuri sunt marcate 
 ## Actualizare reproductibilă
 
 Datele de intrare și rezultatele descărcărilor sunt în artifacts/recipe-photos. Importul nu execută HTML sau instrucțiuni din fișierele furnizate. Ordinea verificării este: import-recipe-images.cjs, audit-recipe-images.cjs, revizuirea planșelor, apoi publish-recipe-image-manifest.cjs. Reintroducerea unui fișier respins necesită actualizarea explicită a review.json și o nouă verificare.
+
+## Arhiva cu 34 de corecții
+
+`corrections.json` păstrează metadatele celor 34 de fișiere locale. Asocierea este făcută după numele rețetei, fără folosirea ID-urilor externe ca ID-uri ale aplicației. `sources.json` păstrează istoricul fiecărei înlocuiri în `previousImage`. Formatele, dimensiunile și hashurile se referă la octeții originali din arhivă.
+
+Pentru reaplicare, extrage arhiva în `artifacts/image-corrections/input`, rulează `node scripts/apply-recipe-image-corrections.cjs`, verifică planșele, apoi rulează cu `--apply`. Acest pas se aplică după fluxul original de publicare; rularea doar a vechiului publicator ar reveni la catalogul anterior.

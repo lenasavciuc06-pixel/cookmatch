@@ -1,21 +1,42 @@
 {
-  "rejected": {
-    "87": "Planșă de rețetă cu text și pictograme; nu este o fotografie de preparat potrivită pentru coperta 4:3.",
-    "88": "Captură a unei fișe tehnologice cu mult text și o fotografie mică; nu este o fotografie culinară utilizabilă ca atare.",
-    "91": "Poster/slide cu rețeta și fotografii foarte mici; nu este o fotografie de salată pentru card.",
-    "168": "Planșă de rețetă cu text, ingrediente și fotografie; nu este o fotografie simplă pentru copertă.",
-    "213": "Infografic cu ingrediente și instrucțiuni în jurul bolului; nu este o fotografie simplă pentru copertă.",
-    "234": "Fotografia arată un wrap din lipie cu spanac și brânză. Rețeta CookMatch este o tortilla pe bază de ouă, fără lipie."
-  },
+  "rejected": {},
   "additionalApproximationNotes": {
     "28": "Fotografia arată o supă cu bucăți vizibile de ciuperci și legume; textura complet pasată din CookMatch nu este reprezentată exact.",
     "54": "Fotografia arată fâșii de varză și morcov, nu o supă complet pasată; variantă de textură apropiată.",
     "147": "Fotografia include și o legendă de ingrediente. Varianta sursă de Capricciosa include anghinare și șuncă; lista CookMatch diferă.",
     "159": "Pagina Food52 indică cartofi dulci umpluți cu năut și roșii; CookMatch folosește cartofi obișnuiți. Compoziție apropiată, nu identică.",
+    "234": "Fotografia furnizată arată o lipie umplută cu ou, spanac și brânză; rețeta CookMatch este o tortilla pe bază de ouă, fără lipie. Păstrată conform cererii de aplicare a tuturor celor 34 de fotografii; potrivire aproximativă.",
     "265": "Preparat apropiat de țelină cu morcovi; sosul deschis la culoare nu reprezintă exact sosul de roșii al rețetei CookMatch.",
     "284": "Fotografia arată un gratin de ricotta și banane, nu doar fructe coapte cu ricotta adăugată la servire.",
     "290": "Fotografia arată o variantă de desert/gratin cu ricotta și mere; forma și textura diferă de simpla coacere a fructelor din CookMatch."
   },
-  "visibleTextOrCollage": [6, 22, 60, 63, 66, 70, 71, 93, 108, 118, 120, 123, 124, 147, 167, 170, 175, 178, 221, 236, 275, 282, 285],
+  "visibleTextOrCollage": [
+    6,
+    22,
+    60,
+    63,
+    66,
+    70,
+    71,
+    93,
+    108,
+    118,
+    120,
+    123,
+    124,
+    147,
+    167,
+    170,
+    175,
+    178,
+    221,
+    236,
+    275,
+    282,
+    285,
+    4,
+    46,
+    213
+  ],
   "scope": "Revizuire vizuală a celor 12 planșe de contact, cu inspectarea separată a cazurilor ambigue. Potrivirea ingredientelor nu poate fi garantată numai din fotografie. Nu s-au verificat licențele de reutilizare."
 }

@@ -35,7 +35,8 @@ for (const width of [390, 1440]) {
   });
 }
 
-test('rejected dish photographs show an accessible empty state', async ({ page }) => {
+test('failed image requests show an accessible empty state', async ({ page }) => {
+  await page.route('**/images/recipes/tortilla-spanac-si-branza.jpg', route => route.abort());
   await page.goto('/recipes/tortilla-spanac-si-branza');
   await expect(page.locator('.details-photo').getByRole('img', {name:'Imagine indisponibilă'})).toBeVisible();
   await expect(page.locator('.details-photo img')).toHaveCount(0);

@@ -1,0 +1,35 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+
+COPY backend/Frigider.Api/Frigider.Api.csproj backend/Frigider.Api/
+RUN dotnet restore backend/Frigider.Api/Frigider.Api.csproj
+
+COPY backend/Frigider.Api/ backend/Frigider.Api/
+RUN dotnet publish backend/Frigider.Api/Frigider.Api.csproj \
+    --configuration Release \
+    --no-restore \
+    --output /app/publish \
+    /p:UseAppHost=false
+
+WORKDIR /app/publish
+ENV ASPNETCORE_ENVIRONMENT=Production
+ENV ConnectionStrings__FrigiderDb="Data Source=Data/FrigiderCatalog.db"
+RUN dotnet Frigider.Api.dll seed \
+    && mkdir -p /app/catalog \
+    && cp Data/FrigiderCatalog.db /app/catalog/FrigiderCatalog.db \
+    && rm -f Data/FrigiderCatalog.db \
+    && rm -rf Data/Seed
+
+FROM mcr.microsoft.com/dotnet/aspnet:10.0-noble-chiseled AS runtime
+WORKDIR /app
+
+COPY --from=build /app/publish ./
+COPY --from=build /app/catalog/FrigiderCatalog.db ./Data/FrigiderCatalog.db
+
+ENV ASPNETCORE_ENVIRONMENT=Production
+ENV PORT=8080
+ENV DOTNET_EnableDiagnostics=0
+ENV ConnectionStrings__FrigiderDb="Data Source=Data/FrigiderCatalog.db;Mode=ReadOnly"
+EXPOSE 8080
+
+ENTRYPOINT ["dotnet", "Frigider.Api.dll"]

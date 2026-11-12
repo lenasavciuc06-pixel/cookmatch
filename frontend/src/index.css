@@ -1,0 +1,81 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root, html.light {
+    color-scheme: light;
+    --color-canvas: 246 241 231;
+    --color-surface: 255 253 248;
+    --color-surface-elevated: 237 233 220;
+    --color-border: 205 209 190;
+    --color-text-primary: 23 63 50;
+    --color-text-secondary: 66 79 66;
+    --color-text-muted: 94 103 83;
+    --color-accent: 23 63 50;
+    --color-accent-hover: 38 84 66;
+    --color-on-accent: 255 253 248;
+    --color-sage: 226 232 209;
+    --color-olive: 120 128 82;
+    --color-terracotta: 188 104 71;
+    --color-success: 35 102 67;
+    --color-warning: 145 73 37;
+    --color-danger: 161 49 41;
+  }
+  html.dark {
+    color-scheme: dark;
+    --color-canvas: 18 32 27;
+    --color-surface: 27 45 37;
+    --color-surface-elevated: 39 59 47;
+    --color-border: 73 94 77;
+    --color-text-primary: 246 241 231;
+    --color-text-secondary: 218 224 205;
+    --color-text-muted: 178 191 164;
+    --color-accent: 189 211 153;
+    --color-accent-hover: 210 229 180;
+    --color-on-accent: 23 63 50;
+    --color-sage: 49 70 49;
+    --color-olive: 183 193 142;
+    --color-terracotta: 228 161 129;
+    --color-success: 166 212 156;
+    --color-warning: 241 190 134;
+    --color-danger: 255 171 157;
+  }
+  body { margin: 0; min-width: 320px; min-height: 100vh; background: rgb(var(--color-canvas)); color: rgb(var(--color-text-primary)); }
+  h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; text-wrap: balance; }
+  h1 { letter-spacing: -0.035em; }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  button, a { touch-action: manipulation; }
+  button, input, select, textarea { max-width: 100%; }
+  button { min-width: 44px; min-height: 44px; }
+  input:not([type='checkbox']), select, textarea { min-height: 44px; }
+  input[type='checkbox'] { width: 22px; height: 22px; margin: 11px; accent-color: rgb(var(--color-accent)); }
+  :where(button, a, input, select, textarea):focus-visible { outline: 3px solid rgb(var(--color-terracotta)); outline-offset: 4px; }
+  button:disabled { cursor: not-allowed; }
+  ::selection { background: rgb(var(--color-sage)); color: rgb(var(--color-text-primary)); }
+}
+
+@layer components {
+  .site-header { background: #173f32; color: #f6f1e7; }
+  .site-header button, .site-header a { color: inherit; }
+  .site-header .nav-active { background: #f6f1e7; color: #173f32; }
+  .site-header .language-switcher { background: transparent; border-color: rgb(246 241 231 / .25); }
+  .site-header .language-switcher button[aria-pressed='true'] { background: #f6f1e7; color: #173f32; }
+  .site-header .nav-badge { background: #cbd5a9; color: #173f32; }
+  .primary-button { @apply inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-on-accent transition-colors hover:bg-accent-hover disabled:opacity-45; }
+  .ingredient-field { @apply flex min-h-16 flex-wrap items-center gap-1 rounded-xl border border-border bg-canvas px-3 py-2 transition-colors focus-within:border-accent; }
+  .ingredient-chip { @apply inline-flex max-w-full items-center gap-1 rounded-full bg-sage pl-3 text-sm font-semibold text-text-primary; }
+  .ingredient-chip > span { overflow-wrap: anywhere; }
+  .ingredient-chip button { @apply shrink-0 rounded-full text-accent hover:bg-accent/10; }
+  .hero-photo { border-radius: 45% 45% 12% 12%; }
+  .recipe-card { @apply flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-border/70 bg-surface shadow-soft transition-shadow hover:shadow-lg; }
+  .recipe-card h3 { font-size: 1.5rem; line-height: 1.25; }
+  .recipe-image { @apply h-full w-full object-cover object-center; }
+  .state-panel { @apply mx-auto max-w-xl rounded-2xl border border-border bg-surface p-6 text-center shadow-soft; }
+  .details-photo { @apply relative mx-auto w-full max-w-5xl overflow-hidden rounded-3xl bg-forest; }
+  .details-photo img { @apply h-full w-full object-cover object-center; }
+  .details-photo h1, .details-photo p { color: #fffdf8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,32 @@
+{
+  "app": {
+    "title": "CookMatch",
+    "tagline": "What are we cooking with ingredients at home?"
+  },
+  "nav": {
+    "home": "Home",
+    "recipes": "Recipes",
+    "myIngredients": "My ingredients",
+    "favorites": "Favorites",
+    "shoppingList": "Shopping List"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "status": "Status",
+    "language": "Language",
+    "backHome": "Back to home page",
+    "notFound": "The requested page was not found.",
+    "checking": "checking",
+    "offline": "offline",
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme",
+    "renderError": "The page could not be displayed",
+    "renderErrorDescription": "An unexpected error occurred on this page.",
+    "retry": "Try again"
+  },
+  "footer": "Cook sustainably, without waste.",
+  "styleGuide": "Style guide"
+}

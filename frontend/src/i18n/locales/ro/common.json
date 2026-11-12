@@ -1,0 +1,32 @@
+{
+  "app": {
+    "title": "CookMatch",
+    "tagline": "Ce gătim din ingredientele de acasă?"
+  },
+  "nav": {
+    "home": "Acasă",
+    "recipes": "Rețete",
+    "myIngredients": "Ingredientele mele",
+    "favorites": "Favorite",
+    "shoppingList": "Listă cumpărături"
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "A apărut o eroare",
+    "status": "Stare",
+    "language": "Limbă",
+    "backHome": "Înapoi la pagina principală",
+    "notFound": "Pagina solicitată nu a fost găsită.",
+    "checking": "se verifică",
+    "offline": "offline",
+    "skipToContent": "Sari la conținut",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "toggleTheme": "Schimbă tema",
+    "renderError": "Pagina nu a putut fi afișată",
+    "renderErrorDescription": "A apărut o eroare neașteptată în această pagină.",
+    "retry": "Încearcă din nou"
+  },
+  "footer": "Gătește sustenabil, fără risipă.",
+  "styleGuide": "Ghid de stil"
+}

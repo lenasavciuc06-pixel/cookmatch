@@ -1,0 +1,59 @@
+{
+  "selectedIngredients": "Selected ingredients",
+  "emptyIngredients": "You have not selected any ingredients yet.",
+  "ingredientCount": "You have {{count}} selected ingredients.",
+  "eyebrow": "Cook better, waste less",
+  "heroTitle": "What's in your fridge?",
+  "heroSubtitle": "Your ingredients, delicious ideas for every day. Discover what you can cook and enjoy wasting less.",
+  "findButton": "Find what I can cook",
+  "loadingButton": "Finding recipes...",
+  "quickSuggestions": "Try quickly:",
+  "quickSuggestionsLabel": "Quick ingredient suggestions",
+  "quickIngredients": {
+    "potatoes": "potatoes",
+    "eggs": "eggs",
+    "onion": "onion",
+    "cheese": "cheese",
+    "chicken": "chicken",
+    "tomatoes": "tomatoes"
+  },
+  "loadingResults": "Loading results",
+  "howTitle": "How it works",
+  "steps": {
+    "choose": {
+      "title": "Choose your ingredients",
+      "description": "Start with what you have."
+    },
+    "match": {
+      "title": "Discover recipes",
+      "description": "See what you can make."
+    },
+    "cook": {
+      "title": "Enjoy cooking",
+      "description": "More flavour, less waste."
+    }
+  },
+  "errorTitle": "We couldn't load recipes",
+  "errorDescription": "Check your connection and try again.",
+  "retry": "Try again",
+  "emptyResultsTitle": "We need a few more ingredients",
+  "emptyResultsDescription": "Add more ingredients or try the quick suggestions to find more matches.",
+  "resultsTitle": "What you can cook",
+  "missingCount": "Missing ingredients: {{count}}",
+  "status": {
+    "CanCookNow": "Can cook now",
+    "OneMissing": "One ingredient missing",
+    "FewMissing": "2+ ingredients missing",
+    "ManyMissing": "2+ ingredients missing"
+  },
+  "groups": {
+    "ready": "You can cook now",
+    "oneMissing": "You are missing 1 ingredient",
+    "manyMissing": "You are missing 2+ ingredients"
+  },
+  "recipeCount": "{{count}} recipes",
+  "showMore": "Show more",
+  "photoAlt": "Fresh salad with vegetables, leafy greens and seasonal ingredients",
+  "photoCaption": "Simple ingredients. Joy on a plate.",
+  "inputHint": "Press Enter to add, or separate ingredients with commas."
+}

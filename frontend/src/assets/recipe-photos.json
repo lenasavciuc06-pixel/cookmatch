@@ -1,0 +1,1480 @@
+{
+  "omleta-cu-ardei-si-branza": {
+    "file": "/images/recipes/omleta-cu-ardei-si-branza.jpg",
+    "width": 1000,
+    "height": 759
+  },
+  "omleta-cu-ardei-si-cartofi": {
+    "file": "/images/recipes/omleta-cu-ardei-si-cartofi.jpg",
+    "width": 780,
+    "height": 520
+  },
+  "omleta-cu-ardei-si-ceapa-rosie": {
+    "file": "/images/recipes/omleta-cu-ardei-si-ceapa-rosie.webp",
+    "width": 1305,
+    "height": 1320
+  },
+  "omleta-cu-ardei-si-mozzarella": {
+    "file": "/images/recipes/omleta-cu-ardei-si-mozzarella.jpg",
+    "width": 711,
+    "height": 400
+  },
+  "omleta-cu-ceapa-si-branza": {
+    "file": "/images/recipes/omleta-cu-ceapa-si-branza.jpg",
+    "width": 774,
+    "height": 544
+  },
+  "omleta-cu-ciuperci-si-ardei": {
+    "file": "/images/recipes/omleta-cu-ciuperci-si-ardei.jpg",
+    "width": 500,
+    "height": 500
+  },
+  "omleta-cu-ciuperci-si-parmezan": {
+    "file": "/images/recipes/omleta-cu-ciuperci-si-parmezan.jpg",
+    "width": 1200,
+    "height": 628
+  },
+  "omleta-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/omleta-cu-ciuperci-si-spanac.jpg",
+    "width": 1080,
+    "height": 1080
+  },
+  "omleta-cu-ciuperci-si-telemea": {
+    "file": "/images/recipes/omleta-cu-ciuperci-si-telemea.jpg",
+    "width": 644,
+    "height": 644
+  },
+  "omleta-cu-dovlecei-si-branza": {
+    "file": "/images/recipes/omleta-cu-dovlecei-si-branza.jpg",
+    "width": 2560,
+    "height": 1707
+  },
+  "omleta-cu-dovlecei-si-marar": {
+    "file": "/images/recipes/omleta-cu-dovlecei-si-marar.webp",
+    "width": 930,
+    "height": 620
+  },
+  "omleta-cu-dovlecei-si-parmezan": {
+    "file": "/images/recipes/omleta-cu-dovlecei-si-parmezan.jpg",
+    "width": 581,
+    "height": 768
+  },
+  "omleta-cu-dovlecei-si-rosii": {
+    "file": "/images/recipes/omleta-cu-dovlecei-si-rosii.webp",
+    "width": 567,
+    "height": 425
+  },
+  "omleta-cu-mazare-si-branza": {
+    "file": "/images/recipes/omleta-cu-mazare-si-branza.jpg",
+    "width": 1440,
+    "height": 720
+  },
+  "omleta-cu-mazare-si-marar": {
+    "file": "/images/recipes/omleta-cu-mazare-si-marar.jpg",
+    "width": 564,
+    "height": 436
+  },
+  "omleta-cu-porumb-si-telemea": {
+    "file": "/images/recipes/omleta-cu-porumb-si-telemea.jpg",
+    "width": 1200,
+    "height": 1200
+  },
+  "omleta-cu-rosii-si-busuioc": {
+    "file": "/images/recipes/omleta-cu-rosii-si-busuioc.jpg",
+    "width": 973,
+    "height": 1300
+  },
+  "omleta-cu-rosii-si-masline": {
+    "file": "/images/recipes/omleta-cu-rosii-si-masline.jpg",
+    "width": 600,
+    "height": 494
+  },
+  "omleta-cu-rosii-si-telemea": {
+    "file": "/images/recipes/omleta-cu-rosii-si-telemea.jpg",
+    "width": 716,
+    "height": 537
+  },
+  "omleta-cu-spanac-si-ceapa-rosie": {
+    "file": "/images/recipes/omleta-cu-spanac-si-ceapa-rosie.webp",
+    "width": 3840,
+    "height": 2160
+  },
+  "omleta-cu-spanac-si-mozzarella": {
+    "file": "/images/recipes/omleta-cu-spanac-si-mozzarella.jpg",
+    "width": 720,
+    "height": 540
+  },
+  "omleta-cu-spanac-si-ricotta": {
+    "file": "/images/recipes/omleta-cu-spanac-si-ricotta.jpg",
+    "width": 940,
+    "height": 492
+  },
+  "pancakes-cu-ricotta": {
+    "file": "/images/recipes/pancakes-cu-ricotta.avif",
+    "width": 1200,
+    "height": 600
+  },
+  "ciorba-radauteana": {
+    "file": "/images/recipes/ciorba-radauteana.jpg",
+    "width": 656,
+    "height": 440
+  },
+  "supa-crema-de-ardei-si-morcovi": {
+    "file": "/images/recipes/supa-crema-de-ardei-si-morcovi.avif",
+    "width": 600,
+    "height": 600
+  },
+  "supa-crema-de-ardei-si-telemea": {
+    "file": "/images/recipes/supa-crema-de-ardei-si-telemea.jpg",
+    "width": 1500,
+    "height": 844
+  },
+  "supa-crema-de-ciuperci-si-smantana": {
+    "file": "/images/recipes/supa-crema-de-ciuperci-si-smantana.webp",
+    "width": 648,
+    "height": 907
+  },
+  "supa-crema-de-ciuperci-si-telina": {
+    "file": "/images/recipes/supa-crema-de-ciuperci-si-telina.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "supa-crema-de-dovleac-si-ghimbir": {
+    "file": "/images/recipes/supa-crema-de-dovleac-si-ghimbir.webp",
+    "width": 992,
+    "height": 768
+  },
+  "supa-crema-de-dovleac-si-linte": {
+    "file": "/images/recipes/supa-crema-de-dovleac-si-linte.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "supa-crema-de-dovleac-si-morcovi": {
+    "file": "/images/recipes/supa-crema-de-dovleac-si-morcovi.jpg",
+    "width": 1946,
+    "height": 1460
+  },
+  "supa-crema-de-dovlecei-si-busuioc": {
+    "file": "/images/recipes/supa-crema-de-dovlecei-si-busuioc.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "supa-crema-de-dovlecei-si-mazare": {
+    "file": "/images/recipes/supa-crema-de-dovlecei-si-mazare.jpg",
+    "width": 1920,
+    "height": 1920
+  },
+  "supa-crema-de-dovlecei-si-smantana": {
+    "file": "/images/recipes/supa-crema-de-dovlecei-si-smantana.jpg",
+    "width": 1021,
+    "height": 1536
+  },
+  "supa-crema-de-fasole-si-rosii": {
+    "file": "/images/recipes/supa-crema-de-fasole-si-rosii.webp",
+    "width": 900,
+    "height": 1260
+  },
+  "supa-crema-de-fasole-si-varza": {
+    "file": "/images/recipes/supa-crema-de-fasole-si-varza.jpg",
+    "width": 727,
+    "height": 1024
+  },
+  "supa-crema-de-linte-si-morcovi": {
+    "file": "/images/recipes/supa-crema-de-linte-si-morcovi.jpg",
+    "width": 1200,
+    "height": 900
+  },
+  "supa-crema-de-linte-si-pastarnac": {
+    "file": "/images/recipes/supa-crema-de-linte-si-pastarnac.webp",
+    "width": 1792,
+    "height": 1195
+  },
+  "supa-crema-de-mazare": {
+    "file": "/images/recipes/supa-crema-de-mazare.jpg",
+    "width": 1200,
+    "height": 675
+  },
+  "supa-crema-de-mazare-si-iaurt": {
+    "file": "/images/recipes/supa-crema-de-mazare-si-iaurt.jpg",
+    "width": 1100,
+    "height": 1100
+  },
+  "supa-crema-de-mazare-si-marar": {
+    "file": "/images/recipes/supa-crema-de-mazare-si-marar.jpg",
+    "width": 1280,
+    "height": 670
+  },
+  "supa-crema-de-mazare-si-spanac": {
+    "file": "/images/recipes/supa-crema-de-mazare-si-spanac.jpg",
+    "width": 1200,
+    "height": 795
+  },
+  "supa-crema-de-morcovi-si-pastarnac": {
+    "file": "/images/recipes/supa-crema-de-morcovi-si-pastarnac.jpg",
+    "width": 2121,
+    "height": 1414
+  },
+  "supa-crema-de-morcovi-si-telina": {
+    "file": "/images/recipes/supa-crema-de-morcovi-si-telina.jpg",
+    "width": 1237,
+    "height": 865
+  },
+  "supa-crema-de-naut-si-morcovi": {
+    "file": "/images/recipes/supa-crema-de-naut-si-morcovi.jpg",
+    "width": 1071,
+    "height": 1600
+  },
+  "supa-crema-de-naut-si-spanac": {
+    "file": null
+  },
+  "supa-crema-de-pastarnac-si-mere": {
+    "file": "/images/recipes/supa-crema-de-pastarnac-si-mere.jpg",
+    "width": 1600,
+    "height": 2846
+  },
+  "supa-crema-de-pastarnac-si-telina": {
+    "file": "/images/recipes/supa-crema-de-pastarnac-si-telina.webp",
+    "width": 1923,
+    "height": 2291
+  },
+  "supa-crema-de-rosii-si-ardei": {
+    "file": "/images/recipes/supa-crema-de-rosii-si-ardei.webp",
+    "width": 640,
+    "height": 800
+  },
+  "supa-crema-de-rosii-si-busuioc": {
+    "file": "/images/recipes/supa-crema-de-rosii-si-busuioc.png",
+    "width": 1920,
+    "height": 1080
+  },
+  "supa-crema-de-rosii-si-linte": {
+    "file": "/images/recipes/supa-crema-de-rosii-si-linte.webp",
+    "width": 756,
+    "height": 426
+  },
+  "supa-crema-de-spanac-si-ricotta": {
+    "file": "/images/recipes/supa-crema-de-spanac-si-ricotta.jpg",
+    "width": 800,
+    "height": 533
+  },
+  "supa-crema-de-spanac-si-usturoi": {
+    "file": "/images/recipes/supa-crema-de-spanac-si-usturoi.jpg",
+    "width": 1200,
+    "height": 675
+  },
+  "supa-crema-de-varza-si-morcovi": {
+    "file": "/images/recipes/supa-crema-de-varza-si-morcovi.avif",
+    "width": 500,
+    "height": 500
+  },
+  "supa-crema-de-varza-si-rosii": {
+    "file": "/images/recipes/supa-crema-de-varza-si-rosii.jpg",
+    "width": 620,
+    "height": 413
+  },
+  "supa-de-dovlecei": {
+    "file": "/images/recipes/supa-de-dovlecei.webp",
+    "width": 1200,
+    "height": 1800
+  },
+  "supa-de-legume-cu-cartofi": {
+    "file": "/images/recipes/supa-de-legume-cu-cartofi.jpg",
+    "width": 768,
+    "height": 1152
+  },
+  "salata-cu-avocado-si-naut": {
+    "file": "/images/recipes/salata-cu-avocado-si-naut.webp",
+    "width": 928,
+    "height": 1232
+  },
+  "salata-cu-avocado-si-rosii": {
+    "file": "/images/recipes/salata-cu-avocado-si-rosii.webp",
+    "width": 1000,
+    "height": 820
+  },
+  "salata-cu-avocado-si-ton": {
+    "file": "/images/recipes/salata-cu-avocado-si-ton.jpg",
+    "width": 1080,
+    "height": 1350
+  },
+  "salata-cu-castraveti-si-iaurt": {
+    "file": "/images/recipes/salata-cu-castraveti-si-iaurt.jpg",
+    "width": 1408,
+    "height": 768
+  },
+  "salata-cu-castraveti-si-sardine": {
+    "file": "/images/recipes/salata-cu-castraveti-si-sardine.jpg",
+    "width": 1400,
+    "height": 675
+  },
+  "salata-cu-fasole-si-ardei": {
+    "file": "/images/recipes/salata-cu-fasole-si-ardei.webp",
+    "width": 650,
+    "height": 450
+  },
+  "salata-cu-fasole-si-castraveti": {
+    "file": "/images/recipes/salata-cu-fasole-si-castraveti.jpg",
+    "width": 1024,
+    "height": 1024
+  },
+  "salata-cu-fasole-si-ceapa-rosie": {
+    "file": "/images/recipes/salata-cu-fasole-si-ceapa-rosie.webp",
+    "width": 600,
+    "height": 430
+  },
+  "salata-cu-linte-si-ceapa-rosie": {
+    "file": "/images/recipes/salata-cu-linte-si-ceapa-rosie.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "salata-cu-linte-si-morcovi": {
+    "file": "/images/recipes/salata-cu-linte-si-morcovi.avif",
+    "width": 768,
+    "height": 768
+  },
+  "salata-cu-linte-si-rosii": {
+    "file": "/images/recipes/salata-cu-linte-si-rosii.jpg",
+    "width": 779,
+    "height": 588
+  },
+  "salata-cu-mazare-si-castraveti": {
+    "file": "/images/recipes/salata-cu-mazare-si-castraveti.jpg",
+    "width": 900,
+    "height": 600
+  },
+  "salata-cu-mazare-si-telemea": {
+    "file": "/images/recipes/salata-cu-mazare-si-telemea.jpg",
+    "width": 720,
+    "height": 406
+  },
+  "salata-cu-morcovi-si-mere": {
+    "file": "/images/recipes/salata-cu-morcovi-si-mere.jpg",
+    "width": 2160,
+    "height": 3240
+  },
+  "salata-cu-morcovi-si-portocale": {
+    "file": "/images/recipes/salata-cu-morcovi-si-portocale.jpg",
+    "width": 1080,
+    "height": 810
+  },
+  "salata-cu-naut-si-ardei": {
+    "file": "/images/recipes/salata-cu-naut-si-ardei.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "salata-cu-naut-si-castraveti": {
+    "file": "/images/recipes/salata-cu-naut-si-castraveti.webp",
+    "width": 550,
+    "height": 825
+  },
+  "salata-cu-naut-si-rosii": {
+    "file": "/images/recipes/salata-cu-naut-si-rosii.jpg",
+    "width": 720,
+    "height": 1150
+  },
+  "salata-cu-naut-si-telemea": {
+    "file": "/images/recipes/salata-cu-naut-si-telemea.webp",
+    "width": 1500,
+    "height": 1000
+  },
+  "salata-cu-pere-si-ricotta": {
+    "file": "/images/recipes/salata-cu-pere-si-ricotta.jpg",
+    "width": 639,
+    "height": 480
+  },
+  "salata-cu-ridiche-si-castraveti": {
+    "file": "/images/recipes/salata-cu-ridiche-si-castraveti.jpg",
+    "width": 768,
+    "height": 576
+  },
+  "salata-cu-ridiche-si-telemea": {
+    "file": "/images/recipes/salata-cu-ridiche-si-telemea.webp",
+    "width": 853,
+    "height": 853
+  },
+  "salata-cu-rosii-si-masline": {
+    "file": "/images/recipes/salata-cu-rosii-si-masline.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "salata-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/salata-cu-rosii-si-mozzarella.jpg",
+    "width": 1080,
+    "height": 1080
+  },
+  "salata-cu-rosii-si-telemea": {
+    "file": "/images/recipes/salata-cu-rosii-si-telemea.avif",
+    "width": 1603,
+    "height": 2405
+  },
+  "salata-cu-rosii-si-ton": {
+    "file": "/images/recipes/salata-cu-rosii-si-ton.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "salata-cu-spanac-si-mere": {
+    "file": "/images/recipes/salata-cu-spanac-si-mere.avif",
+    "width": 2175,
+    "height": 2175
+  },
+  "salata-cu-spanac-si-portocale": {
+    "file": "/images/recipes/salata-cu-spanac-si-portocale.webp",
+    "width": 600,
+    "height": 400
+  },
+  "salata-cu-spanac-si-telemea": {
+    "file": "/images/recipes/salata-cu-spanac-si-telemea.avif",
+    "width": 640,
+    "height": 640
+  },
+  "salata-cu-varza-si-mere": {
+    "file": null
+  },
+  "salata-cu-varza-si-morcovi": {
+    "file": null
+  },
+  "salam-de-fasole-cu-rosii": {
+    "file": "/images/recipes/salam-de-fasole-cu-rosii.webp",
+    "width": 384,
+    "height": 384
+  },
+  "salata-de-rosii-si-castraveti": {
+    "file": "/images/recipes/salata-de-rosii-si-castraveti.webp",
+    "width": 1080,
+    "height": 1620
+  },
+  "salata-greceasca": {
+    "file": null
+  },
+  "bolognese-cu-paste": {
+    "file": "/images/recipes/bolognese-cu-paste.jpg",
+    "width": 920,
+    "height": 520
+  },
+  "gnocchi-cu-rosii-si-busuioc": {
+    "file": "/images/recipes/gnocchi-cu-rosii-si-busuioc.jpg",
+    "width": 720,
+    "height": 406
+  },
+  "pasta-carbonara-cu-mushrooms": {
+    "file": "/images/recipes/pasta-carbonara-cu-mushrooms.webp",
+    "width": 665,
+    "height": 887
+  },
+  "paste-cu-ardei-si-ciuperci": {
+    "file": "/images/recipes/paste-cu-ardei-si-ciuperci.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "paste-cu-ardei-si-masline": {
+    "file": "/images/recipes/paste-cu-ardei-si-masline.jpg",
+    "width": 1200,
+    "height": 800
+  },
+  "paste-cu-ardei-si-rosii": {
+    "file": "/images/recipes/paste-cu-ardei-si-rosii.jpg",
+    "width": 1024,
+    "height": 768
+  },
+  "paste-cu-ardei-si-telemea": {
+    "file": "/images/recipes/paste-cu-ardei-si-telemea.jpg",
+    "width": 1888,
+    "height": 2560
+  },
+  "paste-cu-ciuperci-si-mazare": {
+    "file": "/images/recipes/paste-cu-ciuperci-si-mazare.webp",
+    "width": 675,
+    "height": 675
+  },
+  "paste-cu-ciuperci-si-parmezan": {
+    "file": "/images/recipes/paste-cu-ciuperci-si-parmezan.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "paste-cu-ciuperci-si-smantana": {
+    "file": "/images/recipes/paste-cu-ciuperci-si-smantana.jpg",
+    "width": 1707,
+    "height": 2560
+  },
+  "paste-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/paste-cu-ciuperci-si-spanac.webp",
+    "width": 1200,
+    "height": 1200
+  },
+  "paste-cu-dovleac-si-parmezan": {
+    "file": "/images/recipes/paste-cu-dovleac-si-parmezan.jpg",
+    "width": 1010,
+    "height": 1010
+  },
+  "paste-cu-dovleac-si-ricotta": {
+    "file": "/images/recipes/paste-cu-dovleac-si-ricotta.jpg",
+    "width": 1200,
+    "height": 800
+  },
+  "paste-cu-dovlecei-si-parmezan": {
+    "file": "/images/recipes/paste-cu-dovlecei-si-parmezan.jpg",
+    "width": 2400,
+    "height": 1800
+  },
+  "paste-cu-dovlecei-si-pesto": {
+    "file": "/images/recipes/paste-cu-dovlecei-si-pesto.jpg",
+    "width": 1200,
+    "height": 790
+  },
+  "paste-cu-dovlecei-si-ricotta": {
+    "file": "/images/recipes/paste-cu-dovlecei-si-ricotta.jpg",
+    "width": 720,
+    "height": 720
+  },
+  "paste-cu-dovlecei-si-rosii": {
+    "file": "/images/recipes/paste-cu-dovlecei-si-rosii.jpg",
+    "width": 1125,
+    "height": 1691
+  },
+  "paste-cu-dovlecei-si-telemea": {
+    "file": "/images/recipes/paste-cu-dovlecei-si-telemea.webp",
+    "width": 1200,
+    "height": 900
+  },
+  "paste-cu-fasole-si-rosii": {
+    "file": "/images/recipes/paste-cu-fasole-si-rosii.webp",
+    "width": 2500,
+    "height": 3745
+  },
+  "paste-cu-linte-si-rosii": {
+    "file": "/images/recipes/paste-cu-linte-si-rosii.jpg",
+    "width": 480,
+    "height": 640
+  },
+  "paste-cu-mazare-si-parmezan": {
+    "file": "/images/recipes/paste-cu-mazare-si-parmezan.jpg",
+    "width": 1200,
+    "height": 676
+  },
+  "paste-cu-mazare-si-ricotta": {
+    "file": "/images/recipes/paste-cu-mazare-si-ricotta.jpg",
+    "width": 2016,
+    "height": 1587
+  },
+  "paste-cu-morcovi-si-mazare": {
+    "file": "/images/recipes/paste-cu-morcovi-si-mazare.avif",
+    "width": 1200,
+    "height": 675
+  },
+  "paste-cu-naut-si-spanac": {
+    "file": "/images/recipes/paste-cu-naut-si-spanac.jpg",
+    "width": 1024,
+    "height": 683
+  },
+  "paste-cu-rosii-si-masline": {
+    "file": "/images/recipes/paste-cu-rosii-si-masline.avif",
+    "width": 1181,
+    "height": 1181
+  },
+  "paste-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/paste-cu-rosii-si-mozzarella.avif",
+    "width": 1200,
+    "height": 900
+  },
+  "paste-cu-rosii-si-ricotta": {
+    "file": "/images/recipes/paste-cu-rosii-si-ricotta.jpg",
+    "width": 720,
+    "height": 1280
+  },
+  "paste-cu-rosii-si-sardine": {
+    "file": "/images/recipes/paste-cu-rosii-si-sardine.webp",
+    "width": 800,
+    "height": 400
+  },
+  "paste-cu-rosii-si-spanac": {
+    "file": "/images/recipes/paste-cu-rosii-si-spanac.jpg",
+    "width": 720,
+    "height": 406
+  },
+  "paste-cu-rosii-si-ton": {
+    "file": "/images/recipes/paste-cu-rosii-si-ton.jpg",
+    "width": 900,
+    "height": 1200
+  },
+  "paste-cu-spanac-si-mozzarella": {
+    "file": "/images/recipes/paste-cu-spanac-si-mozzarella.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "paste-cu-spanac-si-ricotta": {
+    "file": "/images/recipes/paste-cu-spanac-si-ricotta.jpg",
+    "width": 683,
+    "height": 1024
+  },
+  "paste-cu-spanac-si-smantana": {
+    "file": "/images/recipes/paste-cu-spanac-si-smantana.jpg",
+    "width": 640,
+    "height": 430
+  },
+  "orez-cu-legume-si-soia": {
+    "file": "/images/recipes/orez-cu-legume-si-soia.jpg",
+    "width": 768,
+    "height": 1024
+  },
+  "orez-cu-rosii-si-masline": {
+    "file": "/images/recipes/orez-cu-rosii-si-masline.jpg",
+    "width": 1400,
+    "height": 919
+  },
+  "pilaf-cu-ardei-si-mazare": {
+    "file": "/images/recipes/pilaf-cu-ardei-si-mazare.jpg",
+    "width": 1200,
+    "height": 1800
+  },
+  "pilaf-cu-ardei-si-morcovi": {
+    "file": "/images/recipes/pilaf-cu-ardei-si-morcovi.jpg",
+    "width": 625,
+    "height": 468
+  },
+  "pilaf-cu-broccoli-si-branza": {
+    "file": "/images/recipes/pilaf-cu-broccoli-si-branza.avif",
+    "width": 1200,
+    "height": 900
+  },
+  "pilaf-cu-broccoli-si-morcovi": {
+    "file": "/images/recipes/pilaf-cu-broccoli-si-morcovi.avif",
+    "width": 500,
+    "height": 500
+  },
+  "pilaf-cu-ciuperci-si-mazare": {
+    "file": "/images/recipes/pilaf-cu-ciuperci-si-mazare.webp",
+    "width": 1200,
+    "height": 660
+  },
+  "pilaf-cu-ciuperci-si-parmezan": {
+    "file": "/images/recipes/pilaf-cu-ciuperci-si-parmezan.jpg",
+    "width": 1000,
+    "height": 667
+  },
+  "pilaf-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/pilaf-cu-ciuperci-si-spanac.jpg",
+    "width": 404,
+    "height": 404
+  },
+  "pilaf-cu-dovleac-si-mazare": {
+    "file": "/images/recipes/pilaf-cu-dovleac-si-mazare.jpg",
+    "width": 620,
+    "height": 413
+  },
+  "pilaf-cu-dovleac-si-parmezan": {
+    "file": "/images/recipes/pilaf-cu-dovleac-si-parmezan.webp",
+    "width": 800,
+    "height": 534
+  },
+  "pilaf-cu-dovlecei-si-rosii": {
+    "file": "/images/recipes/pilaf-cu-dovlecei-si-rosii.jpg",
+    "width": 1000,
+    "height": 500
+  },
+  "pilaf-cu-dovlecei-si-telemea": {
+    "file": "/images/recipes/pilaf-cu-dovlecei-si-telemea.webp",
+    "width": 870,
+    "height": 480
+  },
+  "pilaf-cu-fasole-si-ardei": {
+    "file": "/images/recipes/pilaf-cu-fasole-si-ardei.jpg",
+    "width": 684,
+    "height": 684
+  },
+  "pilaf-cu-linte-si-rosii": {
+    "file": "/images/recipes/pilaf-cu-linte-si-rosii.jpg",
+    "width": 1506,
+    "height": 1467
+  },
+  "pilaf-cu-mazare-si-marar": {
+    "file": "/images/recipes/pilaf-cu-mazare-si-marar.avif",
+    "width": 445,
+    "height": 556
+  },
+  "pilaf-cu-morcovi-si-mazare": {
+    "file": "/images/recipes/pilaf-cu-morcovi-si-mazare.jpg",
+    "width": 1200,
+    "height": 800
+  },
+  "pilaf-cu-rosii-si-busuioc": {
+    "file": "/images/recipes/pilaf-cu-rosii-si-busuioc.webp",
+    "width": 900,
+    "height": 1260
+  },
+  "pilaf-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/pilaf-cu-rosii-si-mozzarella.webp",
+    "width": 988,
+    "height": 659
+  },
+  "pilaf-cu-rosii-si-ton": {
+    "file": "/images/recipes/pilaf-cu-rosii-si-ton.png",
+    "width": 531,
+    "height": 800
+  },
+  "pilaf-cu-spanac-si-naut": {
+    "file": "/images/recipes/pilaf-cu-spanac-si-naut.jpg",
+    "width": 445,
+    "height": 445
+  },
+  "pilaf-cu-spanac-si-ricotta": {
+    "file": "/images/recipes/pilaf-cu-spanac-si-ricotta.jpg",
+    "width": 1920,
+    "height": 1080
+  },
+  "pizza-capriciosa": {
+    "file": "/images/recipes/pizza-capriciosa.jpg",
+    "width": 1200,
+    "height": 778
+  },
+  "cartofi-copti-cu-ardei-si-branza": {
+    "file": "/images/recipes/cartofi-copti-cu-ardei-si-branza.jpg",
+    "width": 592,
+    "height": 395
+  },
+  "cartofi-copti-cu-ardei-si-ciuperci": {
+    "file": "/images/recipes/cartofi-copti-cu-ardei-si-ciuperci.jpg",
+    "width": 900,
+    "height": 600
+  },
+  "cartofi-copti-cu-broccoli-si-branza": {
+    "file": "/images/recipes/cartofi-copti-cu-broccoli-si-branza.webp",
+    "width": 730,
+    "height": 913
+  },
+  "cartofi-copti-cu-ceapa-rosie-si-telemea": {
+    "file": "/images/recipes/cartofi-copti-cu-ceapa-rosie-si-telemea.jpg",
+    "width": 820,
+    "height": 547
+  },
+  "cartofi-copti-cu-ciuperci-si-mozzarella": {
+    "file": "/images/recipes/cartofi-copti-cu-ciuperci-si-mozzarella.webp",
+    "width": 1504,
+    "height": 1003
+  },
+  "cartofi-copti-cu-ciuperci-si-smantana": {
+    "file": "/images/recipes/cartofi-copti-cu-ciuperci-si-smantana.jpg",
+    "width": 440,
+    "height": 400
+  },
+  "cartofi-copti-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/cartofi-copti-cu-ciuperci-si-spanac.jpg",
+    "width": 500,
+    "height": 500
+  },
+  "cartofi-copti-cu-dovlecei-si-parmezan": {
+    "file": "/images/recipes/cartofi-copti-cu-dovlecei-si-parmezan.jpg",
+    "width": 960,
+    "height": 540
+  },
+  "cartofi-copti-cu-fasole-si-sos-de-rosii": {
+    "file": "/images/recipes/cartofi-copti-cu-fasole-si-sos-de-rosii.jpg",
+    "width": 1400,
+    "height": 919
+  },
+  "cartofi-copti-cu-linte-si-rosii": {
+    "file": "/images/recipes/cartofi-copti-cu-linte-si-rosii.webp",
+    "width": 1200,
+    "height": 1800
+  },
+  "cartofi-copti-cu-mazare-si-telemea": {
+    "file": "/images/recipes/cartofi-copti-cu-mazare-si-telemea.jpg",
+    "width": 1224,
+    "height": 918
+  },
+  "cartofi-copti-cu-naut-si-rosii": {
+    "file": "/images/recipes/cartofi-copti-cu-naut-si-rosii.jpg",
+    "width": 690,
+    "height": 690
+  },
+  "cartofi-copti-cu-ricotta-si-marar": {
+    "file": "/images/recipes/cartofi-copti-cu-ricotta-si-marar.jpg",
+    "width": 1320,
+    "height": 880
+  },
+  "cartofi-copti-cu-rosii-si-masline": {
+    "file": "/images/recipes/cartofi-copti-cu-rosii-si-masline.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "cartofi-copti-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/cartofi-copti-cu-rosii-si-mozzarella.jpg",
+    "width": 1600,
+    "height": 1601
+  },
+  "cartofi-copti-cu-rosii-si-telemea": {
+    "file": "/images/recipes/cartofi-copti-cu-rosii-si-telemea.jpg",
+    "width": 1200,
+    "height": 957
+  },
+  "cartofi-copti-cu-spanac-si-branza": {
+    "file": "/images/recipes/cartofi-copti-cu-spanac-si-branza.jpg",
+    "width": 738,
+    "height": 410
+  },
+  "cartofi-copti-cu-spanac-si-ricotta": {
+    "file": "/images/recipes/cartofi-copti-cu-spanac-si-ricotta.jpg",
+    "width": 809,
+    "height": 501
+  },
+  "cartofi-copti-cu-ton-si-ceapa-rosie": {
+    "file": "/images/recipes/cartofi-copti-cu-ton-si-ceapa-rosie.jpg",
+    "width": 1536,
+    "height": 1152
+  },
+  "cartofi-copti-cu-ton-si-mozzarella": {
+    "file": "/images/recipes/cartofi-copti-cu-ton-si-mozzarella.jpg",
+    "width": 800,
+    "height": 500
+  },
+  "gratar-de-pui-cu-legume": {
+    "file": null
+  },
+  "gratin-de-cartofi-cu-branza": {
+    "file": "/images/recipes/gratin-de-cartofi-cu-branza.jpg",
+    "width": 740,
+    "height": 1005
+  },
+  "paella-de-vegetale": {
+    "file": "/images/recipes/paella-de-vegetale.avif",
+    "width": 2365,
+    "height": 2365
+  },
+  "pui-la-cuptor-cu-cartofi": {
+    "file": "/images/recipes/pui-la-cuptor-cu-cartofi.jpg",
+    "width": 1200,
+    "height": 800
+  },
+  "somon-la-cuptor-cu-ardei-si-ceapa-rosie": {
+    "file": "/images/recipes/somon-la-cuptor-cu-ardei-si-ceapa-rosie.jpg",
+    "width": 1200,
+    "height": 900
+  },
+  "somon-la-cuptor-cu-broccoli-si-lamaie": {
+    "file": "/images/recipes/somon-la-cuptor-cu-broccoli-si-lamaie.jpg",
+    "width": 640,
+    "height": 480
+  },
+  "somon-la-cuptor-cu-broccoli-si-morcovi": {
+    "file": "/images/recipes/somon-la-cuptor-cu-broccoli-si-morcovi.webp",
+    "width": 1200,
+    "height": 900
+  },
+  "somon-la-cuptor-cu-cartofi-si-patrunjel": {
+    "file": "/images/recipes/somon-la-cuptor-cu-cartofi-si-patrunjel.webp",
+    "width": 720,
+    "height": 405
+  },
+  "somon-la-cuptor-cu-cartofi-si-rozmarin": {
+    "file": "/images/recipes/somon-la-cuptor-cu-cartofi-si-rozmarin.avif",
+    "width": 1920,
+    "height": 1080
+  },
+  "somon-la-cuptor-cu-ciuperci-si-usturoi": {
+    "file": "/images/recipes/somon-la-cuptor-cu-ciuperci-si-usturoi.jpg",
+    "width": 625,
+    "height": 625
+  },
+  "somon-la-cuptor-cu-dovleac-si-morcovi": {
+    "file": "/images/recipes/somon-la-cuptor-cu-dovleac-si-morcovi.jpg",
+    "width": 1024,
+    "height": 576
+  },
+  "somon-la-cuptor-cu-dovlecei-si-rosii": {
+    "file": "/images/recipes/somon-la-cuptor-cu-dovlecei-si-rosii.jpg",
+    "width": 880,
+    "height": 880
+  },
+  "somon-la-cuptor-cu-dovlecei-si-telemea": {
+    "file": "/images/recipes/somon-la-cuptor-cu-dovlecei-si-telemea.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "somon-la-cuptor-cu-fasole-si-ardei": {
+    "file": "/images/recipes/somon-la-cuptor-cu-fasole-si-ardei.webp",
+    "width": 750,
+    "height": 750
+  },
+  "somon-la-cuptor-cu-iaurt-si-lamaie": {
+    "file": "/images/recipes/somon-la-cuptor-cu-iaurt-si-lamaie.jpg",
+    "width": 500,
+    "height": 500
+  },
+  "somon-la-cuptor-cu-lamaie-si-marar": {
+    "file": "/images/recipes/somon-la-cuptor-cu-lamaie-si-marar.webp",
+    "width": 730,
+    "height": 913
+  },
+  "somon-la-cuptor-cu-mazare-si-marar": {
+    "file": "/images/recipes/somon-la-cuptor-cu-mazare-si-marar.jpg",
+    "width": 424,
+    "height": 424
+  },
+  "somon-la-cuptor-cu-mazare-si-ricotta": {
+    "file": "/images/recipes/somon-la-cuptor-cu-mazare-si-ricotta.jpg",
+    "width": 1260,
+    "height": 1260
+  },
+  "somon-la-cuptor-cu-naut-si-rosii": {
+    "file": "/images/recipes/somon-la-cuptor-cu-naut-si-rosii.jpg",
+    "width": 3722,
+    "height": 3722
+  },
+  "somon-la-cuptor-cu-rosii-si-busuioc": {
+    "file": null
+  },
+  "somon-la-cuptor-cu-rosii-si-masline": {
+    "file": "/images/recipes/somon-la-cuptor-cu-rosii-si-masline.jpg",
+    "width": 1200,
+    "height": 800
+  },
+  "somon-la-cuptor-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/somon-la-cuptor-cu-rosii-si-mozzarella.avif",
+    "width": 1087,
+    "height": 1080
+  },
+  "somon-la-cuptor-cu-spanac-si-smantana": {
+    "file": "/images/recipes/somon-la-cuptor-cu-spanac-si-smantana.jpg",
+    "width": 2048,
+    "height": 1535
+  },
+  "somon-la-cuptor-cu-telina-si-pastarnac": {
+    "file": "/images/recipes/somon-la-cuptor-cu-telina-si-pastarnac.jpg",
+    "width": 440,
+    "height": 400
+  },
+  "piept-de-pui-la-tava-cu-ardei-si-ceapa-rosie": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-ardei-si-ceapa-rosie.jpg",
+    "width": 696,
+    "height": 464
+  },
+  "piept-de-pui-la-tava-cu-ardei-si-dovlecei": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-ardei-si-dovlecei.jpg",
+    "width": 1024,
+    "height": 1024
+  },
+  "piept-de-pui-la-tava-cu-broccoli-si-ardei": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-broccoli-si-ardei.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "piept-de-pui-la-tava-cu-broccoli-si-parmezan": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-broccoli-si-parmezan.jpg",
+    "width": 3200,
+    "height": 3200
+  },
+  "piept-de-pui-la-tava-cu-cartofi-si-oregano": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-cartofi-si-oregano.webp",
+    "width": 1000,
+    "height": 800
+  },
+  "piept-de-pui-la-tava-cu-cartofi-si-rozmarin": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-cartofi-si-rozmarin.png",
+    "width": 780,
+    "height": 520
+  },
+  "piept-de-pui-la-tava-cu-ciuperci-si-morcovi": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-ciuperci-si-morcovi.jpg",
+    "width": 1000,
+    "height": 1000
+  },
+  "piept-de-pui-la-tava-cu-ciuperci-si-smantana": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-ciuperci-si-smantana.avif",
+    "width": 1050,
+    "height": 1050
+  },
+  "piept-de-pui-la-tava-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-ciuperci-si-spanac.jpg",
+    "width": 428,
+    "height": 640
+  },
+  "piept-de-pui-la-tava-cu-dovleac-si-ceapa-rosie": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-dovleac-si-ceapa-rosie.webp",
+    "width": 3180,
+    "height": 2120
+  },
+  "piept-de-pui-la-tava-cu-dovleac-si-morcovi": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-dovleac-si-morcovi.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "piept-de-pui-la-tava-cu-dovlecei-si-parmezan": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-dovlecei-si-parmezan.jpg",
+    "width": 829,
+    "height": 1216
+  },
+  "piept-de-pui-la-tava-cu-dovlecei-si-telemea": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-dovlecei-si-telemea.jpg",
+    "width": 1024,
+    "height": 1024
+  },
+  "piept-de-pui-la-tava-cu-iaurt-si-lamaie": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-iaurt-si-lamaie.jpg",
+    "width": 1000,
+    "height": 1000
+  },
+  "piept-de-pui-la-tava-cu-morcovi-si-telina": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-morcovi-si-telina.jpg",
+    "width": 640,
+    "height": 480
+  },
+  "piept-de-pui-la-tava-cu-rosii-si-busuioc": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-rosii-si-busuioc.webp",
+    "width": 2048,
+    "height": 1366
+  },
+  "piept-de-pui-la-tava-cu-rosii-si-masline": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-rosii-si-masline.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "piept-de-pui-la-tava-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-rosii-si-mozzarella.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  "piept-de-pui-la-tava-cu-rosii-si-ricotta": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-rosii-si-ricotta.avif",
+    "width": 1280,
+    "height": 720
+  },
+  "piept-de-pui-la-tava-cu-telina-si-pastarnac": {
+    "file": "/images/recipes/piept-de-pui-la-tava-cu-telina-si-pastarnac.webp",
+    "width": 4000,
+    "height": 4000
+  },
+  "tochitura-traditionala": {
+    "file": "/images/recipes/tochitura-traditionala.jpg",
+    "width": 2451,
+    "height": 1838
+  },
+  "vegetarian-bowl-cu-quinoa": {
+    "file": null
+  },
+  "chiftele-la-tigaie-cu-ardei-si-mozzarella": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-ardei-si-mozzarella.jpg",
+    "width": 1920,
+    "height": 1281
+  },
+  "chiftele-la-tigaie-cu-broccoli-si-parmezan": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-broccoli-si-parmezan.jpg",
+    "width": 1946,
+    "height": 1460
+  },
+  "chiftele-la-tigaie-cu-broccoli-si-telemea": {
+    "file": null
+  },
+  "chiftele-la-tigaie-cu-ciuperci-si-spanac": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-ciuperci-si-spanac.webp",
+    "width": 800,
+    "height": 608
+  },
+  "chiftele-la-tigaie-cu-ciuperci-si-telemea": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-ciuperci-si-telemea.jpg",
+    "width": 930,
+    "height": 620
+  },
+  "chiftele-la-tigaie-cu-dovleac-si-branza": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovleac-si-branza.jpg",
+    "width": 900,
+    "height": 600
+  },
+  "chiftele-la-tigaie-cu-dovleac-si-ricotta": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovleac-si-ricotta.jpg",
+    "width": 2560,
+    "height": 1442
+  },
+  "chiftele-la-tigaie-cu-dovlecei-si-ceapa-rosie": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovlecei-si-ceapa-rosie.jpg",
+    "width": 680,
+    "height": 781
+  },
+  "chiftele-la-tigaie-cu-dovlecei-si-marar": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovlecei-si-marar.jpg",
+    "width": 869,
+    "height": 455
+  },
+  "chiftele-la-tigaie-cu-dovlecei-si-parmezan": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovlecei-si-parmezan.avif",
+    "width": 1200,
+    "height": 600
+  },
+  "chiftele-la-tigaie-cu-dovlecei-si-telemea": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-dovlecei-si-telemea.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "chiftele-la-tigaie-cu-mazare-si-marar": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-mazare-si-marar.jpg",
+    "width": 1920,
+    "height": 1281
+  },
+  "chiftele-la-tigaie-cu-mazare-si-telemea": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-mazare-si-telemea.jpg",
+    "width": 1600,
+    "height": 899
+  },
+  "chiftele-la-tigaie-cu-morcovi-si-branza": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-morcovi-si-branza.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "chiftele-la-tigaie-cu-morcovi-si-patrunjel": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-morcovi-si-patrunjel.jpg",
+    "width": 967,
+    "height": 645
+  },
+  "chiftele-la-tigaie-cu-porumb-si-branza": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-porumb-si-branza.jpg",
+    "width": 900,
+    "height": 928
+  },
+  "chiftele-la-tigaie-cu-spanac-si-parmezan": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-spanac-si-parmezan.jpg",
+    "width": 840,
+    "height": 560
+  },
+  "chiftele-la-tigaie-cu-spanac-si-ricotta": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-spanac-si-ricotta.png",
+    "width": 1366,
+    "height": 765
+  },
+  "chiftele-la-tigaie-cu-varza-si-marar": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-varza-si-marar.jpg",
+    "width": 1440,
+    "height": 1693
+  },
+  "chiftele-la-tigaie-cu-varza-si-morcovi": {
+    "file": "/images/recipes/chiftele-la-tigaie-cu-varza-si-morcovi.jpg",
+    "width": 1026,
+    "height": 1203
+  },
+  "tortilla-spanac-si-branza": {
+    "file": null
+  },
+  "mancare-de-linte-cu-cartofi": {
+    "file": "/images/recipes/mancare-de-linte-cu-cartofi.jpg",
+    "width": 600,
+    "height": 400
+  },
+  "supa-de-varza": {
+    "file": "/images/recipes/supa-de-varza.webp",
+    "width": 1000,
+    "height": 2000
+  },
+  "tocana-de-broccoli-si-naut": {
+    "file": "/images/recipes/tocana-de-broccoli-si-naut.webp",
+    "width": 1500,
+    "height": 2667
+  },
+  "tocana-de-cartofi-si-ardei": {
+    "file": "/images/recipes/tocana-de-cartofi-si-ardei.webp",
+    "width": 640,
+    "height": 427
+  },
+  "tocana-de-cartofi-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-cartofi-si-ciuperci.jpg",
+    "width": 2121,
+    "height": 1414
+  },
+  "tocana-de-cartofi-si-dovlecei": {
+    "file": "/images/recipes/tocana-de-cartofi-si-dovlecei.jpg",
+    "width": 2908,
+    "height": 1925
+  },
+  "tocana-de-dovleac-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-dovleac-si-ciuperci.webp",
+    "width": 2500,
+    "height": 1792
+  },
+  "tocana-de-fasole-si-ardei": {
+    "file": "/images/recipes/tocana-de-fasole-si-ardei.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "tocana-de-fasole-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-fasole-si-ciuperci.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "tocana-de-fasole-si-dovlecei": {
+    "file": "/images/recipes/tocana-de-fasole-si-dovlecei.webp",
+    "width": 1170,
+    "height": 780
+  },
+  "tocana-de-fasole-si-spanac": {
+    "file": "/images/recipes/tocana-de-fasole-si-spanac.png",
+    "width": 1400,
+    "height": 1400
+  },
+  "tocana-de-fasole-si-telina": {
+    "file": "/images/recipes/tocana-de-fasole-si-telina.webp",
+    "width": 1080,
+    "height": 1350
+  },
+  "tocana-de-fasole-si-varza": {
+    "file": "/images/recipes/tocana-de-fasole-si-varza.jpg",
+    "width": 1024,
+    "height": 1024
+  },
+  "tocana-de-linte-si-ardei": {
+    "file": "/images/recipes/tocana-de-linte-si-ardei.webp",
+    "width": 640,
+    "height": 427
+  },
+  "tocana-de-linte-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-linte-si-ciuperci.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "tocana-de-linte-si-dovleac": {
+    "file": "/images/recipes/tocana-de-linte-si-dovleac.jpg",
+    "width": 1400,
+    "height": 934
+  },
+  "tocana-de-linte-si-morcovi": {
+    "file": "/images/recipes/tocana-de-linte-si-morcovi.jpg",
+    "width": 1200,
+    "height": 776
+  },
+  "tocana-de-linte-si-spanac": {
+    "file": "/images/recipes/tocana-de-linte-si-spanac.webp",
+    "width": 1200,
+    "height": 1200
+  },
+  "tocana-de-linte-si-varza": {
+    "file": "/images/recipes/tocana-de-linte-si-varza.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "tocana-de-mazare-si-ardei": {
+    "file": "/images/recipes/tocana-de-mazare-si-ardei.jpg",
+    "width": 656,
+    "height": 440
+  },
+  "tocana-de-mazare-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-mazare-si-ciuperci.jpg",
+    "width": 1140,
+    "height": 1710
+  },
+  "tocana-de-mazare-si-dovlecei": {
+    "file": "/images/recipes/tocana-de-mazare-si-dovlecei.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "tocana-de-mazare-si-morcovi": {
+    "file": "/images/recipes/tocana-de-mazare-si-morcovi.jpg",
+    "width": 1536,
+    "height": 1024
+  },
+  "tocana-de-naut-si-ardei": {
+    "file": "/images/recipes/tocana-de-naut-si-ardei.jpg",
+    "width": 656,
+    "height": 440
+  },
+  "tocana-de-naut-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-naut-si-ciuperci.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  "tocana-de-naut-si-dovleac": {
+    "file": "/images/recipes/tocana-de-naut-si-dovleac.jpg",
+    "width": 1200,
+    "height": 846
+  },
+  "tocana-de-naut-si-dovlecei": {
+    "file": "/images/recipes/tocana-de-naut-si-dovlecei.jpg",
+    "width": 700,
+    "height": 525
+  },
+  "tocana-de-naut-si-morcovi": {
+    "file": "/images/recipes/tocana-de-naut-si-morcovi.jpg",
+    "width": 751,
+    "height": 532
+  },
+  "tocana-de-naut-si-spanac": {
+    "file": "/images/recipes/tocana-de-naut-si-spanac.jpg",
+    "width": 1200,
+    "height": 900
+  },
+  "tocana-de-pastarnac-si-morcovi": {
+    "file": "/images/recipes/tocana-de-pastarnac-si-morcovi.avif",
+    "width": 862,
+    "height": 485
+  },
+  "tocana-de-telina-si-morcovi": {
+    "file": "/images/recipes/tocana-de-telina-si-morcovi.avif",
+    "width": 800,
+    "height": 600
+  },
+  "tocana-de-varza-si-ciuperci": {
+    "file": "/images/recipes/tocana-de-varza-si-ciuperci.jpg",
+    "width": 750,
+    "height": 500
+  },
+  "mancare-de-ciuperci-cu-orez": {
+    "file": "/images/recipes/mancare-de-ciuperci-cu-orez.jpg",
+    "width": 1380,
+    "height": 2000
+  },
+  "paine-prajita-cu-avocado-si-rosii": {
+    "file": "/images/recipes/paine-prajita-cu-avocado-si-rosii.jpg",
+    "width": 576,
+    "height": 432
+  },
+  "paine-prajita-cu-avocado-si-spanac": {
+    "file": "/images/recipes/paine-prajita-cu-avocado-si-spanac.jpg",
+    "width": 700,
+    "height": 541
+  },
+  "paine-prajita-cu-avocado-si-telemea": {
+    "file": "/images/recipes/paine-prajita-cu-avocado-si-telemea.jpg",
+    "width": 750,
+    "height": 750
+  },
+  "paine-prajita-cu-fasole-si-rosii": {
+    "file": null
+  },
+  "paine-prajita-cu-naut-si-ardei": {
+    "file": null
+  },
+  "paine-prajita-cu-ricotta-si-pere": {
+    "file": "/images/recipes/paine-prajita-cu-ricotta-si-pere.webp",
+    "width": 840,
+    "height": 519
+  },
+  "paine-prajita-cu-rosii-si-mozzarella": {
+    "file": "/images/recipes/paine-prajita-cu-rosii-si-mozzarella.jpg",
+    "width": 640,
+    "height": 426
+  },
+  "paine-prajita-cu-sardine-si-ceapa-rosie": {
+    "file": "/images/recipes/paine-prajita-cu-sardine-si-ceapa-rosie.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "paine-prajita-cu-telemea-si-castraveti": {
+    "file": "/images/recipes/paine-prajita-cu-telemea-si-castraveti.jpg",
+    "width": 580,
+    "height": 580
+  },
+  "paine-prajita-cu-ton-si-castraveti": {
+    "file": "/images/recipes/paine-prajita-cu-ton-si-castraveti.avif",
+    "width": 685,
+    "height": 600
+  },
+  "tigaie-de-cartofi-si-oua": {
+    "file": "/images/recipes/tigaie-de-cartofi-si-oua.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "clatite-cu-branza-si-mere": {
+    "file": "/images/recipes/clatite-cu-branza-si-mere.webp",
+    "width": 800,
+    "height": 600
+  },
+  "fructe-coapte-cu-banane-si-iaurt": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-iaurt.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "fructe-coapte-cu-banane-si-iaurt-grecesc": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-iaurt-grecesc.jpg",
+    "width": 1260,
+    "height": 475
+  },
+  "fructe-coapte-cu-banane-si-mere": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-mere.jpg",
+    "width": 1920,
+    "height": 1440
+  },
+  "fructe-coapte-cu-banane-si-pere": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-pere.avif",
+    "width": 876,
+    "height": 720
+  },
+  "fructe-coapte-cu-banane-si-ricotta": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-ricotta.jpg",
+    "width": 677,
+    "height": 508
+  },
+  "fructe-coapte-cu-banane-si-scortisoara": {
+    "file": "/images/recipes/fructe-coapte-cu-banane-si-scortisoara.avif",
+    "width": 2000,
+    "height": 1500
+  },
+  "fructe-coapte-cu-mere-si-iaurt": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-iaurt.jpg",
+    "width": 800,
+    "height": 800
+  },
+  "fructe-coapte-cu-mere-si-iaurt-grecesc": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-iaurt-grecesc.jpg",
+    "width": 1920,
+    "height": 1440
+  },
+  "fructe-coapte-cu-mere-si-pere": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-pere.jpg",
+    "width": 680,
+    "height": 781
+  },
+  "fructe-coapte-cu-mere-si-portocale": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-portocale.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "fructe-coapte-cu-mere-si-ricotta": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-ricotta.avif",
+    "width": 912,
+    "height": 456
+  },
+  "fructe-coapte-cu-mere-si-scortisoara": {
+    "file": "/images/recipes/fructe-coapte-cu-mere-si-scortisoara.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "fructe-coapte-cu-pere-si-branza": {
+    "file": "/images/recipes/fructe-coapte-cu-pere-si-branza.jpg",
+    "width": 600,
+    "height": 401
+  },
+  "fructe-coapte-cu-pere-si-iaurt-grecesc": {
+    "file": "/images/recipes/fructe-coapte-cu-pere-si-iaurt-grecesc.jpg",
+    "width": 600,
+    "height": 390
+  },
+  "fructe-coapte-cu-pere-si-portocale": {
+    "file": "/images/recipes/fructe-coapte-cu-pere-si-portocale.webp",
+    "width": 420,
+    "height": 420
+  },
+  "fructe-coapte-cu-pere-si-ricotta": {
+    "file": "/images/recipes/fructe-coapte-cu-pere-si-ricotta.webp",
+    "width": 896,
+    "height": 896
+  },
+  "fructe-coapte-cu-pere-si-scortisoara": {
+    "file": "/images/recipes/fructe-coapte-cu-pere-si-scortisoara.jpg",
+    "width": 1400,
+    "height": 2100
+  },
+  "fructe-coapte-cu-portocale-si-iaurt-grecesc": {
+    "file": "/images/recipes/fructe-coapte-cu-portocale-si-iaurt-grecesc.webp",
+    "width": 1200,
+    "height": 1600
+  },
+  "fructe-coapte-cu-portocale-si-ricotta": {
+    "file": "/images/recipes/fructe-coapte-cu-portocale-si-ricotta.jpg",
+    "width": 832,
+    "height": 468
+  },
+  "fructe-coapte-cu-portocale-si-scortisoara": {
+    "file": "/images/recipes/fructe-coapte-cu-portocale-si-scortisoara.jpg",
+    "width": 640,
+    "height": 480
+  },
+  "prajitura-cu-mere-si-scortisoara": {
+    "file": "/images/recipes/prajitura-cu-mere-si-scortisoara.avif",
+    "width": 2500,
+    "height": 1667
+  }
+}
